@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.google.javascript.jscomp.NodeUtilTest" time="0.18" tests="137" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
+    <property name="java.vm.version" value="25.151-b12"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/wju/test-proj/closure-compiler"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/home/wju/test-proj/closure-compiler"/>
+    <property name="java.runtime.version" value="1.8.0_151-8u151-b12-0ubuntu0.16.04.2-b12"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Linux"/>
+    <property name="net.sourceforge.cobertura.datafile" value="/home/wju/test-proj/closure-compiler/target/cobertura/cobertura.ser"/>
+    <property name="classworlds.conf" value="/usr/share/maven/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="4.4.0-109-generic"/>
+    <property name="user.home" value="/home/wju"/>
+    <property name="user.timezone" value="America/Los_Angeles"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="wju"/>
+    <property name="java.class.path" value="/usr/share/maven/boot/plexus-classworlds-2.x.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/usr/lib/jvm/java-8-openjdk-amd64/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher cobertura:cobertura"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_151"/>
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/usr/share/maven"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="project.build.outputDirectory" value="/home/wju/test-proj/closure-compiler/target/generated-classes/cobertura"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="testComputedPropSideEffects" classname="com.google.javascript.jscomp.NodeUtilTest" time="0.001"/>
+  <testcase name="testIsClassDeclaration" classname="com.google.javascript.jscomp.NodeUtilTest" time="0.001"/>
+  <testcase name="testRegExpSideEffect" classname="com.google.javascript.jscomp.NodeUtilTest" time="0.007"/>
+  <testcase name="testIsStringResult" classname="com.google.javascript.jscomp.NodeUtilTest" time="0.008"/>
+  <testcase name="testObjectLiteralIsLiteralValue" classname="com.google.javascript.jscomp.NodeUtilTest" time="0.005"/>
+  <testcase name="testGetBestLValue" classname="com.google.javascript.jscomp.NodeUtilTest" time="0.002"/>
+  <testcase name="testConstKeywordNamespace" classname="com.google.javascript.jscomp.NodeUtilTest" time="0"/>
+  <testcase name="testLhsByDestructuring1b" classname="com.google.javascript.jscomp.NodeUtilTest" time="0"/>
+  <testcase name="testLhsByDestructuring1c" classname="com.google.javascript.jscomp.NodeUtilTest" time="0"/>
+  <testcase name="testLhsByDestructuring1d" classname="com.google.javascript.jscomp.NodeUtilTest" time="0.001"/>
+  <testcase name="testLhsByDestructuring1e" classname="com.google.javascript.jscomp.NodeUtilTest" time="0"/>
+  <testcase name="testLhsByDestructuring1f" classname="com.google.javascript.jscomp.NodeUtilTest" time="0"/>
+  <testcase name="testLhsByDestructuring2b" classname="com.google.javascript.jscomp.NodeUtilTest" time="0"/>
+  <testcase name="testLhsByDestructuring3b" classname="com.google.javascript.jscomp.NodeUtilTest" time="0.001"/>
+  <testcase name="testLhsByDestructuring6b" classname="com.google.javascript.jscomp.NodeUtilTest" time="0"/>
+  <testcase name="testLhsByDestructuring6c" classname="com.google.javascript.jscomp.NodeUtilTest" time="0"/>
+  <testcase name="testLhsByDestructuring7b" classname="com.google.javascript.jscomp.NodeUtilTest" time="0"/>
+  <testcase name="testLhsByDestructuring7c" classname="com.google.javascript.jscomp.NodeUtilTest" time="0"/>
+  <testcase name="testLhsByDestructuring7d" classname="com.google.javascript.jscomp.NodeUtilTest" time="0.001"/>
+  <testcase name="testLhsByDestructuring7e" classname="com.google.javascript.jscomp.NodeUtilTest" time="0"/>
+  <testcase name="testLhsByDestructuring8b" classname="com.google.javascript.jscomp.NodeUtilTest" time="0"/>
+  <testcase name="testIsSimpleOperator" classname="com.google.javascript.jscomp.NodeUtilTest" time="0.002"/>
+  <testcase name="testLhsByDestructuring1" classname="com.google.javascript.jscomp.NodeUtilTest" time="0"/>
+  <testcase name="testLhsByDestructuring2" classname="com.google.javascript.jscomp.NodeUtilTest" time="0"/>
+  <testcase name="testLhsByDestructuring3" classname="com.google.javascript.jscomp.NodeUtilTest" time="0.001"/>
+  <testcase name="testLhsByDestructuring4" classname="com.google.javascript.jscomp.NodeUtilTest" time="0"/>
+  <testcase name="testLhsByDestructuring5" classname="com.google.javascript.jscomp.NodeUtilTest" time="0"/>
+  <testcase name="testLhsByDestructuring6" classname="com.google.javascript.jscomp.NodeUtilTest" time="0"/>
+  <testcase name="testLhsByDestructuring7" classname="com.google.javascript.jscomp.NodeUtilTest" time="0.001"/>
+  <testcase name="testLhsByDestructuring8" classname="com.google.javascript.jscomp.NodeUtilTest" time="0"/>
+  <testcase name="testLhsByDestructuring9" classname="com.google.javascript.jscomp.NodeUtilTest" time="0"/>
+  <testcase name="testIsNestedArrayPattern" classname="com.google.javascript.jscomp.NodeUtilTest" time="0"/>
+  <testcase name="testGetBestJsDocInfoForClasses" classname="com.google.javascript.jscomp.NodeUtilTest" time="0.001"/>
+  <testcase name="testNewQualifiedNameNode2" classname="com.google.javascript.jscomp.NodeUtilTest" time="0"/>
+  <testcase name="testGetBestJsDocInfoForMethods" classname="com.google.javascript.jscomp.NodeUtilTest" time="0.001"/>
+  <testcase name="testMayHaveSideEffects" classname="com.google.javascript.jscomp.NodeUtilTest" time="0.017"/>
+  <testcase name="testGetRValueOfLValue" classname="com.google.javascript.jscomp.NodeUtilTest" time="0.002"/>
+  <testcase name="testLocalValueAwait" classname="com.google.javascript.jscomp.NodeUtilTest" time="0.001"/>
+  <testcase name="testLocalValueYield" classname="com.google.javascript.jscomp.NodeUtilTest" time="0"/>
+  <testcase name="testGetNodeByLineCol_preferLiterals" classname="com.google.javascript.jscomp.NodeUtilTest" time="0.001"/>
+  <testcase name="testIsNaN" classname="com.google.javascript.jscomp.NodeUtilTest" time="0.001"/>
+  <testcase name="testIsControlStructureCodeBlock" classname="com.google.javascript.jscomp.NodeUtilTest" time="0"/>
+  <testcase name="testLocalValueTaggedTemplateLit1" classname="com.google.javascript.jscomp.NodeUtilTest" time="0"/>
+  <testcase name="testLocalValueTaggedTemplateLit2" classname="com.google.javascript.jscomp.NodeUtilTest" time="0"/>
+  <testcase name="testGetNumberValue" classname="com.google.javascript.jscomp.NodeUtilTest" time="0.01"/>
+  <testcase name="testIsFunctionExpression1" classname="com.google.javascript.jscomp.NodeUtilTest" time="0"/>
+  <testcase name="testIsFunctionExpression2" classname="com.google.javascript.jscomp.NodeUtilTest" time="0"/>
+  <testcase name="testContainsType" classname="com.google.javascript.jscomp.NodeUtilTest" time="0.001"/>
+  <testcase name="testIsConstructor" classname="com.google.javascript.jscomp.NodeUtilTest" time="0.001"/>
+  <testcase name="testGetAllVars1" classname="com.google.javascript.jscomp.NodeUtilTest" time="0.001"/>
+  <testcase name="testGetAllVars2" classname="com.google.javascript.jscomp.NodeUtilTest" time="0"/>
+  <testcase name="testIsNonlocalModuleExportNameOnExports1" classname="com.google.javascript.jscomp.NodeUtilTest" time="0"/>
+  <testcase name="testIsNonlocalModuleExportNameOnExports2" classname="com.google.javascript.jscomp.NodeUtilTest" time="0.001"/>
+  <testcase name="testGetRValueOfLValueDestructuringLhs" classname="com.google.javascript.jscomp.NodeUtilTest" time="0.001"/>
+  <testcase name="testLocalValueTemplateLit" classname="com.google.javascript.jscomp.NodeUtilTest" time="0.001"/>
+  <testcase name="testIsNestedObjectPattern" classname="com.google.javascript.jscomp.NodeUtilTest" time="0"/>
+  <testcase name="testIsLiteralOrConstValue" classname="com.google.javascript.jscomp.NodeUtilTest" time="0.002"/>
+  <testcase name="testGetVarsDeclaredInBranch" classname="com.google.javascript.jscomp.NodeUtilTest" time="0.001"/>
+  <testcase name="testGetRValueOfLValueDestructuringPattern" classname="com.google.javascript.jscomp.NodeUtilTest" time="0.001"/>
+  <testcase name="testValidNames" classname="com.google.javascript.jscomp.NodeUtilTest" time="0"/>
+  <testcase name="testRemoveLetChild" classname="com.google.javascript.jscomp.NodeUtilTest" time="0.001"/>
+  <testcase name="testRemoveLabelChild1" classname="com.google.javascript.jscomp.NodeUtilTest" time="0.001"/>
+  <testcase name="testRemoveLabelChild2" classname="com.google.javascript.jscomp.NodeUtilTest" time="0"/>
+  <testcase name="testIsFunctionExpression" classname="com.google.javascript.jscomp.NodeUtilTest" time="0.004"/>
+  <testcase name="testIsBooleanResult" classname="com.google.javascript.jscomp.NodeUtilTest" time="0.006"/>
+  <testcase name="testLocalValueNewExpr" classname="com.google.javascript.jscomp.NodeUtilTest" time="0"/>
+  <testcase name="testIsExpressionResultUsed" classname="com.google.javascript.jscomp.NodeUtilTest" time="0.003"/>
+  <testcase name="testFindLhsNodesInNode" classname="com.google.javascript.jscomp.NodeUtilTest" time="0.003"/>
+  <testcase name="testIsNumericResult" classname="com.google.javascript.jscomp.NodeUtilTest" time="0.006"/>
+  <testcase name="testLocalValueSpread" classname="com.google.javascript.jscomp.NodeUtilTest" time="0.001"/>
+  <testcase name="testRegExpSideEffect2" classname="com.google.javascript.jscomp.NodeUtilTest" time="0"/>
+  <testcase name="testContainsFunctionDeclaration" classname="com.google.javascript.jscomp.NodeUtilTest" time="0.001"/>
+  <testcase name="testIsGetterOrSetter" classname="com.google.javascript.jscomp.NodeUtilTest" time="0.001"/>
+  <testcase name="testGetNameReferenceCount" classname="com.google.javascript.jscomp.NodeUtilTest" time="0.001"/>
+  <testcase name="testGetBestJsDocInfoExport" classname="com.google.javascript.jscomp.NodeUtilTest" time="0"/>
+  <testcase name="testGetFunctionName1" classname="com.google.javascript.jscomp.NodeUtilTest" time="0"/>
+  <testcase name="testGetFunctionName2" classname="com.google.javascript.jscomp.NodeUtilTest" time="0"/>
+  <testcase name="testGetFunctionName3" classname="com.google.javascript.jscomp.NodeUtilTest" time="0"/>
+  <testcase name="testGetFunctionName4" classname="com.google.javascript.jscomp.NodeUtilTest" time="0"/>
+  <testcase name="testGetFunctionName5" classname="com.google.javascript.jscomp.NodeUtilTest" time="0"/>
+  <testcase name="testNewQName1" classname="com.google.javascript.jscomp.NodeUtilTest" time="0"/>
+  <testcase name="testReplaceDeclarationName" classname="com.google.javascript.jscomp.NodeUtilTest" time="0.002"/>
+  <testcase name="testRemoveParamChild1" classname="com.google.javascript.jscomp.NodeUtilTest" time="0.001"/>
+  <testcase name="testRemoveParamChild2" classname="com.google.javascript.jscomp.NodeUtilTest" time="0"/>
+  <testcase name="testRemoveVarChild" classname="com.google.javascript.jscomp.NodeUtilTest" time="0.001"/>
+  <testcase name="testCanMergeBlock1" classname="com.google.javascript.jscomp.NodeUtilTest" time="0"/>
+  <testcase name="testCanMergeBlock2" classname="com.google.javascript.jscomp.NodeUtilTest" time="0"/>
+  <testcase name="testIsLValue" classname="com.google.javascript.jscomp.NodeUtilTest" time="0.001"/>
+  <testcase name="testIsVarArgs" classname="com.google.javascript.jscomp.NodeUtilTest" time="0.001"/>
+  <testcase name="testGetBooleanValue" classname="com.google.javascript.jscomp.NodeUtilTest" time="0.002"/>
+  <testcase name="testIsExecutedExactlyOnce" classname="com.google.javascript.jscomp.NodeUtilTest" time="0.005"/>
+  <testcase name="testGetSourceName" classname="com.google.javascript.jscomp.NodeUtilTest" time="0"/>
+  <testcase name="testMayBeString" classname="com.google.javascript.jscomp.NodeUtilTest" time="0.006"/>
+  <testcase name="testIsNonlocalModuleExportNameOnImports1" classname="com.google.javascript.jscomp.NodeUtilTest" time="0"/>
+  <testcase name="testIsNonlocalModuleExportNameOnImports2" classname="com.google.javascript.jscomp.NodeUtilTest" time="0"/>
+  <testcase name="testGetNodeByLineCol_1" classname="com.google.javascript.jscomp.NodeUtilTest" time="0"/>
+  <testcase name="testGetNodeByLineCol_2" classname="com.google.javascript.jscomp.NodeUtilTest" time="0.001"/>
+  <testcase name="testRemovePatternChild" classname="com.google.javascript.jscomp.NodeUtilTest" time="0"/>
+  <testcase name="testGetNodeTypeReferenceCount" classname="com.google.javascript.jscomp.NodeUtilTest" time="0.001"/>
+  <testcase name="testLocalValue1" classname="com.google.javascript.jscomp.NodeUtilTest" time="0.008"/>
+  <testcase name="testGetStringValue" classname="com.google.javascript.jscomp.NodeUtilTest" time="0.004"/>
+  <testcase name="testGetBestFunctionName1" classname="com.google.javascript.jscomp.NodeUtilTest" time="0"/>
+  <testcase name="testGetBestFunctionName2" classname="com.google.javascript.jscomp.NodeUtilTest" time="0.001"/>
+  <testcase name="testIsFunctionDeclaration" classname="com.google.javascript.jscomp.NodeUtilTest" time="0.001"/>
+  <testcase name="testTryMergeBlock1" classname="com.google.javascript.jscomp.NodeUtilTest" time="0"/>
+  <testcase name="testTryMergeBlock2" classname="com.google.javascript.jscomp.NodeUtilTest" time="0"/>
+  <testcase name="testTryMergeBlock3" classname="com.google.javascript.jscomp.NodeUtilTest" time="0.001"/>
+  <testcase name="testTryMergeBlock4" classname="com.google.javascript.jscomp.NodeUtilTest" time="0"/>
+  <testcase name="testIsObjectResult" classname="com.google.javascript.jscomp.NodeUtilTest" time="0.005"/>
+  <testcase name="testMayEffectMutableState" classname="com.google.javascript.jscomp.NodeUtilTest" time="0.005"/>
+  <testcase name="testGetNearestFunctionName" classname="com.google.javascript.jscomp.NodeUtilTest" time="0.002"/>
+  <testcase name="testReferencesThis" classname="com.google.javascript.jscomp.NodeUtilTest" time="0.001"/>
+  <testcase name="testGetExpressionBooleanValue" classname="com.google.javascript.jscomp.NodeUtilTest" time="0.005"/>
+  <testcase name="testRemoveChildBlock" classname="com.google.javascript.jscomp.NodeUtilTest" time="0"/>
+  <testcase name="testIsNameReferenceCount" classname="com.google.javascript.jscomp.NodeUtilTest" time="0.001"/>
+  <testcase name="testGetRValueOfLValueInDestructuringPattern" classname="com.google.javascript.jscomp.NodeUtilTest" time="0"/>
+  <testcase name="testIsMethodDeclaration" classname="com.google.javascript.jscomp.NodeUtilTest" time="0.001"/>
+  <testcase name="testGetOctalNumberValue" classname="com.google.javascript.jscomp.NodeUtilTest" time="0"/>
+  <testcase name="testValidDefine" classname="com.google.javascript.jscomp.NodeUtilTest" time="0.002"/>
+  <testcase name="testIsObjectLiteralKey1" classname="com.google.javascript.jscomp.NodeUtilTest" time="0.001"/>
+  <testcase name="testObjectMethodSideEffects" classname="com.google.javascript.jscomp.NodeUtilTest" time="0.001"/>
+  <testcase name="testIsNotLValue" classname="com.google.javascript.jscomp.NodeUtilTest" time="0"/>
+  <testcase name="testRemoveTryChild1" classname="com.google.javascript.jscomp.NodeUtilTest" time="0"/>
+  <testcase name="testRemoveTryChild2" classname="com.google.javascript.jscomp.NodeUtilTest" time="0.001"/>
+  <testcase name="testRemoveTryChild3" classname="com.google.javascript.jscomp.NodeUtilTest" time="0"/>
+  <testcase name="testRemoveTryChild4" classname="com.google.javascript.jscomp.NodeUtilTest" time="0"/>
+  <testcase name="testGetArrayStringValue" classname="com.google.javascript.jscomp.NodeUtilTest" time="0.002"/>
+  <testcase name="testIsObjectDefinePropertiesDefinition" classname="com.google.javascript.jscomp.NodeUtilTest" time="0"/>
+  <testcase name="testRemoveFromImport" classname="com.google.javascript.jscomp.NodeUtilTest" time="0.001"/>
+  <testcase name="testRemoveForChild" classname="com.google.javascript.jscomp.NodeUtilTest" time="0.001"/>
+  <testcase name="testGetDeclaredTypeExpression1" classname="com.google.javascript.jscomp.NodeUtilTest" time="0"/>
+  <testcase name="testGetDeclaredTypeExpression2" classname="com.google.javascript.jscomp.NodeUtilTest" time="0"/>
+  <testcase name="testGetDeclaredTypeExpression3" classname="com.google.javascript.jscomp.NodeUtilTest" time="0.001"/>
+  <testcase name="testGetDeclaredTypeExpression4" classname="com.google.javascript.jscomp.NodeUtilTest" time="0"/>
+  <testcase name="testIsObjectDefinePropertyDefinition" classname="com.google.javascript.jscomp.NodeUtilTest" time="0"/>
+  <testcase name="testIsClassExpression" classname="com.google.javascript.jscomp.NodeUtilTest" time="0.003"/>
+  <testcase name="testCallSideEffects" classname="com.google.javascript.jscomp.NodeUtilTest" time="0"/>
+</testsuite>

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.google.javascript.jscomp.CodePrinterTest" time="0.853" tests="175" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
+    <property name="java.vm.version" value="25.151-b12"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/wju/test-proj/closure-compiler"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/home/wju/test-proj/closure-compiler"/>
+    <property name="java.runtime.version" value="1.8.0_151-8u151-b12-0ubuntu0.16.04.2-b12"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Linux"/>
+    <property name="net.sourceforge.cobertura.datafile" value="/home/wju/test-proj/closure-compiler/target/cobertura/cobertura.ser"/>
+    <property name="classworlds.conf" value="/usr/share/maven/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="4.4.0-109-generic"/>
+    <property name="user.home" value="/home/wju"/>
+    <property name="user.timezone" value="America/Los_Angeles"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="wju"/>
+    <property name="java.class.path" value="/usr/share/maven/boot/plexus-classworlds-2.x.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/usr/lib/jvm/java-8-openjdk-amd64/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher cobertura:cobertura"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_151"/>
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/usr/share/maven"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="project.build.outputDirectory" value="/home/wju/test-proj/closure-compiler/target/generated-classes/cobertura"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="testTypeAnnotationsAssign" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.003"/>
+  <testcase name="testFunctionWithThisTypeAnnotation" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.004"/>
+  <testcase name="testExponentiationOperator" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.008"/>
+  <testcase name="testBreakUntrustedStrings" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.01"/>
+  <testcase name="testEs6NewTargetConditional" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.001"/>
+  <testcase name="testPrintDestructuringInParamList" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.007"/>
+  <testcase name="testPrettyPrintArrayPattern" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.001"/>
+  <testcase name="testPrintObjectPatternAssign" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.003"/>
+  <testcase name="testPrettyPrinter_spaceBeforeSingleQuote" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.001"/>
+  <testcase name="testTypeAnnotationsMember" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.003"/>
+  <testcase name="testDeprecatedAnnotationIncludesNewline" classname="com.google.javascript.jscomp.CodePrinterTest" time="0"/>
+  <testcase name="testDeclarations" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.013"/>
+  <testcase name="testPrintMixedDestructuring" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.002"/>
+  <testcase name="testExports" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.018"/>
+  <testcase name="testExterns" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.002"/>
+  <testcase name="testTypeAnnotationsTypeDef" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.002"/>
+  <testcase name="testParensAroundArrowReturnValue" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.012"/>
+  <testcase name="testPrintObjectPatternInitializer" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.005"/>
+  <testcase name="testExtendedObjectLit" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.004"/>
+  <testcase name="testKeywordProperties1a" classname="com.google.javascript.jscomp.CodePrinterTest" time="0"/>
+  <testcase name="testKeywordProperties2a" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.001"/>
+  <testcase name="testPrintDestructuringInRestParam" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.002"/>
+  <testcase name="testClosureLibraryTypeAnnotationExamples" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.003"/>
+  <testcase name="testDefaultParameters" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.002"/>
+  <testcase name="testClassPretty" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.002"/>
+  <testcase name="testEs6ArrowFunctionSetsOriginalNameForThis" classname="com.google.javascript.jscomp.CodePrinterTest" time="0"/>
+  <testcase name="testPrintComma1" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.001"/>
+  <testcase name="testPrintComma2" classname="com.google.javascript.jscomp.CodePrinterTest" time="0"/>
+  <testcase name="testIjs" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.002"/>
+  <testcase name="testTemplateLiteral" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.022"/>
+  <testcase name="testPrettyPrinter_varLetConst" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.001"/>
+  <testcase name="testMemberGeneratorYield1" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.003"/>
+  <testcase name="testComputedProperties" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.008"/>
+  <testcase name="testPrintNewVoid" classname="com.google.javascript.jscomp.CodePrinterTest" time="0"/>
+  <testcase name="testAsyncMethod" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.006"/>
+  <testcase name="testOptionalTypesAnnotation" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.003"/>
+  <testcase name="testClass" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.005"/>
+  <testcase name="testForOf" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.002"/>
+  <testcase name="testPrint" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.133"/>
+  <testcase name="testSuper" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.003"/>
+  <testcase name="testArrowFunction" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.012"/>
+  <testcase name="testNegCollapse" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.001"/>
+  <testcase name="testTempConstructor" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.003"/>
+  <testcase name="testEs6ArrowFunctionSetsOriginalNameForArguments" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.001"/>
+  <testcase name="testLineBreak" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.001"/>
+  <testcase name="testHook" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.011"/>
+  <testcase name="testZero" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.004"/>
+  <testcase name="testTypeAnnotationsInterface" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.002"/>
+  <testcase name="testLineLength" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.004"/>
+  <testcase name="testPrettyPrinter2" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.002"/>
+  <testcase name="testPrettyPrinter3" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.001"/>
+  <testcase name="testPrettyPrinter4" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.002"/>
+  <testcase name="testParsePrintParse" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.049"/>
+  <testcase name="testPrintScript" classname="com.google.javascript.jscomp.CodePrinterTest" time="0"/>
+  <testcase name="testNonNullTypes" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.002"/>
+  <testcase name="testTypeAnnotationsMemberStub" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.002"/>
+  <testcase name="testObjectLit" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.005"/>
+  <testcase name="testForOfPretty" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.001"/>
+  <testcase name="testPrintNestedArrayPattern" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.004"/>
+  <testcase name="testLiteralProperty" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.001"/>
+  <testcase name="testKeywordProperties1" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.003"/>
+  <testcase name="testKeywordProperties2" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.003"/>
+  <testcase name="testBlocksNotPreserved" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.001"/>
+  <testcase name="testStringEscapeSequences" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.02"/>
+  <testcase name="testPrintBlockScopedFunctions" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.002"/>
+  <testcase name="testUnicode" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.002"/>
+  <testcase name="testPrintArray" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.004"/>
+  <testcase name="testPrintCast1" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.001"/>
+  <testcase name="testPrintCast2" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.003"/>
+  <testcase name="testPrintCast3" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.002"/>
+  <testcase name="testNumericKeys" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.007"/>
+  <testcase name="testPrintInOperatorInForLoop" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.011"/>
+  <testcase name="testBlocksArePreserved" classname="com.google.javascript.jscomp.CodePrinterTest" time="0"/>
+  <testcase name="testRestParameters" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.002"/>
+  <testcase name="testDirectEval" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.001"/>
+  <testcase name="testPreserveTypeAnnotations2" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.002"/>
+  <testcase name="testPrintArrayPatternAssign" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.008"/>
+  <testcase name="testTypeAnnotationsMultipleInterface" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.002"/>
+  <testcase name="testAmbiguousElseClauses" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.001"/>
+  <testcase name="testTypeAnnotationsImplements" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.002"/>
+  <testcase name="testTypeAnnotationsNamespace" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.003"/>
+  <testcase name="testEnumAnnotation1" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.002"/>
+  <testcase name="testEnumAnnotation2" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.002"/>
+  <testcase name="testEnumAnnotation3" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.002"/>
+  <testcase name="testEnumAnnotation4" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.002"/>
+  <testcase name="testArrayLiteral" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.004"/>
+  <testcase name="testPrintArrayPatternWithInitializer" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.003"/>
+  <testcase name="testFunctionWithCall" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.002"/>
+  <testcase name="testComputedPropertiesClassMethods" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.002"/>
+  <testcase name="testTypeAnnotations" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.002"/>
+  <testcase name="testPrettyPrinter_arrow" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.001"/>
+  <testcase name="testPrettyPrinter_defaultValue" classname="com.google.javascript.jscomp.CodePrinterTest" time="0"/>
+  <testcase name="testSetterInEs3" classname="com.google.javascript.jscomp.CodePrinterTest" time="0"/>
+  <testcase name="testNewTarget" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.002"/>
+  <testcase name="testPreserveTypeAnnotations" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.003"/>
+  <testcase name="testGetterInEs3" classname="com.google.javascript.jscomp.CodePrinterTest" time="0"/>
+  <testcase name="testConstFor" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.003"/>
+  <testcase name="testAwaitExpression" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.005"/>
+  <testcase name="testFreeCall1" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.002"/>
+  <testcase name="testFreeCall2" classname="com.google.javascript.jscomp.CodePrinterTest" time="0"/>
+  <testcase name="testFreeCall3" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.001"/>
+  <testcase name="testFunctionTypeAnnotation" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.005"/>
+  <testcase name="testPrintObjectPatternConst" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.003"/>
+  <testcase name="testFunctionSafariCompatibility" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.004"/>
+  <testcase name="testParensAroundArrow" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.011"/>
+  <testcase name="testObjectLiteralWithSpread" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.007"/>
+  <testcase name="testObjectLit2" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.004"/>
+  <testcase name="testObjectLit3" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.005"/>
+  <testcase name="testObjectLit4" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.001"/>
+  <testcase name="testPrettyArrowFunction" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.001"/>
+  <testcase name="testIssue5746867" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.001"/>
+  <testcase name="testOctalInStringNoLeadingZero" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.008"/>
+  <testcase name="testPrettyPrinter_spaceBeforeUnaryOperators" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.004"/>
+  <testcase name="testPrettyPrinter_number" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.008"/>
+  <testcase name="testU2UFunctionTypeAnnotation1" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.002"/>
+  <testcase name="testU2UFunctionTypeAnnotation2" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.002"/>
+  <testcase name="testManyCommas" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.014"/>
+  <testcase name="testEs6NewTargetPrototype" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.001"/>
+  <testcase name="testOctalNumericKey" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.001"/>
+  <testcase name="testOptionalTypesAnnotation2" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.002"/>
+  <testcase name="testPrintArrayPatternConst" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.009"/>
+  <testcase name="testBreakTrustedStrings" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.008"/>
+  <testcase name="testDestructuringForOfLoops1" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.011"/>
+  <testcase name="testDestructuringForOfLoops2" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.001"/>
+  <testcase name="testDefaultParametersWithRestParameters" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.002"/>
+  <testcase name="testClassComputedProperties" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.006"/>
+  <testcase name="testCommaSpacing" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.001"/>
+  <testcase name="testIssue1062" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.001"/>
+  <testcase name="testManyAdds" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.013"/>
+  <testcase name="testSpreadExpression" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.003"/>
+  <testcase name="testPrettyPrintObjectPattern" classname="com.google.javascript.jscomp.CodePrinterTest" time="0"/>
+  <testcase name="testPrintArrayPatternLet" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.009"/>
+  <testcase name="testPrintArrayPatternVar" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.008"/>
+  <testcase name="testPrettyPrinter" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.015"/>
+  <testcase name="testRegexp_escape" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.011"/>
+  <testcase name="testExponents" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.021"/>
+  <testcase name="testEs6NewTargetBare" classname="com.google.javascript.jscomp.CodePrinterTest" time="0"/>
+  <testcase name="testHtmlComments" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.002"/>
+  <testcase name="testAsyncFunction" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.005"/>
+  <testcase name="testLetConstInIf" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.001"/>
+  <testcase name="testEs6GoogModule" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.003"/>
+  <testcase name="testGetter" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.006"/>
+  <testcase name="testPrintObjectPatternWithRest" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.006"/>
+  <testcase name="testIssue582" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.001"/>
+  <testcase name="testIssue601" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.003"/>
+  <testcase name="testIssue620" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.002"/>
+  <testcase name="testIssue942" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.001"/>
+  <testcase name="testPrintNestedObjectPattern" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.002"/>
+  <testcase name="testOctalInString" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.007"/>
+  <testcase name="testReturnWithTypeAnnotation" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.001"/>
+  <testcase name="testLetFor" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.003"/>
+  <testcase name="testImports" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.007"/>
+  <testcase name="testAsyncArrowFunction" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.002"/>
+  <testcase name="testDestructuringForInLoops" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.01"/>
+  <testcase name="testBlocksInCaseArePreserved" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.001"/>
+  <testcase name="testRegexp_unnecessaryEscape" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.005"/>
+  <testcase name="testExponentiationAssignmentOperator" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.001"/>
+  <testcase name="testPrintObjectPatternLet" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.003"/>
+  <testcase name="testPrintObjectPatternVar" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.003"/>
+  <testcase name="testSetter" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.005"/>
+  <testcase name="testVariableArgumentsTypesAnnotation" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.003"/>
+  <testcase name="testStrict" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.001"/>
+  <testcase name="testBiggerThanMaxLongNumericLiterals" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.004"/>
+  <testcase name="testPrettyPrint_switch" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.001"/>
+  <testcase name="testIndirectEval" classname="com.google.javascript.jscomp.CodePrinterTest" time="0"/>
+  <testcase name="testSubtraction" classname="com.google.javascript.jscomp.CodePrinterTest" time="0"/>
+  <testcase name="testEmitUnknownParamTypesAsAllType" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.002"/>
+  <testcase name="testMinusNegativeZero" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.001"/>
+  <testcase name="testPreferLineBreakAtEndOfFile" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.005"/>
+  <testcase name="testGeneratorYieldPretty" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.001"/>
+  <testcase name="testStrictPretty" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.002"/>
+  <testcase name="testGeneratorYield" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.007"/>
+  <testcase name="testDoLoopIECompatibility" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.008"/>
+  <testcase name="testGoogScope" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.002"/>
+  <testcase name="testTypeAnnotationsMemberSubclass" classname="com.google.javascript.jscomp.CodePrinterTest" time="0.003"/>
+</testsuite>

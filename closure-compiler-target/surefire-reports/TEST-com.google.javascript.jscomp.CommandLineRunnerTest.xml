@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.google.javascript.jscomp.CommandLineRunnerTest" time="9.582" tests="165" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
+    <property name="java.vm.version" value="25.151-b12"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/wju/test-proj/closure-compiler"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/home/wju/test-proj/closure-compiler"/>
+    <property name="java.runtime.version" value="1.8.0_151-8u151-b12-0ubuntu0.16.04.2-b12"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Linux"/>
+    <property name="net.sourceforge.cobertura.datafile" value="/home/wju/test-proj/closure-compiler/target/cobertura/cobertura.ser"/>
+    <property name="classworlds.conf" value="/usr/share/maven/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="4.4.0-109-generic"/>
+    <property name="user.home" value="/home/wju"/>
+    <property name="user.timezone" value="America/Los_Angeles"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="wju"/>
+    <property name="java.class.path" value="/usr/share/maven/boot/plexus-classworlds-2.x.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/usr/lib/jvm/java-8-openjdk-amd64/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher cobertura:cobertura"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_151"/>
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/usr/share/maven"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="project.build.outputDirectory" value="/home/wju/test-proj/closure-compiler/target/generated-classes/cobertura"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="testSourcePruningOn1" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.124"/>
+  <testcase name="testSourcePruningOn2" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.033"/>
+  <testcase name="testSourcePruningOn3" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.018"/>
+  <testcase name="testSourcePruningOn4" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.017"/>
+  <testcase name="testSourcePruningOn5" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.004"/>
+  <testcase name="testSourcePruningOn6" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.014"/>
+  <testcase name="testSourcePruningOn7" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.015"/>
+  <testcase name="testSourcePruningOn8" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.013"/>
+  <testcase name="testTypeCheckingOnWithWVerbose" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.028"/>
+  <testcase name="testExternsLifting1" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.011"/>
+  <testcase name="testExternsLifting2" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.014"/>
+  <testcase name="testNoCompile" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.013"/>
+  <testcase name="testProcessCJSWithES6Export" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.031"/>
+  <testcase name="testCommonJSRequireOfFileWithoutExports" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.013"/>
+  <testcase name="testWarningGuardOrdering1" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.01"/>
+  <testcase name="testWarningGuardOrdering2" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.006"/>
+  <testcase name="testWarningGuardOrdering3" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.011"/>
+  <testcase name="testWarningGuardOrdering4" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.009"/>
+  <testcase name="testSourceMapFormat1" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.01"/>
+  <testcase name="testSourceMapFormat2" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.008"/>
+  <testcase name="testWebpackModuleIds" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.332"/>
+  <testcase name="testDefineFlag" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.014"/>
+  <testcase name="testHiddenSideEffect" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.061"/>
+  <testcase name="testProcessClosurePrimitives" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.024"/>
+  <testcase name="testModuleJSON" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.016"/>
+  <testcase name="testSimpleModeLeavesUnusedParams" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.011"/>
+  <testcase name="testChecksOnlySkipsOptimizations" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.007"/>
+  <testcase name="testSourceSortingOff" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.009"/>
+  <testcase name="testSourceSortingOn2" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.01"/>
+  <testcase name="testSourceSortingOn3" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.01"/>
+  <testcase name="testGetMsgWiringNoWarnings" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.013"/>
+  <testcase name="testProcessCJSWithClosureRequires2" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.019"/>
+  <testcase name="testOutputModuleGraphJson" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.015"/>
+  <testcase name="testProcessCJSWithPackageJsonBrowserField" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.013"/>
+  <testcase name="testES3" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.017"/>
+  <testcase name="testES5" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.019"/>
+  <testcase name="testCharSetExpansion" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.032"/>
+  <testcase name="testTypeParsingOnWithVerbose" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.018"/>
+  <testcase name="testChainModuleManifest" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.013"/>
+  <testcase name="testDependencySortingWhitespaceMode" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.007"/>
+  <testcase name="testES5ChecksInVerbose" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.005"/>
+  <testcase name="testMultistageCompilation" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="1.178"/>
+  <testcase name="testTransformAMDAndProcessCJS" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.012"/>
+  <testcase name="testOutputSameAsInput" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.007"/>
+  <testcase name="testES6ImportOfFileWithImportsButNoExports" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.014"/>
+  <testcase name="testFunctionStrictModeNoWarning" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.021"/>
+  <testcase name="testInputOneZip" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.38"/>
+  <testcase name="testForwardDeclareDroppedTypes" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.028"/>
+  <testcase name="testTypedDisabledAdvanced" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.022"/>
+  <testcase name="testSourceMapExpansion1" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.01"/>
+  <testcase name="testSourceMapExpansion2" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.01"/>
+  <testcase name="testSourceMapExpansion3" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.009"/>
+  <testcase name="testNoSrCFilesWithManifest" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.021"/>
+  <testcase name="testTransformAMD" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.016"/>
+  <testcase name="testProcessCJSWithModuleOutput" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.012"/>
+  <testcase name="testOutputModuleNaming" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.348"/>
+  <testcase name="testOnlyClosureDependenciesEmptyEntryPoints" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.011"/>
+  <testcase name="testJsonStreamOutputFlag" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.314"/>
+  <testcase name="testGenerateExports" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.011"/>
+  <testcase name="testES5Strict" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.019"/>
+  <testcase name="testES6ImportOfFileWithoutImportsOrExports" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.012"/>
+  <testcase name="testMissingReturnCheckOnWithVerbose" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.017"/>
+  <testcase name="testGetMsgWiring" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.029"/>
+  <testcase name="testProcessCJS" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.01"/>
+  <testcase name="testModuleWrapperExpansion" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.014"/>
+  <testcase name="testGlobJs1" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.337"/>
+  <testcase name="testGlobJs2" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.359"/>
+  <testcase name="testGlobJs3" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.368"/>
+  <testcase name="testGlobJs4" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.36"/>
+  <testcase name="testGlobJs5" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.364"/>
+  <testcase name="testUnknownAnnotation" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.028"/>
+  <testcase name="testStarModuleManifest" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.017"/>
+  <testcase name="testAdvancedModeRemovesUnusedParams" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.018"/>
+  <testcase name="testTypeCheckOverride1" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.012"/>
+  <testcase name="testTypeCheckOverride2" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.021"/>
+  <testcase name="testES3plusStrictModeChecks" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.017"/>
+  <testcase name="testHelpFlag" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.027"/>
+  <testcase name="testJsonStreamInputFlag" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.272"/>
+  <testcase name="testModuleEntryPoint" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.013"/>
+  <testcase name="testBooleanFlag1" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.016"/>
+  <testcase name="testBooleanFlag2" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.01"/>
+  <testcase name="testCheckSymbolsOffForDefault" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.009"/>
+  <testcase name="testSourceSortingCircularDeps1" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.006"/>
+  <testcase name="testSourceSortingCircularDeps2" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.005"/>
+  <testcase name="testVersionFlag" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.001"/>
+  <testcase name="testInputMultipleFiles" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.342"/>
+  <testcase name="testInputMultipleConflictingZips" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.03"/>
+  <testcase name="testES6TranspiledByDefault" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.007"/>
+  <testcase name="testSourceMapLocationsTranslations1" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.009"/>
+  <testcase name="testSourceMapLocationsTranslations2" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.006"/>
+  <testcase name="testSourceMapLocationsTranslations3" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.001"/>
+  <testcase name="testAssumeFunctionWrapper" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.033"/>
+  <testcase name="testCheckGlobalThisOnWithErrorFlag" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.005"/>
+  <testcase name="testInputMultipleJsFilesWithOneJsFlag" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.353"/>
+  <testcase name="testIsolationMode" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.02"/>
+  <testcase name="testWarningGuardHideWarningsFor1" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.008"/>
+  <testcase name="testWarningGuardHideWarningsFor2" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.01"/>
+  <testcase name="testModuleWrapperBaseNameExpansion" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.012"/>
+  <testcase name="testTypeParsingOffByDefault" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.01"/>
+  <testcase name="testChecksOnlyWithWarning" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.007"/>
+  <testcase name="testScriptStrictModeNoWarning" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.015"/>
+  <testcase name="testCheckGlobalThisOff" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.009"/>
+  <testcase name="testDuplicateParams" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.001"/>
+  <testcase name="testInputMultipleContents" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.317"/>
+  <testcase name="testPrintAstFlag" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.011"/>
+  <testcase name="testSourceSortingOn" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.015"/>
+  <testcase name="testDepreciationWithVerbose" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.011"/>
+  <testcase name="testWarningGuardWildcard1" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.013"/>
+  <testcase name="testCheckSymbolsOnForVerbose" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.012"/>
+  <testcase name="testTypeCheckingOnWithVerbose" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.012"/>
+  <testcase name="testJsonStreamSourceMap" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.346"/>
+  <testcase name="testGoogAssertStripping" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.036"/>
+  <testcase name="testInputMultipleZips" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.348"/>
+  <testcase name="testIssue601b" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.017"/>
+  <testcase name="testIssue601c" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.014"/>
+  <testcase name="testVersionFlag2" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0"/>
+  <testcase name="testOnlyClosureDependenciesOneEntryPoint" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.011"/>
+  <testcase name="testTypeCheckingOffByDefault" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.008"/>
+  <testcase name="testWarningGuardWildcardOrdering" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.011"/>
+  <testcase name="testHoistedFunction1" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.009"/>
+  <testcase name="testHoistedFunction2" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.008"/>
+  <testcase name="testSourceMapInputs" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.008"/>
+  <testcase name="testReflectedMethods" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.016"/>
+  <testcase name="testInvalidSourceMapPattern" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.007"/>
+  <testcase name="testCheckGlobalThisOnWithAdvancedMode" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.011"/>
+  <testcase name="testES5StrictUseStrictMultipleInputs" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.008"/>
+  <testcase name="testSyntheticExterns" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.017"/>
+  <testcase name="testJsonStreamBothFlag" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.307"/>
+  <testcase name="testIssue115" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.025"/>
+  <testcase name="testIssue297" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.03"/>
+  <testcase name="testIssue504" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.025"/>
+  <testcase name="testIssue601" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.005"/>
+  <testcase name="testIssue70a" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.002"/>
+  <testcase name="testIssue70b" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.002"/>
+  <testcase name="testIssue846" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.015"/>
+  <testcase name="testCheckUndefinedProperties1" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.006"/>
+  <testcase name="testCheckUndefinedProperties2" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.01"/>
+  <testcase name="testCheckUndefinedProperties3" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.011"/>
+  <testcase name="testCssNameWiring" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.012"/>
+  <testcase name="testCheckGlobalThisOnWithAdvanced" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.008"/>
+  <testcase name="testCheckSymbolsOverrideForVerbose" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.009"/>
+  <testcase name="testCheckSymbolsOverrideForQuiet" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.004"/>
+  <testcase name="testInputMultipleDuplicateZips" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.324"/>
+  <testcase name="testTwoParseErrors" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.004"/>
+  <testcase name="testIssue81" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.018"/>
+  <testcase name="testES5ChecksByDefault" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.006"/>
+  <testcase name="testDebugFlag1" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.011"/>
+  <testcase name="testDebugFlag2" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.01"/>
+  <testcase name="testDebugFlag3" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.014"/>
+  <testcase name="testDebugFlag4" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.016"/>
+  <testcase name="testForOfTypecheck" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.519"/>
+  <testcase name="testOutputWrapperFlag" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.001"/>
+  <testcase name="testWithKeywordWithEs5ChecksOff" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.012"/>
+  <testcase name="testTypedAdvanced" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.02"/>
+  <testcase name="testProcessCJSWithClosureRequires" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.019"/>
+  <testcase name="testInlineVariables" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.03"/>
+  <testcase name="testChecksOnlyWithParseError" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.001"/>
+  <testcase name="testFormattingSingleQuote" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.02"/>
+  <testcase name="testES5StrictUseStrict" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.01"/>
+  <testcase name="testQuietMode" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.018"/>
+  <testcase name="testDefineFlag2" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.01"/>
+  <testcase name="testDefineFlag3" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.009"/>
+  <testcase name="testCheckGlobalThisOffByDefault" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.009"/>
+  <testcase name="testSideEffectIntegration" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.019"/>
+  <testcase name="testES6ImportOfCJS" classname="com.google.javascript.jscomp.CommandLineRunnerTest" time="0.012"/>
+</testsuite>

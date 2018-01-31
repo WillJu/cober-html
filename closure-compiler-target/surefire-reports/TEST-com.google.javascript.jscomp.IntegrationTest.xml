@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.google.javascript.jscomp.IntegrationTest" time="7.67" tests="277" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
+    <property name="java.vm.version" value="25.151-b12"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/wju/test-proj/closure-compiler"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/home/wju/test-proj/closure-compiler"/>
+    <property name="java.runtime.version" value="1.8.0_151-8u151-b12-0ubuntu0.16.04.2-b12"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Linux"/>
+    <property name="net.sourceforge.cobertura.datafile" value="/home/wju/test-proj/closure-compiler/target/cobertura/cobertura.ser"/>
+    <property name="classworlds.conf" value="/usr/share/maven/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="4.4.0-109-generic"/>
+    <property name="user.home" value="/home/wju"/>
+    <property name="user.timezone" value="America/Los_Angeles"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="wju"/>
+    <property name="java.class.path" value="/usr/share/maven/boot/plexus-classworlds-2.x.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/usr/lib/jvm/java-8-openjdk-amd64/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher cobertura:cobertura"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_151"/>
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/usr/share/maven"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="project.build.outputDirectory" value="/home/wju/test-proj/closure-compiler/target/generated-classes/cobertura"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="testGoogDefine1" classname="com.google.javascript.jscomp.IntegrationTest" time="0.028"/>
+  <testcase name="testGoogDefine2" classname="com.google.javascript.jscomp.IntegrationTest" time="0.024"/>
+  <testcase name="testNoProtectSideEffectsInChecksOnly" classname="com.google.javascript.jscomp.IntegrationTest" time="0.008"/>
+  <testcase name="testFlowSensitiveInlineVariables1" classname="com.google.javascript.jscomp.IntegrationTest" time="0.074"/>
+  <testcase name="testFlowSensitiveInlineVariables2" classname="com.google.javascript.jscomp.IntegrationTest" time="0.028"/>
+  <testcase name="testRenamePrefixNamespaceProtectSideEffects" classname="com.google.javascript.jscomp.IntegrationTest" time="0.048"/>
+  <testcase name="testTypeCheckingWithSyntheticBlocks" classname="com.google.javascript.jscomp.IntegrationTest" time="0.027"/>
+  <testcase name="testAtDefineReassigned" classname="com.google.javascript.jscomp.IntegrationTest" time="0.014"/>
+  <testcase name="testCrossModuleDepCheck" classname="com.google.javascript.jscomp.IntegrationTest" time="0.035"/>
+  <testcase name="testNoRemoveSuperCallWithWrongArgumentCount" classname="com.google.javascript.jscomp.IntegrationTest" time="0.053"/>
+  <testcase name="testBug32660578" classname="com.google.javascript.jscomp.IntegrationTest" time="0.015"/>
+  <testcase name="testExplicitBlocksInSwitch" classname="com.google.javascript.jscomp.IntegrationTest" time="0.016"/>
+  <testcase name="testDevirtualizePrototypeMethods" classname="com.google.javascript.jscomp.IntegrationTest" time="0.016"/>
+  <testcase name="testTIsNotNullable" classname="com.google.javascript.jscomp.IntegrationTest" time="0.017"/>
+  <testcase name="testSuppressEs5StrictWarning" classname="com.google.javascript.jscomp.IntegrationTest" time="0.03"/>
+  <testcase name="testExportTestFunctionsOff" classname="com.google.javascript.jscomp.IntegrationTest" time="0.012"/>
+  <testcase name="testExportTestFunctionsOn1" classname="com.google.javascript.jscomp.IntegrationTest" time="0.015"/>
+  <testcase name="testExportTestFunctionsOn2" classname="com.google.javascript.jscomp.IntegrationTest" time="0.017"/>
+  <testcase name="testGenerateExportsOff" classname="com.google.javascript.jscomp.IntegrationTest" time="0.013"/>
+  <testcase name="testCssNameCheck" classname="com.google.javascript.jscomp.IntegrationTest" time="0.005"/>
+  <testcase name="testChromePass_noTranspile" classname="com.google.javascript.jscomp.IntegrationTest" time="0.022"/>
+  <testcase name="testConvertToDottedProperties" classname="com.google.javascript.jscomp.IntegrationTest" time="0.035"/>
+  <testcase name="testBug2410122" classname="com.google.javascript.jscomp.IntegrationTest" time="0.018"/>
+  <testcase name="testAngularPropertyNameRestrictions" classname="com.google.javascript.jscomp.IntegrationTest" time="0.164"/>
+  <testcase name="testDeadAssignmentsElimination" classname="com.google.javascript.jscomp.IntegrationTest" time="0.065"/>
+  <testcase name="testExports" classname="com.google.javascript.jscomp.IntegrationTest" time="0.28"/>
+  <testcase name="testsyntheticBlockOnDeadAssignments" classname="com.google.javascript.jscomp.IntegrationTest" time="0.02"/>
+  <testcase name="testBug2592659" classname="com.google.javascript.jscomp.IntegrationTest" time="0.022"/>
+  <testcase name="testHiddenSideEffect" classname="com.google.javascript.jscomp.IntegrationTest" time="0.05"/>
+  <testcase name="testSuppressCheckProvidesWarning" classname="com.google.javascript.jscomp.IntegrationTest" time="0.019"/>
+  <testcase name="testRemoveUnreachableCode" classname="com.google.javascript.jscomp.IntegrationTest" time="0.037"/>
+  <testcase name="testAngularPassOff" classname="com.google.javascript.jscomp.IntegrationTest" time="0.017"/>
+  <testcase name="testInlineGetters" classname="com.google.javascript.jscomp.IntegrationTest" time="0.042"/>
+  <testcase name="testLegacyGoogModuleExport" classname="com.google.javascript.jscomp.IntegrationTest" time="0.024"/>
+  <testcase name="testDefaultParameters" classname="com.google.javascript.jscomp.IntegrationTest" time="0.081"/>
+  <testcase name="testRecoverOnBadExterns" classname="com.google.javascript.jscomp.IntegrationTest" time="0.007"/>
+  <testcase name="testBothTypeCheckersRunNoDupWarning" classname="com.google.javascript.jscomp.IntegrationTest" time="0.094"/>
+  <testcase name="testLegacyCompileTurnsOffDisambiguateProperties" classname="com.google.javascript.jscomp.IntegrationTest" time="0.011"/>
+  <testcase name="testClosurePassOn" classname="com.google.javascript.jscomp.IntegrationTest" time="0.029"/>
+  <testcase name="testES5toES6" classname="com.google.javascript.jscomp.IntegrationTest" time="0.031"/>
+  <testcase name="testCheckGlobalThisOn" classname="com.google.javascript.jscomp.IntegrationTest" time="0.006"/>
+  <testcase name="testUnresolvedDefine" classname="com.google.javascript.jscomp.IntegrationTest" time="0.014"/>
+  <testcase name="testFoldLocals1" classname="com.google.javascript.jscomp.IntegrationTest" time="0.05"/>
+  <testcase name="testFoldLocals2" classname="com.google.javascript.jscomp.IntegrationTest" time="0.038"/>
+  <testcase name="testFoldLocals3" classname="com.google.javascript.jscomp.IntegrationTest" time="0.036"/>
+  <testcase name="testFoldLocals4" classname="com.google.javascript.jscomp.IntegrationTest" time="0.033"/>
+  <testcase name="testFoldLocals5" classname="com.google.javascript.jscomp.IntegrationTest" time="0.035"/>
+  <testcase name="testFoldLocals6" classname="com.google.javascript.jscomp.IntegrationTest" time="0.028"/>
+  <testcase name="testFoldLocals7" classname="com.google.javascript.jscomp.IntegrationTest" time="0.034"/>
+  <testcase name="testAngularPassOn" classname="com.google.javascript.jscomp.IntegrationTest" time="0.015"/>
+  <testcase name="testCoalesceVariableNames" classname="com.google.javascript.jscomp.IntegrationTest" time="0.029"/>
+  <testcase name="testCollapseAnonymousFunctions" classname="com.google.javascript.jscomp.IntegrationTest" time="0.027"/>
+  <testcase name="testConstructorCycle" classname="com.google.javascript.jscomp.IntegrationTest" time="0.017"/>
+  <testcase name="testDisambiguateProperties2" classname="com.google.javascript.jscomp.IntegrationTest" time="0.026"/>
+  <testcase name="testShadowVaribles" classname="com.google.javascript.jscomp.IntegrationTest" time="0.016"/>
+  <testcase name="testCheckTypes" classname="com.google.javascript.jscomp.IntegrationTest" time="0.015"/>
+  <testcase name="testCheckReferencesOn" classname="com.google.javascript.jscomp.IntegrationTest" time="0.013"/>
+  <testcase name="testInliningLocalVarsPreservesCastsNullable" classname="com.google.javascript.jscomp.IntegrationTest" time="0.013"/>
+  <testcase name="testCheckProvidesWarning" classname="com.google.javascript.jscomp.IntegrationTest" time="0.011"/>
+  <testcase name="testArrayValuesIsPolyfilledForEs2015Out" classname="com.google.javascript.jscomp.IntegrationTest" time="0.03"/>
+  <testcase name="testPropertyRenaming" classname="com.google.javascript.jscomp.IntegrationTest" time="0.03"/>
+  <testcase name="testLanguageMode" classname="com.google.javascript.jscomp.IntegrationTest" time="0.028"/>
+  <testcase name="testConstantTagsMustAlwaysBeRemoved" classname="com.google.javascript.jscomp.IntegrationTest" time="0.023"/>
+  <testcase name="testClosurePassOff" classname="com.google.javascript.jscomp.IntegrationTest" time="0.027"/>
+  <testcase name="testCompilerDoesNotBlowUpIfUndefinedSymbols" classname="com.google.javascript.jscomp.IntegrationTest" time="0.019"/>
+  <testcase name="testProvidedNamespaceIsConst3" classname="com.google.javascript.jscomp.IntegrationTest" time="0.017"/>
+  <testcase name="testProvidedNamespaceIsConst4" classname="com.google.javascript.jscomp.IntegrationTest" time="0.017"/>
+  <testcase name="testProvidedNamespaceIsConst5" classname="com.google.javascript.jscomp.IntegrationTest" time="0.017"/>
+  <testcase name="testCoalesceVariables" classname="com.google.javascript.jscomp.IntegrationTest" time="0.047"/>
+  <testcase name="testUnnecessaryBackslashInStringLiteral" classname="com.google.javascript.jscomp.IntegrationTest" time="0.014"/>
+  <testcase name="testInferTypes" classname="com.google.javascript.jscomp.IntegrationTest" time="0.033"/>
+  <testcase name="testBug22684459_aliased" classname="com.google.javascript.jscomp.IntegrationTest" time="0.023"/>
+  <testcase name="testMethodDestructuringInTranspiledAsyncFunction" classname="com.google.javascript.jscomp.IntegrationTest" time="0.028"/>
+  <testcase name="testRemoveAbstractMethods" classname="com.google.javascript.jscomp.IntegrationTest" time="0.032"/>
+  <testcase name="testReplaceCssNames" classname="com.google.javascript.jscomp.IntegrationTest" time="0.016"/>
+  <testcase name="testGoogModuleDuplicateExport" classname="com.google.javascript.jscomp.IntegrationTest" time="0.005"/>
+  <testcase name="testUnreachableCode" classname="com.google.javascript.jscomp.IntegrationTest" time="0.027"/>
+  <testcase name="testCheckStrictMode" classname="com.google.javascript.jscomp.IntegrationTest" time="0.01"/>
+  <testcase name="testSortingOff" classname="com.google.javascript.jscomp.IntegrationTest" time="0.005"/>
+  <testcase name="testRenameVars1" classname="com.google.javascript.jscomp.IntegrationTest" time="0.049"/>
+  <testcase name="testRenameVars2" classname="com.google.javascript.jscomp.IntegrationTest" time="0.031"/>
+  <testcase name="testLegacyCompileOverridesExplicitPromotionToError" classname="com.google.javascript.jscomp.IntegrationTest" time="0.008"/>
+  <testcase name="testInliningLocalVarsPreservesCasts" classname="com.google.javascript.jscomp.IntegrationTest" time="0.015"/>
+  <testcase name="testIjsWithGoogScopeWorks" classname="com.google.javascript.jscomp.IntegrationTest" time="0.013"/>
+  <testcase name="testExploitAssigns" classname="com.google.javascript.jscomp.IntegrationTest" time="0.045"/>
+  <testcase name="testOptimizeReturns" classname="com.google.javascript.jscomp.IntegrationTest" time="0.037"/>
+  <testcase name="testInlineGettersWithAmbiguate" classname="com.google.javascript.jscomp.IntegrationTest" time="0.054"/>
+  <testcase name="testLateConstantReordering" classname="com.google.javascript.jscomp.IntegrationTest" time="0.015"/>
+  <testcase name="testExportedNames" classname="com.google.javascript.jscomp.IntegrationTest" time="0.027"/>
+  <testcase name="testRemoveClosureAsserts" classname="com.google.javascript.jscomp.IntegrationTest" time="0.026"/>
+  <testcase name="testMaxFunSizeAfterInliningUsage" classname="com.google.javascript.jscomp.IntegrationTest" time="0.001"/>
+  <testcase name="testAddFunctionProperties2a" classname="com.google.javascript.jscomp.IntegrationTest" time="0.034"/>
+  <testcase name="testAddFunctionProperties2b" classname="com.google.javascript.jscomp.IntegrationTest" time="0.042"/>
+  <testcase name="testGatherExternPropsWithNTI" classname="com.google.javascript.jscomp.IntegrationTest" time="0.014"/>
+  <testcase name="testExternsProvideIsAllowed" classname="com.google.javascript.jscomp.IntegrationTest" time="0.006"/>
+  <testcase name="testCheckRequiresAndCheckProvidesOff" classname="com.google.javascript.jscomp.IntegrationTest" time="0.015"/>
+  <testcase name="testCheckConsts" classname="com.google.javascript.jscomp.IntegrationTest" time="0.016"/>
+  <testcase name="testEs6OutDoesntCrash" classname="com.google.javascript.jscomp.IntegrationTest" time="0.008"/>
+  <testcase name="testNtiTypeVariableErrorsDontBlockDisambiguation2" classname="com.google.javascript.jscomp.IntegrationTest" time="0.017"/>
+  <testcase name="testBug18078936" classname="com.google.javascript.jscomp.IntegrationTest" time="0.022"/>
+  <testcase name="testSingletonGetter1" classname="com.google.javascript.jscomp.IntegrationTest" time="0.033"/>
+  <testcase name="testStrictWarningsGuardEmergencyMode" classname="com.google.javascript.jscomp.IntegrationTest" time="0.013"/>
+  <testcase name="testRemoveUnusedClass" classname="com.google.javascript.jscomp.IntegrationTest" time="0.032"/>
+  <testcase name="testRemoveClosureAsserts2" classname="com.google.javascript.jscomp.IntegrationTest" time="0.015"/>
+  <testcase name="testRemoveUnusedVars1" classname="com.google.javascript.jscomp.IntegrationTest" time="0.026"/>
+  <testcase name="testRemoveUnusedVars2" classname="com.google.javascript.jscomp.IntegrationTest" time="0.054"/>
+  <testcase name="testLhsCast" classname="com.google.javascript.jscomp.IntegrationTest" time="0.017"/>
+  <testcase name="testDependencySorting" classname="com.google.javascript.jscomp.IntegrationTest" time="0.017"/>
+  <testcase name="testNoFuseIntoSyntheticBlock" classname="com.google.javascript.jscomp.IntegrationTest" time="0.062"/>
+  <testcase name="testMinimizeExits" classname="com.google.javascript.jscomp.IntegrationTest" time="0.027"/>
+  <testcase name="testES6UnusedClassesAreRemoved" classname="com.google.javascript.jscomp.IntegrationTest" time="0.1"/>
+  <testcase name="testReplaceMessages" classname="com.google.javascript.jscomp.IntegrationTest" time="0.028"/>
+  <testcase name="testFlowSensitiveInlineVariablesUnderAdvanced" classname="com.google.javascript.jscomp.IntegrationTest" time="0.04"/>
+  <testcase name="testChromePass_transpile" classname="com.google.javascript.jscomp.IntegrationTest" time="0.015"/>
+  <testcase name="testBug4152835" classname="com.google.javascript.jscomp.IntegrationTest" time="0.012"/>
+  <testcase name="testInlineStringConcat" classname="com.google.javascript.jscomp.IntegrationTest" time="0.037"/>
+  <testcase name="testCrossModuleCodeMotion" classname="com.google.javascript.jscomp.IntegrationTest" time="0.031"/>
+  <testcase name="testConstPolymerNotAllowed" classname="com.google.javascript.jscomp.IntegrationTest" time="0.003"/>
+  <testcase name="testPureFunctionIdentifierWorksWithMultipleNames" classname="com.google.javascript.jscomp.IntegrationTest" time="0.035"/>
+  <testcase name="testBadBreakStatementInIdeMode" classname="com.google.javascript.jscomp.IntegrationTest" time="0.008"/>
+  <testcase name="testDisambiguateProperties" classname="com.google.javascript.jscomp.IntegrationTest" time="0.03"/>
+  <testcase name="testInlineRestParam" classname="com.google.javascript.jscomp.IntegrationTest" time="0.047"/>
+  <testcase name="testExportOnStaticGetter" classname="com.google.javascript.jscomp.IntegrationTest" time="0.065"/>
+  <testcase name="testBrokenNameSpace" classname="com.google.javascript.jscomp.IntegrationTest" time="0.046"/>
+  <testcase name="testDisambiguatePropertiesWithNtiNoCrash" classname="com.google.javascript.jscomp.IntegrationTest" time="0.006"/>
+  <testcase name="testTypeCheckAndInference" classname="com.google.javascript.jscomp.IntegrationTest" time="0.014"/>
+  <testcase name="testNoTypeWarningForDupExternNamespace" classname="com.google.javascript.jscomp.IntegrationTest" time="0.005"/>
+  <testcase name="testCheckSymbolsOn" classname="com.google.javascript.jscomp.IntegrationTest" time="0.005"/>
+  <testcase name="testMarkNoSideEffects" classname="com.google.javascript.jscomp.IntegrationTest" time="0.028"/>
+  <testcase name="testMemoizedTypedScopeCreator" classname="com.google.javascript.jscomp.IntegrationTest" time="0.019"/>
+  <testcase name="testGoogDefineClassWithNti" classname="com.google.javascript.jscomp.IntegrationTest" time="0.015"/>
+  <testcase name="testQMarkTIsNullable" classname="com.google.javascript.jscomp.IntegrationTest" time="0.013"/>
+  <testcase name="testNoCrash_varInCatch2" classname="com.google.javascript.jscomp.IntegrationTest" time="0.014"/>
+  <testcase name="testDeprecation" classname="com.google.javascript.jscomp.IntegrationTest" time="0.031"/>
+  <testcase name="testNoCrash_varInCatch" classname="com.google.javascript.jscomp.IntegrationTest" time="0.015"/>
+  <testcase name="testMissingReturn" classname="com.google.javascript.jscomp.IntegrationTest" time="0.03"/>
+  <testcase name="testNTInoMaskTypeParseError" classname="com.google.javascript.jscomp.IntegrationTest" time="0.013"/>
+  <testcase name="testSmartNamePassBug11163486" classname="com.google.javascript.jscomp.IntegrationTest" time="0.023"/>
+  <testcase name="testLateStatementFusion" classname="com.google.javascript.jscomp.IntegrationTest" time="0.02"/>
+  <testcase name="testExportTestFunctionsOn" classname="com.google.javascript.jscomp.IntegrationTest" time="0.012"/>
+  <testcase name="testReplaceIdGeneratorsTest" classname="com.google.javascript.jscomp.IntegrationTest" time="0.014"/>
+  <testcase name="testCheckGlobalThisOff" classname="com.google.javascript.jscomp.IntegrationTest" time="0.012"/>
+  <testcase name="testIdGenerators" classname="com.google.javascript.jscomp.IntegrationTest" time="0.024"/>
+  <testcase name="testDisambiguatePropertiesWithNtiNoCrash2" classname="com.google.javascript.jscomp.IntegrationTest" time="0.011"/>
+  <testcase name="testProcessDefinesAdditionalReplacements" classname="com.google.javascript.jscomp.IntegrationTest" time="0.011"/>
+  <testcase name="testCheckReferencesOff" classname="com.google.javascript.jscomp.IntegrationTest" time="0.011"/>
+  <testcase name="testExtraAnnotationNames" classname="com.google.javascript.jscomp.IntegrationTest" time="0.011"/>
+  <testcase name="testStrictEqualityComparisonAgainstUndefined" classname="com.google.javascript.jscomp.IntegrationTest" time="0.014"/>
+  <testcase name="testMultipleAliasesInlined_bug31437418" classname="com.google.javascript.jscomp.IntegrationTest" time="0.015"/>
+  <testcase name="testAngularPassOn_Es6Out" classname="com.google.javascript.jscomp.IntegrationTest" time="0.011"/>
+  <testcase name="testExportOnStaticSetter" classname="com.google.javascript.jscomp.IntegrationTest" time="0.089"/>
+  <testcase name="testSuppressBadGoogRequire" classname="com.google.javascript.jscomp.IntegrationTest" time="0.019"/>
+  <testcase name="testIjsProvideIsAllowed1" classname="com.google.javascript.jscomp.IntegrationTest" time="0.012"/>
+  <testcase name="testAddFunctionProperties1" classname="com.google.javascript.jscomp.IntegrationTest" time="0.035"/>
+  <testcase name="testAddFunctionProperties3" classname="com.google.javascript.jscomp.IntegrationTest" time="0.053"/>
+  <testcase name="testAddFunctionProperties4" classname="com.google.javascript.jscomp.IntegrationTest" time="0.048"/>
+  <testcase name="testWarnUnnecessaryBackslashInStringLiteral" classname="com.google.javascript.jscomp.IntegrationTest" time="0.013"/>
+  <testcase name="testAdvancedModeIncludesExtraSmartNameRemoval" classname="com.google.javascript.jscomp.IntegrationTest" time="0.012"/>
+  <testcase name="testBug22684459" classname="com.google.javascript.jscomp.IntegrationTest" time="0.018"/>
+  <testcase name="testCheckStrictModeGeneratorFunction" classname="com.google.javascript.jscomp.IntegrationTest" time="0.004"/>
+  <testcase name="testObjDestructuringConst" classname="com.google.javascript.jscomp.IntegrationTest" time="0.012"/>
+  <testcase name="testLetInSwitch" classname="com.google.javascript.jscomp.IntegrationTest" time="0.028"/>
+  <testcase name="testCheckVarsOnInAdvancedMode" classname="com.google.javascript.jscomp.IntegrationTest" time="0.005"/>
+  <testcase name="testCodingConvention" classname="com.google.javascript.jscomp.IntegrationTest" time="0"/>
+  <testcase name="testSilenceUnknownTypeWarningFromOTI" classname="com.google.javascript.jscomp.IntegrationTest" time="0.012"/>
+  <testcase name="testRegExp1" classname="com.google.javascript.jscomp.IntegrationTest" time="0.031"/>
+  <testcase name="testRegExp2" classname="com.google.javascript.jscomp.IntegrationTest" time="0.035"/>
+  <testcase name="testTypeNameParser" classname="com.google.javascript.jscomp.IntegrationTest" time="0.011"/>
+  <testcase name="testVarDeclarationsIntoFor" classname="com.google.javascript.jscomp.IntegrationTest" time="0.021"/>
+  <testcase name="testOptimizeParameters" classname="com.google.javascript.jscomp.IntegrationTest" time="0.024"/>
+  <testcase name="testRenameCollision" classname="com.google.javascript.jscomp.IntegrationTest" time="0.033"/>
+  <testcase name="testRestParametersWithGenerics" classname="com.google.javascript.jscomp.IntegrationTest" time="0.01"/>
+  <testcase name="testDeadCodeHasNoDisambiguationSideEffects" classname="com.google.javascript.jscomp.IntegrationTest" time="0.037"/>
+  <testcase name="testNamelessParameter" classname="com.google.javascript.jscomp.IntegrationTest" time="0.039"/>
+  <testcase name="testBug1949424_v2" classname="com.google.javascript.jscomp.IntegrationTest" time="0.016"/>
+  <testcase name="testRenameLabels" classname="com.google.javascript.jscomp.IntegrationTest" time="0.023"/>
+  <testcase name="testProvidedNamespaceIsConst" classname="com.google.javascript.jscomp.IntegrationTest" time="0.013"/>
+  <testcase name="testCheckConstants1" classname="com.google.javascript.jscomp.IntegrationTest" time="0.017"/>
+  <testcase name="testCheckConstants2" classname="com.google.javascript.jscomp.IntegrationTest" time="0.015"/>
+  <testcase name="testNameAnonymousFunctions" classname="com.google.javascript.jscomp.IntegrationTest" time="0.037"/>
+  <testcase name="testIssue1131" classname="com.google.javascript.jscomp.IntegrationTest" time="0.013"/>
+  <testcase name="testIssue1168" classname="com.google.javascript.jscomp.IntegrationTest" time="0.036"/>
+  <testcase name="testIssue1198" classname="com.google.javascript.jscomp.IntegrationTest" time="0.021"/>
+  <testcase name="testIssue1204" classname="com.google.javascript.jscomp.IntegrationTest" time="0.027"/>
+  <testcase name="testIssue2365" classname="com.google.javascript.jscomp.IntegrationTest" time="0.025"/>
+  <testcase name="testJQueryStringSplitLoops" classname="com.google.javascript.jscomp.IntegrationTest" time="0.023"/>
+  <testcase name="testRenamePrefix" classname="com.google.javascript.jscomp.IntegrationTest" time="0.012"/>
+  <testcase name="testOptimizeSwitchGithubIssue1234" classname="com.google.javascript.jscomp.IntegrationTest" time="0.032"/>
+  <testcase name="testClosurePassPreservesJsDoc" classname="com.google.javascript.jscomp.IntegrationTest" time="0.031"/>
+  <testcase name="testRmUnusedProtoPropsInExternsUsage" classname="com.google.javascript.jscomp.IntegrationTest" time="0"/>
+  <testcase name="testDevirtualizationAndExtractPrototypeMemberDeclarations" classname="com.google.javascript.jscomp.IntegrationTest" time="0.024"/>
+  <testcase name="testBug5786871" classname="com.google.javascript.jscomp.IntegrationTest" time="0.005"/>
+  <testcase name="testAllChecksOn" classname="com.google.javascript.jscomp.IntegrationTest" time="0.013"/>
+  <testcase name="testCheckGlobalNames" classname="com.google.javascript.jscomp.IntegrationTest" time="0.006"/>
+  <testcase name="testNoInline" classname="com.google.javascript.jscomp.IntegrationTest" time="0.066"/>
+  <testcase name="testTranspilingEs2016ToEs2015" classname="com.google.javascript.jscomp.IntegrationTest" time="0.029"/>
+  <testcase name="testTypedefBeforeOwner1" classname="com.google.javascript.jscomp.IntegrationTest" time="0.014"/>
+  <testcase name="testTypedefBeforeOwner2" classname="com.google.javascript.jscomp.IntegrationTest" time="0.015"/>
+  <testcase name="testES6UnusedClassesAreRemovedDefaultCodingConvention" classname="com.google.javascript.jscomp.IntegrationTest" time="0.047"/>
+  <testcase name="testChainedCalls" classname="com.google.javascript.jscomp.IntegrationTest" time="0.017"/>
+  <testcase name="testES6StaticsAreRemoved1" classname="com.google.javascript.jscomp.IntegrationTest" time="0.052"/>
+  <testcase name="testES6StaticsAreRemoved2" classname="com.google.javascript.jscomp.IntegrationTest" time="0.05"/>
+  <testcase name="testNameAnonymousFunctionsWithVarRemoval" classname="com.google.javascript.jscomp.IntegrationTest" time="0.046"/>
+  <testcase name="testAliasAllStrings" classname="com.google.javascript.jscomp.IntegrationTest" time="0.041"/>
+  <testcase name="testMoveFunctionDeclarations" classname="com.google.javascript.jscomp.IntegrationTest" time="0.045"/>
+  <testcase name="testGoogDefineClass1" classname="com.google.javascript.jscomp.IntegrationTest" time="0.041"/>
+  <testcase name="testGoogDefineClass2" classname="com.google.javascript.jscomp.IntegrationTest" time="0.039"/>
+  <testcase name="testGoogDefineClass3" classname="com.google.javascript.jscomp.IntegrationTest" time="0.039"/>
+  <testcase name="testGoogDefineClass4" classname="com.google.javascript.jscomp.IntegrationTest" time="0.031"/>
+  <testcase name="testGoogModuleOuterLegacyInner" classname="com.google.javascript.jscomp.IntegrationTest" time="0.009"/>
+  <testcase name="testVisibility" classname="com.google.javascript.jscomp.IntegrationTest" time="0.035"/>
+  <testcase name="testCheckProvidesOn" classname="com.google.javascript.jscomp.IntegrationTest" time="0.005"/>
+  <testcase name="testBug65688660_pseudoNames" classname="com.google.javascript.jscomp.IntegrationTest" time="0.017"/>
+  <testcase name="testIssue63SourceMap" classname="com.google.javascript.jscomp.IntegrationTest" time="0.005"/>
+  <testcase name="testPreservesCastInformation" classname="com.google.javascript.jscomp.IntegrationTest" time="0.013"/>
+  <testcase name="testInlineProperties" classname="com.google.javascript.jscomp.IntegrationTest" time="0.038"/>
+  <testcase name="testClosureDefines" classname="com.google.javascript.jscomp.IntegrationTest" time="0.019"/>
+  <testcase name="testCheckSymbolsOff" classname="com.google.javascript.jscomp.IntegrationTest" time="0.012"/>
+  <testcase name="testCollapseProperties1" classname="com.google.javascript.jscomp.IntegrationTest" time="0.039"/>
+  <testcase name="testCollapseProperties2" classname="com.google.javascript.jscomp.IntegrationTest" time="0.036"/>
+  <testcase name="testExpose" classname="com.google.javascript.jscomp.IntegrationTest" time="0.018"/>
+  <testcase name="testBug31301233" classname="com.google.javascript.jscomp.IntegrationTest" time="0.013"/>
+  <testcase name="testBug31448683" classname="com.google.javascript.jscomp.IntegrationTest" time="0.021"/>
+  <testcase name="testIssue284" classname="com.google.javascript.jscomp.IntegrationTest" time="0.037"/>
+  <testcase name="testIssue378" classname="com.google.javascript.jscomp.IntegrationTest" time="0.016"/>
+  <testcase name="testIssue550" classname="com.google.javascript.jscomp.IntegrationTest" time="0.022"/>
+  <testcase name="testIssue598" classname="com.google.javascript.jscomp.IntegrationTest" time="0.012"/>
+  <testcase name="testIssue701" classname="com.google.javascript.jscomp.IntegrationTest" time="0.016"/>
+  <testcase name="testIssue724" classname="com.google.javascript.jscomp.IntegrationTest" time="0.048"/>
+  <testcase name="testIssue730" classname="com.google.javascript.jscomp.IntegrationTest" time="0.087"/>
+  <testcase name="testIssue772" classname="com.google.javascript.jscomp.IntegrationTest" time="0.026"/>
+  <testcase name="testIssue787" classname="com.google.javascript.jscomp.IntegrationTest" time="0.043"/>
+  <testcase name="testIssue937" classname="com.google.javascript.jscomp.IntegrationTest" time="0.023"/>
+  <testcase name="testNegativeZero" classname="com.google.javascript.jscomp.IntegrationTest" time="0.061"/>
+  <testcase name="testProvideRequireSameFile" classname="com.google.javascript.jscomp.IntegrationTest" time="0.016"/>
+  <testcase name="testLanguageMode2" classname="com.google.javascript.jscomp.IntegrationTest" time="0.034"/>
+  <testcase name="testNtiTypeVariableErrorsDontBlockDisambiguation" classname="com.google.javascript.jscomp.IntegrationTest" time="0.023"/>
+  <testcase name="testStrictWarningsGuard" classname="com.google.javascript.jscomp.IntegrationTest" time="0.005"/>
+  <testcase name="testRenamePrefixNamespaceActivatesMoveFunctionDeclarations" classname="com.google.javascript.jscomp.IntegrationTest" time="0.031"/>
+  <testcase name="testWindowIsTypedEs6" classname="com.google.javascript.jscomp.IntegrationTest" time="0.126"/>
+  <testcase name="testRenamingOfTypedefPropertiesWithNTI" classname="com.google.javascript.jscomp.IntegrationTest" time="0.023"/>
+  <testcase name="testInlineConstants" classname="com.google.javascript.jscomp.IntegrationTest" time="0.028"/>
+  <testcase name="testMarkPureCalls" classname="com.google.javascript.jscomp.IntegrationTest" time="0.035"/>
+  <testcase name="testExportOnClassGetter" classname="com.google.javascript.jscomp.IntegrationTest" time="0.059"/>
+  <testcase name="testBug65688660" classname="com.google.javascript.jscomp.IntegrationTest" time="0.019"/>
+  <testcase name="testRenamePrefixNamespace" classname="com.google.javascript.jscomp.IntegrationTest" time="0.028"/>
+  <testcase name="testSuppressCastWarning" classname="com.google.javascript.jscomp.IntegrationTest" time="0.053"/>
+  <testcase name="testTurnOffConstChecksOfCheckAccessControlsWithNtiOn" classname="com.google.javascript.jscomp.IntegrationTest" time="0.026"/>
+  <testcase name="testCrossModuleMethodMotion" classname="com.google.javascript.jscomp.IntegrationTest" time="0.034"/>
+  <testcase name="testIssue90" classname="com.google.javascript.jscomp.IntegrationTest" time="0.016"/>
+  <testcase name="testAngularPassOn_transpile" classname="com.google.javascript.jscomp.IntegrationTest" time="0.015"/>
+  <testcase name="testForwardDeclaredTypeInTemplate" classname="com.google.javascript.jscomp.IntegrationTest" time="0.02"/>
+  <testcase name="testIsEquivalentTo" classname="com.google.javascript.jscomp.IntegrationTest" time="0.003"/>
+  <testcase name="testFoldConstants" classname="com.google.javascript.jscomp.IntegrationTest" time="0.036"/>
+  <testcase name="testBug1949424" classname="com.google.javascript.jscomp.IntegrationTest" time="0.019"/>
+  <testcase name="testBug1956277" classname="com.google.javascript.jscomp.IntegrationTest" time="0.02"/>
+  <testcase name="testBug1962380" classname="com.google.javascript.jscomp.IntegrationTest" time="0.02"/>
+  <testcase name="testExtractPrototypeMemberDeclarations" classname="com.google.javascript.jscomp.IntegrationTest" time="0.037"/>
+  <testcase name="testRewriteFunctionExpressions" classname="com.google.javascript.jscomp.IntegrationTest" time="0.04"/>
+  <testcase name="testIncompleteFunction1" classname="com.google.javascript.jscomp.IntegrationTest" time="0.009"/>
+  <testcase name="testIncompleteFunction2" classname="com.google.javascript.jscomp.IntegrationTest" time="0.008"/>
+  <testcase name="testInlineFunctions" classname="com.google.javascript.jscomp.IntegrationTest" time="0.032"/>
+  <testcase name="testClassWithGettersIsRemoved" classname="com.google.javascript.jscomp.IntegrationTest" time="0.056"/>
+  <testcase name="testCollapseObjectLiteral1" classname="com.google.javascript.jscomp.IntegrationTest" time="0.037"/>
+  <testcase name="testCollapseObjectLiteral2" classname="com.google.javascript.jscomp.IntegrationTest" time="0.035"/>
+  <testcase name="testSusiciousCodeOff" classname="com.google.javascript.jscomp.IntegrationTest" time="0.003"/>
+  <testcase name="testAlwaysRunSafetyCheck" classname="com.google.javascript.jscomp.IntegrationTest" time="0.008"/>
+  <testcase name="testInlineVariables" classname="com.google.javascript.jscomp.IntegrationTest" time="0.035"/>
+  <testcase name="testRemoveUnusedPrototypeProperties1" classname="com.google.javascript.jscomp.IntegrationTest" time="0.028"/>
+  <testcase name="testRemoveUnusedPrototypeProperties2" classname="com.google.javascript.jscomp.IntegrationTest" time="0.058"/>
+  <testcase name="testUnboundedArrayLiteralInfiniteLoop" classname="com.google.javascript.jscomp.IntegrationTest" time="0.007"/>
+  <testcase name="testExportOnClassSetter" classname="com.google.javascript.jscomp.IntegrationTest" time="0.062"/>
+  <testcase name="testLegacyCompileOverridesStrict" classname="com.google.javascript.jscomp.IntegrationTest" time="0.008"/>
+  <testcase name="testNTIConstWarningsOverrideAccessControls" classname="com.google.javascript.jscomp.IntegrationTest" time="0.041"/>
+  <testcase name="testDuplicateVariablesInExterns" classname="com.google.javascript.jscomp.IntegrationTest" time="0.006"/>
+  <testcase name="testOptimizeArgumentsArray" classname="com.google.javascript.jscomp.IntegrationTest" time="0.035"/>
+  <testcase name="testRestObjectPatternParameters" classname="com.google.javascript.jscomp.IntegrationTest" time="0.043"/>
+</testsuite>

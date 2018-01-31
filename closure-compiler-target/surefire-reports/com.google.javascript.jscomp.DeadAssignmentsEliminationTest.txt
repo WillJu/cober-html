@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.google.javascript.jscomp.DeadAssignmentsEliminationTest
+-------------------------------------------------------------------------------
+Tests run: 70, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.444 sec - in com.google.javascript.jscomp.DeadAssignmentsEliminationTest

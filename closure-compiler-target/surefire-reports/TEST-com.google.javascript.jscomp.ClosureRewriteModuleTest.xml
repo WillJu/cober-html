@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.154" tests="114" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
+    <property name="java.vm.version" value="25.151-b12"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/wju/test-proj/closure-compiler"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/home/wju/test-proj/closure-compiler"/>
+    <property name="java.runtime.version" value="1.8.0_151-8u151-b12-0ubuntu0.16.04.2-b12"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Linux"/>
+    <property name="net.sourceforge.cobertura.datafile" value="/home/wju/test-proj/closure-compiler/target/cobertura/cobertura.ser"/>
+    <property name="classworlds.conf" value="/usr/share/maven/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="4.4.0-109-generic"/>
+    <property name="user.home" value="/home/wju"/>
+    <property name="user.timezone" value="America/Los_Angeles"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="wju"/>
+    <property name="java.class.path" value="/usr/share/maven/boot/plexus-classworlds-2.x.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/usr/lib/jvm/java-8-openjdk-amd64/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher cobertura:cobertura"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_151"/>
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/usr/share/maven"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="project.build.outputDirectory" value="/home/wju/test-proj/closure-compiler/target/generated-classes/cobertura"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="testGoogModuleGet1" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.001"/>
+  <testcase name="testGoogModuleGet2" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.001"/>
+  <testcase name="testGoogModuleGet3" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.002"/>
+  <testcase name="testGoogModuleGet_missing" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.001"/>
+  <testcase name="testIjsFileInExterns" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.003"/>
+  <testcase name="testInnerScriptOuterModule" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.002"/>
+  <testcase name="testGoogModuleGet_missing_preserve" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.001"/>
+  <testcase name="testInvalidProvide" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0"/>
+  <testcase name="testRewriteGoogModuleAliases1" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.002"/>
+  <testcase name="testRewriteGoogModuleAliases2" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.001"/>
+  <testcase name="testRewriteGoogModuleAliases3" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.001"/>
+  <testcase name="testRewriteGoogModuleAliases4" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.002"/>
+  <testcase name="testRewriteGoogModuleAliases5" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.002"/>
+  <testcase name="testRewriteGoogModuleAliases6" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.001"/>
+  <testcase name="testRewriteGoogModuleAliases7" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.001"/>
+  <testcase name="testBundleWithDestructuringImport" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.002"/>
+  <testcase name="testMultiplyExportedSymbolDoesntCrash" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.001"/>
+  <testcase name="testImportInliningDoesntShadow" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.002"/>
+  <testcase name="testTopLevelNames1" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.001"/>
+  <testcase name="testTopLevelNames2" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.001"/>
+  <testcase name="testTopLevelNames3" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.001"/>
+  <testcase name="testExport0" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.001"/>
+  <testcase name="testExport1" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0"/>
+  <testcase name="testExport2" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.001"/>
+  <testcase name="testExport4" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.001"/>
+  <testcase name="testExport5" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.001"/>
+  <testcase name="testExport6" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.001"/>
+  <testcase name="testExport7" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.001"/>
+  <testcase name="testExport8" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.001"/>
+  <testcase name="testExport9" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.001"/>
+  <testcase name="testImportInliningShadowsVar" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.001"/>
+  <testcase name="testLegacyModuleExportStillExported" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.001"/>
+  <testcase name="testTypeOnlyModuleImportFromLegacyFile" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.001"/>
+  <testcase name="testUninlinableNamedExports" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.005"/>
+  <testcase name="testExportRewritingShadows" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.002"/>
+  <testcase name="testIllegalDestructuringImports" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.003"/>
+  <testcase name="testPathRequireForMissingFile" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.001"/>
+  <testcase name="testGoogLoadModuleString" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.001"/>
+  <testcase name="testExport10" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.002"/>
+  <testcase name="testExport11" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.001"/>
+  <testcase name="testExport12" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.001"/>
+  <testcase name="testExport13" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.002"/>
+  <testcase name="testDeclareLegacyNamespace" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.001"/>
+  <testcase name="testThis" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.001"/>
+  <testcase name="testExportEnhancedObjectLiteral" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.001"/>
+  <testcase name="testSideEffectOnlyImportOfLegacyGoogModule" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.001"/>
+  <testcase name="testPathRequireForNonModule" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.001"/>
+  <testcase name="testInvalidRequire" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0"/>
+  <testcase name="testValidEarlyGoogModuleGet" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.001"/>
+  <testcase name="testUselessUseStrict" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.001"/>
+  <testcase name="testRewriteJsDoc1" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.001"/>
+  <testcase name="testRewriteJsDoc2" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.001"/>
+  <testcase name="testRewriteJsDoc3" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.001"/>
+  <testcase name="testRewriteJsDoc4" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.002"/>
+  <testcase name="testRewriteJsDoc5" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.001"/>
+  <testcase name="testBundle1" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.001"/>
+  <testcase name="testBundle2" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.001"/>
+  <testcase name="testBundle3" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.001"/>
+  <testcase name="testBundle4" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.001"/>
+  <testcase name="testBundle5" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.001"/>
+  <testcase name="testBundle6" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.002"/>
+  <testcase name="testExportsShadowingAllowed" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.001"/>
+  <testcase name="testInvalidGoogModuleGetAlias" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.001"/>
+  <testcase name="testEs6Module" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.001"/>
+  <testcase name="testSetTestOnly" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.001"/>
+  <testcase name="testExtractableExport1" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.001"/>
+  <testcase name="testExtractableExport2" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.001"/>
+  <testcase name="testExtractableExport3" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.001"/>
+  <testcase name="testExtractableExport4" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.001"/>
+  <testcase name="testRewriteGoogModuleAliasesWithPrototypeGets1" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.001"/>
+  <testcase name="testRewriteGoogModuleAliasesWithPrototypeGets2" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.001"/>
+  <testcase name="testSideEffectOnlyModuleImport" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.002"/>
+  <testcase name="testDuplicateModule" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0"/>
+  <testcase name="testDestructuringInsideModule" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.003"/>
+  <testcase name="testModuleLevelVars" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.001"/>
+  <testcase name="testInvalidModule" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.001"/>
+  <testcase name="testTypeOnlyModuleImport" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.001"/>
+  <testcase name="testRewriteGoogModuleAliasesWithPreservedPrimitives" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.003"/>
+  <testcase name="testUninlinableExports" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.002"/>
+  <testcase name="testReferenceToNonLegacyGoogModuleName" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0"/>
+  <testcase name="testLegacyModuleIsUninlined" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.001"/>
+  <testcase name="testInvalidGoogModuleGet1" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.001"/>
+  <testcase name="testInvalidGoogModuleGet2" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0"/>
+  <testcase name="testGoogModuleExportsProvidedName" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.001"/>
+  <testcase name="testPathRequireInProvide" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.001"/>
+  <testcase name="testDuplicateNamespace" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0"/>
+  <testcase name="testExport6_1" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.001"/>
+  <testcase name="testAliasedGoogModuleGet1" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.001"/>
+  <testcase name="testAliasedGoogModuleGet2" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.001"/>
+  <testcase name="testAliasedGoogModuleGet3" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.001"/>
+  <testcase name="testAliasedGoogModuleGet4" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.001"/>
+  <testcase name="testAliasedGoogModuleGet5" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.001"/>
+  <testcase name="testAliasedGoogModuleGet6" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.001"/>
+  <testcase name="testAliasedGoogModuleGet7" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.001"/>
+  <testcase name="testAliasedGoogModuleGet8" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.001"/>
+  <testcase name="testPublicExport" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.001"/>
+  <testcase name="testIjsModule" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.002"/>
+  <testcase name="testBasic0" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.002"/>
+  <testcase name="testBasic1" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.001"/>
+  <testcase name="testBasic2" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.001"/>
+  <testcase name="testBasic3" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.002"/>
+  <testcase name="testSideEffectOnlyImportOfGoogProvide" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.001"/>
+  <testcase name="testInvalidGoogForwardDeclareParameter" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.001"/>
+  <testcase name="testGoogScope1" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.002"/>
+  <testcase name="testShortObjectLiteralsInsideModule" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.002"/>
+  <testcase name="testRequireTooEarly1" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0"/>
+  <testcase name="testRequireTooEarly3" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0"/>
+  <testcase name="testImport" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.002"/>
+  <testcase name="testRelativePathBasedRequire" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.003"/>
+  <testcase name="testObjectLiteralDefaultExport" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0"/>
+  <testcase name="testDestructuringImports" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.011"/>
+  <testcase name="testGoogModuleValidReferences" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.001"/>
+  <testcase name="testImportInliningShadowsDestructuredImport" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.001"/>
+  <testcase name="testLegacyGoogModuleValidReferences" classname="com.google.javascript.jscomp.ClosureRewriteModuleTest" time="0.005"/>
+</testsuite>

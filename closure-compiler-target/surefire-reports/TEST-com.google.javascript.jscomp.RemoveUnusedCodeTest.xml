@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.915" tests="146" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
+    <property name="java.vm.version" value="25.151-b12"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/wju/test-proj/closure-compiler"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/home/wju/test-proj/closure-compiler"/>
+    <property name="java.runtime.version" value="1.8.0_151-8u151-b12-0ubuntu0.16.04.2-b12"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Linux"/>
+    <property name="net.sourceforge.cobertura.datafile" value="/home/wju/test-proj/closure-compiler/target/cobertura/cobertura.ser"/>
+    <property name="classworlds.conf" value="/usr/share/maven/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="4.4.0-109-generic"/>
+    <property name="user.home" value="/home/wju"/>
+    <property name="user.timezone" value="America/Los_Angeles"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="wju"/>
+    <property name="java.class.path" value="/usr/share/maven/boot/plexus-classworlds-2.x.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/usr/lib/jvm/java-8-openjdk-amd64/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher cobertura:cobertura"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_151"/>
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/usr/share/maven"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="project.build.outputDirectory" value="/home/wju/test-proj/closure-compiler/target/generated-classes/cobertura"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="testExternVarNotRemovable" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.004"/>
+  <testcase name="testCallSiteInteraction" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.023"/>
+  <testcase name="testBlockScoping" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.035"/>
+  <testcase name="testVarInControlStructure" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.016"/>
+  <testcase name="testRecursiveFunction1" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.003"/>
+  <testcase name="testRecursiveFunction2" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.002"/>
+  <testcase name="testDefaultParamsWithoutSideEffects0" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.002"/>
+  <testcase name="testDefaultParamsWithoutSideEffects1" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.007"/>
+  <testcase name="testDefaultParams" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.007"/>
+  <testcase name="testDestructuringArrayPattern0" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.129"/>
+  <testcase name="testDestructuringArrayPattern1" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.009"/>
+  <testcase name="testDoNotOptimizeJSCompiler_renameProperty" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.002"/>
+  <testcase name="testLeaveZeroBehind" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.002"/>
+  <testcase name="testSubClasses" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.007"/>
+  <testcase name="testForOf" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.011"/>
+  <testcase name="testRemoveInheritedClass10" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.003"/>
+  <testcase name="testRemoveInheritedClass11" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.002"/>
+  <testcase name="testRemoveInheritedClass12" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.005"/>
+  <testcase name="testRemoveGlobal1" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.004"/>
+  <testcase name="testRemoveGlobal2" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.004"/>
+  <testcase name="testRemoveGlobal3" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.005"/>
+  <testcase name="testRemoveGlobal4" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.004"/>
+  <testcase name="testBug38457201" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.002"/>
+  <testcase name="testRemoveUnusedVarsDeclaredInDestructuring0" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.018"/>
+  <testcase name="testRemoveUnusedVarsDeclaredInDestructuring1" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.024"/>
+  <testcase name="testFunctionArgRemovalWithLeadingUnderscore" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.004"/>
+  <testcase name="testLocalVarReferencesGlobalVar1" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.004"/>
+  <testcase name="testLocalVarReferencesGlobalVar2" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.003"/>
+  <testcase name="testPropertyValuesAddedAfterReferenceAreRemoved" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.004"/>
+  <testcase name="testReferencedPropertiesOnUnreferencedVar" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.003"/>
+  <testcase name="testNestedAssign1" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.003"/>
+  <testcase name="testNestedAssign2" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.004"/>
+  <testcase name="testNestedAssign3" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.003"/>
+  <testcase name="testUnusedAssign1" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.003"/>
+  <testcase name="testUnusedAssign2" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.003"/>
+  <testcase name="testUnusedAssign3" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.003"/>
+  <testcase name="testUnusedAssign4" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.004"/>
+  <testcase name="testUnusedAssign5" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.003"/>
+  <testcase name="testUnusedAssign6" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.003"/>
+  <testcase name="testUnusedAssign7" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.003"/>
+  <testcase name="testUnusedAssign8" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.003"/>
+  <testcase name="testUnusedAssign9" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.003"/>
+  <testcase name="testUsedPropAssign1" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.003"/>
+  <testcase name="testUsedPropAssign2" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.002"/>
+  <testcase name="testUsedPropAssign3" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.003"/>
+  <testcase name="testUsedPropAssign4" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.003"/>
+  <testcase name="testUsedPropAssign5" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.003"/>
+  <testcase name="testUsedPropAssign6" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.003"/>
+  <testcase name="testUsedPropAssign7" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.003"/>
+  <testcase name="testUsedPropAssign8" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.002"/>
+  <testcase name="testUsedPropAssign9" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.003"/>
+  <testcase name="testDestructuringObjectPattern0" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.136"/>
+  <testcase name="testDestructuringObjectPattern1" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.017"/>
+  <testcase name="testGenerators" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.004"/>
+  <testcase name="testPropertyReferenceAddsPropertyReference" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.002"/>
+  <testcase name="testRemoveUnusedVarsFn1s" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.001"/>
+  <testcase name="testRemoveUnusedVars1" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.03"/>
+  <testcase name="testDeclarationInSwitch" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.002"/>
+  <testcase name="testRemoveSingletonClass1" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.002"/>
+  <testcase name="testFunctionArgRemoval_defaultValue1" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.002"/>
+  <testcase name="testFunctionArgRemoval_defaultValue2" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.002"/>
+  <testcase name="testFunctionArgRemoval_defaultValue3" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.002"/>
+  <testcase name="testFunctionArgRemoval_defaultValue4" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.001"/>
+  <testcase name="testFunctionArgRemoval_defaultValue5" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.005"/>
+  <testcase name="testFunctionArgRemoval_defaultValue6" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.002"/>
+  <testcase name="testFunctionArgRemoval_defaultValue7" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.002"/>
+  <testcase name="testDestructuringParams" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.013"/>
+  <testcase name="testES6ModuleExports" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.009"/>
+  <testcase name="testUnusedAssign5b" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.002"/>
+  <testcase name="testUnusedAssign6b" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.002"/>
+  <testcase name="testUnusedAssign9a" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.002"/>
+  <testcase name="testComputedPropertyDestructuring" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.008"/>
+  <testcase name="testReferenceInObjectLiteral" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.002"/>
+  <testcase name="testSelfOverwrite" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.002"/>
+  <testcase name="testDependencies1" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.002"/>
+  <testcase name="testDependencies2" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.001"/>
+  <testcase name="testFunctionWithName1" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.004"/>
+  <testcase name="testFunctionWithName2" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.003"/>
+  <testcase name="testUsageBeforeDefinition" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.002"/>
+  <testcase name="testClasses" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.014"/>
+  <testcase name="testWholePrototypeAssignment" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.002"/>
+  <testcase name="testFunctionsDeadButEscaped" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.004"/>
+  <testcase name="testDefaultParamsWithSideEffects1" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.011"/>
+  <testcase name="testDefaultParamsWithSideEffects2" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.002"/>
+  <testcase name="testIssue618_1" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.002"/>
+  <testcase name="testIssue618_2" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.002"/>
+  <testcase name="testRValueHoisting" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.005"/>
+  <testcase name="testRemoveInBlock" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.003"/>
+  <testcase name="testUnusedPropAssign1" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.002"/>
+  <testcase name="testUnusedPropAssign2" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.002"/>
+  <testcase name="testUnusedPropAssign3" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.001"/>
+  <testcase name="testUnusedPropAssign4" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.002"/>
+  <testcase name="testUnusedPropAssign5" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.002"/>
+  <testcase name="testUnusedPropAssign6" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.001"/>
+  <testcase name="testUnusedPropAssign7" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.002"/>
+  <testcase name="testIssue168a" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.002"/>
+  <testcase name="testIssue168b" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.002"/>
+  <testcase name="testTemplateStrings" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.002"/>
+  <testcase name="testRemoveUnusedVarsFn0" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.002"/>
+  <testcase name="testDefaultParamsInClassThatReferencesArguments" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.002"/>
+  <testcase name="testDoNotOptimizeSetters" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.002"/>
+  <testcase name="testUnusedPropAssign1b" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.001"/>
+  <testcase name="testUnusedPropAssign2b" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.002"/>
+  <testcase name="testUnusedPropAssign3b" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.002"/>
+  <testcase name="testUnusedPropAssign6b" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.002"/>
+  <testcase name="testUnusedPropAssign6c" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.002"/>
+  <testcase name="testUnusedPropAssign7b" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.001"/>
+  <testcase name="testUnusedPropAssign7c" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.002"/>
+  <testcase name="testReflectedMethods" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.003"/>
+  <testcase name="testForInLet" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.003"/>
+  <testcase name="testEnhancedForWithExternVar" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.004"/>
+  <testcase name="testRestParams" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.009"/>
+  <testcase name="testForLet" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.008"/>
+  <testcase name="testPrototypeIsAliased" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.007"/>
+  <testcase name="testDoNotOptimizeJSCompiler_ObjectPropertyString" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.002"/>
+  <testcase name="testModule" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.002"/>
+  <testcase name="testArrayDestructuringParams" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.008"/>
+  <testcase name="testExternVarDestructuredAssign" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.014"/>
+  <testcase name="testDollarSuperParameterNotRemoved" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.002"/>
+  <testcase name="testRemoveVarDeclaration1" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.002"/>
+  <testcase name="testRemoveVarDeclaration2" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.002"/>
+  <testcase name="testUsedPropNotAssign" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.002"/>
+  <testcase name="testUnusedPrototypeFieldReference" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.002"/>
+  <testcase name="testRestPattern" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.014"/>
+  <testcase name="testRemoveInheritedClass1" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.002"/>
+  <testcase name="testRemoveInheritedClass2" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.002"/>
+  <testcase name="testRemoveInheritedClass3" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.002"/>
+  <testcase name="testRemoveInheritedClass4" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.002"/>
+  <testcase name="testRemoveInheritedClass5" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.003"/>
+  <testcase name="testRemoveInheritedClass6" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.002"/>
+  <testcase name="testRemoveInheritedClass7" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.002"/>
+  <testcase name="testRemoveInheritedClass8" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.002"/>
+  <testcase name="testRemoveInheritedClass9" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.002"/>
+  <testcase name="testMixedParamTypes" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.01"/>
+  <testcase name="testDependencies1b" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.002"/>
+  <testcase name="testDependencies1c" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.002"/>
+  <testcase name="testDependencies2b" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.002"/>
+  <testcase name="testDependencies2c" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.002"/>
+  <testcase name="testFunctionArgRemoval" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.01"/>
+  <testcase name="testReferencesInClasses" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.002"/>
+  <testcase name="testDefaultParamsInClass" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.006"/>
+  <testcase name="testGlobalVarReferencesLocalVar" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.002"/>
+  <testcase name="testCallSiteInteraction_constructors" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.002"/>
+  <testcase name="testArrowFunctions" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.009"/>
+  <testcase name="testRemoveGlobalClasses" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.002"/>
+  <testcase name="testRemoveUnusedVarsPossibleNpeCase" classname="com.google.javascript.jscomp.RemoveUnusedCodeTest" time="0.002"/>
+</testsuite>

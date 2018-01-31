@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.google.javascript.jscomp.InlineVariablesTest" time="0.358" tests="168" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
+    <property name="java.vm.version" value="25.151-b12"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/wju/test-proj/closure-compiler"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/home/wju/test-proj/closure-compiler"/>
+    <property name="java.runtime.version" value="1.8.0_151-8u151-b12-0ubuntu0.16.04.2-b12"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Linux"/>
+    <property name="net.sourceforge.cobertura.datafile" value="/home/wju/test-proj/closure-compiler/target/cobertura/cobertura.ser"/>
+    <property name="classworlds.conf" value="/usr/share/maven/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="4.4.0-109-generic"/>
+    <property name="user.home" value="/home/wju"/>
+    <property name="user.timezone" value="America/Los_Angeles"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="wju"/>
+    <property name="java.class.path" value="/usr/share/maven/boot/plexus-classworlds-2.x.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/usr/lib/jvm/java-8-openjdk-amd64/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher cobertura:cobertura"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_151"/>
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/usr/share/maven"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="project.build.outputDirectory" value="/home/wju/test-proj/closure-compiler/target/generated-classes/cobertura"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="testInlineStringWhenWorthwhile" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.002"/>
+  <testcase name="testInlineParameterAlias1" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.001"/>
+  <testcase name="testInlineParameterAlias2" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.002"/>
+  <testcase name="testNoInlineBackwards" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.001"/>
+  <testcase name="testInlineFunctionDeclaration" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.007"/>
+  <testcase name="testUnreferencedBleedingFunction" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.002"/>
+  <testcase name="testInsideHookBranch" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.001"/>
+  <testcase name="testInlineIntoFunction" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.003"/>
+  <testcase name="testNoInlineAliasesInLoop" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.002"/>
+  <testcase name="testNoInlineOutOfBranch" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.001"/>
+  <testcase name="testRecursiveFunction1" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.002"/>
+  <testcase name="testRecursiveFunction2" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.001"/>
+  <testcase name="testNoInlineAliases1b" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.002"/>
+  <testcase name="testNoInlineAliases2b" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.002"/>
+  <testcase name="testNoInlineAliases3b" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.002"/>
+  <testcase name="testNoInlineAliases4b" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.002"/>
+  <testcase name="testNoInlineAliases5b" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.001"/>
+  <testcase name="testNoInlineAliases6b" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.002"/>
+  <testcase name="testNoInlineAliases7b" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.002"/>
+  <testcase name="testNoInlineAliases8b" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.002"/>
+  <testcase name="testArgumentsModifiedInInnerFunction" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.002"/>
+  <testcase name="testInlineIntoLoops" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.004"/>
+  <testcase name="testLetConst" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.007"/>
+  <testcase name="testInlineIntoTryCatch" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.001"/>
+  <testcase name="testDoNotExitTry" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.003"/>
+  <testcase name="testNoInlineCatchAliasVar1" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.002"/>
+  <testcase name="testNoInlineCatchAliasVar2" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.001"/>
+  <testcase name="testDoNotCrossIncrement" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.002"/>
+  <testcase name="testForIn" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.007"/>
+  <testcase name="testForOf" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.003"/>
+  <testcase name="testNoInlineAliases1" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.002"/>
+  <testcase name="testNoInlineAliases2" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.001"/>
+  <testcase name="testNoInlineAliases3" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.002"/>
+  <testcase name="testNoInlineAliases4" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.002"/>
+  <testcase name="testNoInlineAliases5" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.001"/>
+  <testcase name="testNoInlineAliases6" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.001"/>
+  <testcase name="testNoInlineAliases7" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.002"/>
+  <testcase name="testNoInlineAliases8" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.002"/>
+  <testcase name="testOverlappingInlines" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.002"/>
+  <testcase name="testDoNotEnterCatch" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.002"/>
+  <testcase name="testInsideHookConditional" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.001"/>
+  <testcase name="testInlineFunctionAlias1a" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.002"/>
+  <testcase name="testInlineFunctionAlias1b" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.001"/>
+  <testcase name="testInlineFunctionAlias2a" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.002"/>
+  <testcase name="testInlineFunctionAlias2b" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.002"/>
+  <testcase name="testDoNotInlineDecrement" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.001"/>
+  <testcase name="testCrossFunctionsAsLeftLeaves" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.008"/>
+  <testcase name="testInlineAliases1b" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.002"/>
+  <testcase name="testInlineAliases1c" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.001"/>
+  <testcase name="testInlineAliases1d" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.002"/>
+  <testcase name="testInlineAliases2b" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.001"/>
+  <testcase name="testInlineAliases2c" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.002"/>
+  <testcase name="testInlineAliases2d" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.002"/>
+  <testcase name="testOverlappingInlineFunctions" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.001"/>
+  <testcase name="testInlineSwitchLet" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.002"/>
+  <testcase name="testInlineSwitchVar" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.001"/>
+  <testcase name="testDoNotEnterFinally" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.002"/>
+  <testcase name="testThisEscapedAlias" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.002"/>
+  <testcase name="testNoInlineExportedName2" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.001"/>
+  <testcase name="testVarInBlock1" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.002"/>
+  <testcase name="testVarInBlock2" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.001"/>
+  <testcase name="testDoNotCrossAssignmentPlus" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.002"/>
+  <testcase name="testArgumentsModifiedInOuterFunction" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.002"/>
+  <testcase name="testTaggedTemplateLiterals" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.004"/>
+  <testcase name="testGenerators" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.003"/>
+  <testcase name="testDoNotExitLoop" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.001"/>
+  <testcase name="testSideEffectOrder" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.003"/>
+  <testcase name="testDoNotCrossAssignment" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.003"/>
+  <testcase name="testNoInlineRedeclaredExterns" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.002"/>
+  <testcase name="testNoInlineStringMultipleTimesIfNotWorthwhile" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.001"/>
+  <testcase name="testIssue378ModifiedArguments1" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.002"/>
+  <testcase name="testIssue378ModifiedArguments2" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.002"/>
+  <testcase name="testInlineStringMultipleTimesWhenAliasingAllStrings" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.001"/>
+  <testcase name="testDestructuring" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.002"/>
+  <testcase name="testInlineAliasesInLoop" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.002"/>
+  <testcase name="testInlineIntoRhsOfAssign" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.001"/>
+  <testcase name="testInlineThis" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.002"/>
+  <testcase name="testThisAlias" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.001"/>
+  <testcase name="testInlineUndefined1" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.002"/>
+  <testcase name="testInlineUndefined2" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.001"/>
+  <testcase name="testInlineUndefined3" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.001"/>
+  <testcase name="testInlineUndefined4" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.002"/>
+  <testcase name="testInlineUndefined5" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.001"/>
+  <testcase name="testInlineConstantAliasWithNonConstant" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.001"/>
+  <testcase name="testInlineAliases1" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.002"/>
+  <testcase name="testInlineAliases2" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.002"/>
+  <testcase name="testInterferingInlines" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.001"/>
+  <testcase name="testInlineCatchAliasLet1" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.002"/>
+  <testcase name="testInlineCatchAliasLet2" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.001"/>
+  <testcase name="testIssue378EscapedArguments1" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.002"/>
+  <testcase name="testIssue378EscapedArguments2" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.002"/>
+  <testcase name="testIssue378EscapedArguments3" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.001"/>
+  <testcase name="testIssue378EscapedArguments4" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.002"/>
+  <testcase name="testDoCrossVar" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.001"/>
+  <testcase name="testInsideOrBranchInsideIfConditionalWithConstant" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.002"/>
+  <testcase name="testInlineIntoNestedNonHoistedNamedFunctions" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.001"/>
+  <testcase name="testDoCrossFunction" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.002"/>
+  <testcase name="testRenamePropertyFunction" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.001"/>
+  <testcase name="testNoInlineGetpropIntoCall" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.004"/>
+  <testcase name="testNoInlineMutatedVariable" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.001"/>
+  <testcase name="testInsideAndBranch" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.002"/>
+  <testcase name="testInsideIfConditional" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.003"/>
+  <testcase name="testFunctionInlinedAcrossScript" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.001"/>
+  <testcase name="testSingleReferenceAfterInitialzation" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.014"/>
+  <testcase name="testNoInlineIntoNestedNamedFunctions" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.002"/>
+  <testcase name="testNoInlineExportedName" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.001"/>
+  <testcase name="testIssue1177" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.005"/>
+  <testcase name="testTemplateStrings" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.004"/>
+  <testcase name="testPassDoesntProduceInvalidCode1" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.002"/>
+  <testcase name="testPassDoesntProduceInvalidCode2" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.001"/>
+  <testcase name="testPassDoesntProduceInvalidCode3" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.002"/>
+  <testcase name="test2388531" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.003"/>
+  <testcase name="testInlineIntoArrowFunction1" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.002"/>
+  <testcase name="testInlineIntoArrowFunction2" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.001"/>
+  <testcase name="testInlineImmutableMultipleTimes" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.003"/>
+  <testcase name="testDoNotCrossReferencingFunction" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.002"/>
+  <testcase name="testDoNotExitConditional1" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.001"/>
+  <testcase name="testDoNotExitConditional2" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.001"/>
+  <testcase name="testDoNotExitConditional3" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.002"/>
+  <testcase name="testInlineConstantAlias" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.001"/>
+  <testcase name="testHoistedFunction1" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.002"/>
+  <testcase name="testHoistedFunction2" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.001"/>
+  <testcase name="testHoistedFunction3" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.002"/>
+  <testcase name="testHoistedFunction4" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.001"/>
+  <testcase name="testHoistedFunction5" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.002"/>
+  <testcase name="testHoistedFunction6" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.001"/>
+  <testcase name="testIssue378ArgumentsRead1" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.002"/>
+  <testcase name="testIssue378ArgumentsRead2" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.002"/>
+  <testcase name="testNoInlineAnnotation" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.001"/>
+  <testcase name="testInlineGlobal" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.002"/>
+  <testcase name="testNoInlineIntoNamedFunction" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.001"/>
+  <testcase name="testInlineNamedFunction" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.002"/>
+  <testcase name="testDoNotExitForLoop" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.004"/>
+  <testcase name="testInlineIntoForLoop1" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.002"/>
+  <testcase name="testInlineIntoForLoop2" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.002"/>
+  <testcase name="testIssue354" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.002"/>
+  <testcase name="testDoNotInlineIncrement" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.002"/>
+  <testcase name="testCascadingInlines" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.001"/>
+  <testcase name="testInsideOrBranch" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.002"/>
+  <testcase name="testExternalIssue1053" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.001"/>
+  <testcase name="testDoNotInlineIntoLhsOfAssign" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.002"/>
+  <testcase name="testInlineConstants" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.001"/>
+  <testcase name="testChainedAssignment" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.006"/>
+  <testcase name="testOnlyReadAtInitialization" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.013"/>
+  <testcase name="testLocalsOnly1" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.002"/>
+  <testcase name="testLocalsOnly2" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.001"/>
+  <testcase name="testDoCrossNewVariables" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.001"/>
+  <testcase name="testInlineAcrossModules" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.001"/>
+  <testcase name="testDoNotEnterSubscope" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.003"/>
+  <testcase name="testIssue90" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.002"/>
+  <testcase name="testInlineInFunction1" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.001"/>
+  <testcase name="testInlineInFunction2" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.001"/>
+  <testcase name="testInlineInFunction3" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.002"/>
+  <testcase name="testInlineInFunction4" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.002"/>
+  <testcase name="testInlineInFunction5" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.001"/>
+  <testcase name="testInlineInFunction6" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.002"/>
+  <testcase name="testInlineInFunction7" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.001"/>
+  <testcase name="testInsideOrBranchInsideIfConditional" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.001"/>
+  <testcase name="testInlineConstantAliasWithAnnotation" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.002"/>
+  <testcase name="testBug6598844" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.002"/>
+  <testcase name="testDoNotCrossFunctionCalls" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.001"/>
+  <testcase name="testDoNotCrossConstructor" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.002"/>
+  <testcase name="testInsideIfBranch" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.001"/>
+  <testcase name="testSwitchGithubIssue1234" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.002"/>
+  <testcase name="testImmutableWithSingleReferenceAfterInitialzation" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.013"/>
+  <testcase name="testInsideAndConditional" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.001"/>
+  <testcase name="testReferencedBleedingFunction" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.002"/>
+  <testcase name="testDoNotCrossDelete" classname="com.google.javascript.jscomp.InlineVariablesTest" time="0.001"/>
+</testsuite>

@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.google.javascript.jscomp.CompilerTest
+-------------------------------------------------------------------------------
+Tests run: 83, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.69 sec - in com.google.javascript.jscomp.CompilerTest
