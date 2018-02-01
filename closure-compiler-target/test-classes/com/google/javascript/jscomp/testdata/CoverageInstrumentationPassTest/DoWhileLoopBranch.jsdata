@@ -1,7 +1,0 @@
-function AlwaysTrue(x){
-  var i = 0;
-  do {
-    return true;
-  } while (i < x);
-  return false;
-}

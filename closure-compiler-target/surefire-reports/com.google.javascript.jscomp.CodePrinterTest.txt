@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.google.javascript.jscomp.CodePrinterTest
--------------------------------------------------------------------------------
-Tests run: 175, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.853 sec - in com.google.javascript.jscomp.CodePrinterTest
