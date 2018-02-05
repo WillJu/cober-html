@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.google.javascript.jscomp.NewTypeInferenceWithTranspilationTest
--------------------------------------------------------------------------------
-Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.509 sec - in com.google.javascript.jscomp.NewTypeInferenceWithTranspilationTest

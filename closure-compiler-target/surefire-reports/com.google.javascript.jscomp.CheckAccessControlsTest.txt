@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.google.javascript.jscomp.CheckAccessControlsTest
--------------------------------------------------------------------------------
-Tests run: 177, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.224 sec - in com.google.javascript.jscomp.CheckAccessControlsTest

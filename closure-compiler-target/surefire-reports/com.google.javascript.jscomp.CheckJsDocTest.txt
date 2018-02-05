@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.google.javascript.jscomp.CheckJsDocTest
--------------------------------------------------------------------------------
-Tests run: 91, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.093 sec - in com.google.javascript.jscomp.CheckJsDocTest

@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.google.javascript.jscomp.PureFunctionIdentifierTest
--------------------------------------------------------------------------------
-Tests run: 161, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.072 sec - in com.google.javascript.jscomp.PureFunctionIdentifierTest
