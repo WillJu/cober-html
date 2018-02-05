@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.google.javascript.jscomp.NodeUtilTest
+-------------------------------------------------------------------------------
+Tests run: 137, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.18 sec - in com.google.javascript.jscomp.NodeUtilTest

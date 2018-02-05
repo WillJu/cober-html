@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.google.javascript.jscomp.CheckAccessControlsTest" time="2.224" tests="177" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
+    <property name="java.vm.version" value="25.151-b12"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/wju/test-proj/closure-compiler"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/home/wju/test-proj/closure-compiler"/>
+    <property name="java.runtime.version" value="1.8.0_151-8u151-b12-0ubuntu0.16.04.2-b12"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Linux"/>
+    <property name="net.sourceforge.cobertura.datafile" value="/home/wju/test-proj/closure-compiler/target/cobertura/cobertura.ser"/>
+    <property name="classworlds.conf" value="/usr/share/maven/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="4.4.0-109-generic"/>
+    <property name="user.home" value="/home/wju"/>
+    <property name="user.timezone" value="America/Los_Angeles"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="wju"/>
+    <property name="java.class.path" value="/usr/share/maven/boot/plexus-classworlds-2.x.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/usr/lib/jvm/java-8-openjdk-amd64/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher cobertura:cobertura"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_151"/>
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/usr/share/maven"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="project.build.outputDirectory" value="/home/wju/test-proj/closure-compiler/target/generated-classes/cobertura"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="testConstantProperty4" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.012"/>
+  <testcase name="testConstantProperty5" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.011"/>
+  <testcase name="testConstantProperty6" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.011"/>
+  <testcase name="testConstantProperty7" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.017"/>
+  <testcase name="testConstantProperty8" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.017"/>
+  <testcase name="testConstantProperty9" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.017"/>
+  <testcase name="testCircularPrototypeLink" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.018"/>
+  <testcase name="testOkAssignmentOfDeprecatedProperty" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.016"/>
+  <testcase name="testNoWarningInGlobalScopeForCall" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.012"/>
+  <testcase name="testNullableDeprecatedProperty" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.011"/>
+  <testcase name="testDeprecatedFunctionVariable" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.011"/>
+  <testcase name="testNoWarningInDeprecatedFunction" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.015"/>
+  <testcase name="testPrivateAccess_googModule" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.011"/>
+  <testcase name="testNoWarningInGlobalScope" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.016"/>
+  <testcase name="testConstantProperty11" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.01"/>
+  <testcase name="testConstantProperty12" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.007"/>
+  <testcase name="testConstantProperty13" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.01"/>
+  <testcase name="testConstantProperty14" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.01"/>
+  <testcase name="testConstantProperty15" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.015"/>
+  <testcase name="testConstantProperty16" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.015"/>
+  <testcase name="testConstantProperty17" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.014"/>
+  <testcase name="testConstantProperty18" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.015"/>
+  <testcase name="testConstantProperty19" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.015"/>
+  <testcase name="testConstantProperty1a" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.01"/>
+  <testcase name="testConstantProperty1b" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.01"/>
+  <testcase name="testConstantProperty2a" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.009"/>
+  <testcase name="testConstantProperty2b" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.01"/>
+  <testcase name="testConstantProperty3a" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.014"/>
+  <testcase name="testConstantProperty3b" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.014"/>
+  <testcase name="testConstantProperty4b" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.01"/>
+  <testcase name="testPrivateAccessForNames" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.04"/>
+  <testcase name="testWarningOnDeprecatedConstVariable" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.01"/>
+  <testcase name="testOverrideWithoutVisibilityRedeclInFileWithFileOverviewVisibilityNotAllowed_OneFile" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.01"/>
+  <testcase name="testNoWarningInDeprecatedStaticMethod" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.015"/>
+  <testcase name="testOverrideWithVisibilityRedeclInFileWithFileOverviewVisibilityOk_TwoFiles" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.017"/>
+  <testcase name="testProtectedAccessForProperties1" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.017"/>
+  <testcase name="testProtectedAccessForProperties2" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.017"/>
+  <testcase name="testProtectedAccessForProperties3" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.017"/>
+  <testcase name="testProtectedAccessForProperties4" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.016"/>
+  <testcase name="testProtectedAccessForProperties5" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.017"/>
+  <testcase name="testProtectedAccessForProperties6" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.018"/>
+  <testcase name="testProtectedAccessForProperties7" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.017"/>
+  <testcase name="testProtectedAccessForProperties8" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.017"/>
+  <testcase name="testProtectedAccessForProperties9" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.017"/>
+  <testcase name="testBadOverrideOfProtectedProperty" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.01"/>
+  <testcase name="testOverrideWithoutVisibilityRedeclInFileWithNoFileOverviewOk" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.017"/>
+  <testcase name="testNamespaceConstantProperty1" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.011"/>
+  <testcase name="testNamespaceConstantProperty2" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.005"/>
+  <testcase name="testNamespaceConstantProperty3" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.011"/>
+  <testcase name="testNoPrivateAccessForProperties10" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.012"/>
+  <testcase name="testNoPrivateAccessForProperties11" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.011"/>
+  <testcase name="testNoPrivateAccessForProperties12" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.011"/>
+  <testcase name="testNoPrivateAccessForProperties6a" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.012"/>
+  <testcase name="testPrivateAccessForProperties1" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.017"/>
+  <testcase name="testPrivateAccessForProperties2" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.016"/>
+  <testcase name="testPrivateAccessForProperties3" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.011"/>
+  <testcase name="testPrivateAccessForProperties4" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.015"/>
+  <testcase name="testPrivateAccessForProperties5" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.01"/>
+  <testcase name="testPrivateAccessForProperties6" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.011"/>
+  <testcase name="testNoPrivateAccessForProperties1" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.01"/>
+  <testcase name="testNoPrivateAccessForProperties2" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.009"/>
+  <testcase name="testNoPrivateAccessForProperties3" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.01"/>
+  <testcase name="testNoPrivateAccessForProperties4" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.009"/>
+  <testcase name="testNoPrivateAccessForProperties5" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.01"/>
+  <testcase name="testNoPrivateAccessForProperties6" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.01"/>
+  <testcase name="testNoPrivateAccessForProperties7" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.01"/>
+  <testcase name="testNoPrivateAccessForProperties8" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.011"/>
+  <testcase name="testNoPrivateAccessForProperties9" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.01"/>
+  <testcase name="testWarningForDeprecatedClassNoReason" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.01"/>
+  <testcase name="testOverrideWithoutVisibilityRedeclInFileWithNoFileOverviewVisibilityOk" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.016"/>
+  <testcase name="testAccessOfStaticMethodOnPrivateQualifiedConstructor" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.016"/>
+  <testcase name="testProtectedAccessForProperties10" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.015"/>
+  <testcase name="testProtectedAccessForProperties11" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.011"/>
+  <testcase name="testProtectedAccessForProperties12" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.011"/>
+  <testcase name="testProtectedAccessForProperties13" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.013"/>
+  <testcase name="testNoPackagePrivateAccessForProperties1" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.01"/>
+  <testcase name="testNoPackagePrivateAccessForProperties2" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.01"/>
+  <testcase name="testNoPackagePrivateAccessForProperties3" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.01"/>
+  <testcase name="testNoPackagePrivateAccessForProperties4" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.011"/>
+  <testcase name="testNoPackagePrivateAccessForProperties5" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.01"/>
+  <testcase name="testNoPackagePrivateAccessForProperties6" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.009"/>
+  <testcase name="testNoPackagePrivateAccessForProperties7" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.011"/>
+  <testcase name="testWarningForSubclassMethod" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.035"/>
+  <testcase name="testGoodOverrideOfProtectedProperty" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.014"/>
+  <testcase name="testNoWarningInDeprecatedClass" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.014"/>
+  <testcase name="testPrivatePropertyByConvention1" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.01"/>
+  <testcase name="testPrivatePropertyByConvention2" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.01"/>
+  <testcase name="testNoProtectedAccessForProperties1" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.01"/>
+  <testcase name="testNoProtectedAccessForProperties2" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.011"/>
+  <testcase name="testNoProtectedAccessForProperties3" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.01"/>
+  <testcase name="testNoProtectedAccessForProperties4" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.01"/>
+  <testcase name="testNoProtectedAccessForProperties5" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.01"/>
+  <testcase name="testNoProtectedAccessForProperties6" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.01"/>
+  <testcase name="testNoProtectedAccessForProperties7" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.01"/>
+  <testcase name="testNoPrivateAccessForNamespaces" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.008"/>
+  <testcase name="testAutoboxedDeprecatedProperty" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.01"/>
+  <testcase name="testPublicFileOverviewVisibilityDoesNotApplyToPropertyWithExplicitPackageVisibility" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.009"/>
+  <testcase name="testWarningForDeprecatedClassInGlobalScope" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.009"/>
+  <testcase name="testNoWarningOnDeclaration" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.013"/>
+  <testcase name="testNoWarningForDeprecatedClassInstance" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.013"/>
+  <testcase name="testPackageFileOverviewVisibilityDoesNotApplyToNameWithExplicitPublicVisibility" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.014"/>
+  <testcase name="testWarningForDeprecatedClass" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.009"/>
+  <testcase name="testNoPackagePrivateAccessForNamespaces" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.009"/>
+  <testcase name="testNoWarningInDeprecatedClass2" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.013"/>
+  <testcase name="testDeprecatedObjLitKey" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.009"/>
+  <testcase name="testNullablePrivateProperty" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.009"/>
+  <testcase name="testPackageFileOverviewVisibilityAppliesToNameWithoutExplicitVisibility" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.009"/>
+  <testcase name="testPrivateAccessForNames2" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.023"/>
+  <testcase name="testDeprecatedFunctionNoReason" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.009"/>
+  <testcase name="testDeclarationAndConventionConflict4a" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.01"/>
+  <testcase name="testDeclarationAndConventionConflict4b" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.009"/>
+  <testcase name="testWarningForSuperClassWithDeprecatedSubclassMethod" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.015"/>
+  <testcase name="testWarningInStaticMethod" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.01"/>
+  <testcase name="testFileOverviewVisibilityComesFromDeclarationFileNotUseFile" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.01"/>
+  <testcase name="testWarningForSuperclassMethod" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.01"/>
+  <testcase name="testWarningInNormalClass" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.01"/>
+  <testcase name="testInstanceofOfPrivateConstructor" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.015"/>
+  <testcase name="testPackagePrivateAccessForProperties1" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.015"/>
+  <testcase name="testPackagePrivateAccessForProperties2" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.014"/>
+  <testcase name="testPackagePrivateAccessForProperties3" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.016"/>
+  <testcase name="testPackagePrivateAccessForProperties4" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.015"/>
+  <testcase name="testPackagePrivateAccessForProperties5" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.01"/>
+  <testcase name="testAutoboxedPrivateProperty" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.009"/>
+  <testcase name="testPackageFileOverviewVisibilityDoesNotApplyToPropertyWithExplicitPublicVisibility" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.015"/>
+  <testcase name="testFinalClassCannotBeSubclassed" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.033"/>
+  <testcase name="testWarningForProperty1" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.01"/>
+  <testcase name="testWarningForProperty2" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.01"/>
+  <testcase name="testNoWarningOnDeprecatedPrototype" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.015"/>
+  <testcase name="testAccessOfStaticMethodOnPrivateConstructor" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.016"/>
+  <testcase name="testWarningForDeprecatedSuperClass" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.01"/>
+  <testcase name="testOverrideWithoutVisibilityRedeclInFileWithFileOverviewVisibilityNotAllowed_TwoFiles" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.011"/>
+  <testcase name="testWarningForSuperclassMethod2" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.011"/>
+  <testcase name="testWarningForDeprecatedSuperClass2" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.01"/>
+  <testcase name="testDeprecatedFunction" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.036"/>
+  <testcase name="testNoProtectedAccessForPropertiesWithNoRhs" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.015"/>
+  <testcase name="testDeclarationAndConventionConflict1" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.01"/>
+  <testcase name="testDeclarationAndConventionConflict2" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.01"/>
+  <testcase name="testDeclarationAndConventionConflict3" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.01"/>
+  <testcase name="testDeclarationAndConventionConflict5" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.009"/>
+  <testcase name="testDeclarationAndConventionConflict6" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.01"/>
+  <testcase name="testDeclarationAndConventionConflict7" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.008"/>
+  <testcase name="testDeclarationAndConventionConflict8" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.008"/>
+  <testcase name="testDeclarationAndConventionConflict9" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.008"/>
+  <testcase name="testConstantPropertyInExterns" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.009"/>
+  <testcase name="testSuppressConstantProperty2" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.013"/>
+  <testcase name="testSuppressConstantProperty" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.014"/>
+  <testcase name="testPackageFileOverviewVisibilityAppliesToPropertyWithoutExplicitVisibility" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.008"/>
+  <testcase name="testConstantProperty10a" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.014"/>
+  <testcase name="testConstantProperty10b" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.006"/>
+  <testcase name="testConstantProperty15a" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.009"/>
+  <testcase name="testConstantProperty15b" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.009"/>
+  <testcase name="testConstantProperty15c" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.01"/>
+  <testcase name="testConstantProperty3a1" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.013"/>
+  <testcase name="testConstantProperty3a2" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.014"/>
+  <testcase name="testConstantProperty3b1" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.014"/>
+  <testcase name="testConstantProperty3b2" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.006"/>
+  <testcase name="testBadOverrideOfPrivateProperty" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.023"/>
+  <testcase name="testPublicFileOverviewVisibilityAppliesToPropertyWithoutExplicitVisibility" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.015"/>
+  <testcase name="testOverrideWithVisibilityRedeclInFileWithFileOverviewVisibilityOk_OneFile" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.014"/>
+  <testcase name="testPackagePrivateAccessForNames" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.01"/>
+  <testcase name="testBadReadOfDeprecatedProperty" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.009"/>
+  <testcase name="testNoExceptionsWithBadConstructors1" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.013"/>
+  <testcase name="testNoExceptionsWithBadConstructors2" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.014"/>
+  <testcase name="testWarningForBind" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.004"/>
+  <testcase name="testNamespaceConstantProperty2a" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.014"/>
+  <testcase name="testThatNumbersArentDeprecated" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.013"/>
+  <testcase name="testPublicFileOverviewVisibilityDoesNotApplyToNameWithExplicitPackageVisibility" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.009"/>
+  <testcase name="testNoWarningForPrototypeCopying" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.015"/>
+  <testcase name="testFileoverviewVisibilityDoesNotApplyToGoogProvidedNamespace1" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.014"/>
+  <testcase name="testFileoverviewVisibilityDoesNotApplyToGoogProvidedNamespace2" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.015"/>
+  <testcase name="testFileoverviewVisibilityDoesNotApplyToGoogProvidedNamespace3" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.016"/>
+  <testcase name="testFileoverviewVisibilityDoesNotApplyToGoogProvidedNamespace4" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.01"/>
+  <testcase name="testNamespacedFunctionDoesNotNeedVisibilityRedeclInFileWithFileOverviewVisibility" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.015"/>
+  <testcase name="testNoWarningForNumbers" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.016"/>
+  <testcase name="testWarningForPrototypeProperty" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.01"/>
+  <testcase name="testWarningForMethod1" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.01"/>
+  <testcase name="testWarningForMethod2" classname="com.google.javascript.jscomp.CheckAccessControlsTest" time="0.01"/>
+</testsuite>

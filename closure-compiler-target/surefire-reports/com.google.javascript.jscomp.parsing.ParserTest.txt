@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.google.javascript.jscomp.parsing.ParserTest
+-------------------------------------------------------------------------------
+Tests run: 321, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.86 sec - in com.google.javascript.jscomp.parsing.ParserTest

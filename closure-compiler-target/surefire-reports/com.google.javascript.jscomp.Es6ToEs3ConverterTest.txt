@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.google.javascript.jscomp.Es6ToEs3ConverterTest
+-------------------------------------------------------------------------------
+Tests run: 83, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.539 sec - in com.google.javascript.jscomp.Es6ToEs3ConverterTest

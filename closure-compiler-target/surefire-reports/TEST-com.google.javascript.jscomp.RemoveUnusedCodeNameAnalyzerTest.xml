@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="1.009" tests="363" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
+    <property name="java.vm.version" value="25.151-b12"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/wju/test-proj/closure-compiler"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/home/wju/test-proj/closure-compiler"/>
+    <property name="java.runtime.version" value="1.8.0_151-8u151-b12-0ubuntu0.16.04.2-b12"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Linux"/>
+    <property name="net.sourceforge.cobertura.datafile" value="/home/wju/test-proj/closure-compiler/target/cobertura/cobertura.ser"/>
+    <property name="classworlds.conf" value="/usr/share/maven/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="4.4.0-109-generic"/>
+    <property name="user.home" value="/home/wju"/>
+    <property name="user.timezone" value="America/Los_Angeles"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="wju"/>
+    <property name="java.class.path" value="/usr/share/maven/boot/plexus-classworlds-2.x.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/usr/lib/jvm/java-8-openjdk-amd64/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher cobertura:cobertura"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_151"/>
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/usr/share/maven"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="project.build.outputDirectory" value="/home/wju/test-proj/closure-compiler/target/generated-classes/cobertura"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="testAliasInstanceof4" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testAliasInstanceof5" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testExpressions1" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testExpressions2" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testExpressions3" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testRemoveRecursiveFunction1" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testRemoveRecursiveFunction2" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testRemoveRecursiveFunction3" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testRemoveRecursiveFunction4" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testRemoveRecursiveFunction5" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testRemoveRecursiveFunction6" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testRemoveRecursiveFunction7" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testRemoveRecursiveFunction8" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testRemoveRecursiveFunction9" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testTopLevelClass1" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testTopLevelClass2" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testTopLevelClass3" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testTopLevelClass4" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testTopLevelClass5" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testTopLevelClass6" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testTopLevelClass7" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testBug37975351a" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testBug37975351b" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testBug37975351c" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testSetterInSwitchInput" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testRemoveDeclaration1" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testRemoveDeclaration2" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testRemoveDeclaration4" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testRemoveDeclaration5" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testRemoveDeclaration6" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testRemoveDeclaration7" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testBug2099540" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testExternName1" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testExternName2" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testObjectDefinePropertiesOnNamespaceThatEscapes" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testSetterInIfPredicate" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testRegularAssignPropOnNamespaceThatEscapes" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testArrayAliasExt" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testNoSideEffectAnnotation1" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.007"/>
+  <testcase name="testNoSideEffectAnnotation2" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.001"/>
+  <testcase name="testNoSideEffectAnnotation3" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testNoSideEffectAnnotation4" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testNoSideEffectAnnotation5" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testNoSideEffectAnnotation6" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testNoSideEffectAnnotation7" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testNoSideEffectAnnotation8" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.001"/>
+  <testcase name="testNoSideEffectAnnotation9" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.004"/>
+  <testcase name="testNamespacedClass1" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testNamespacedClass2" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testNamespacedClass4" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testNamespacedClass5" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testGetElem1" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testGetElem2" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testGetElem3" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testObjectDefinePropertiesOnConstructor" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.005"/>
+  <testcase name="testRValueReference1" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testRValueReference2" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testRValueReference3" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testRValueReference4" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testRValueReference5" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testRValueReference6" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testIf1" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testIf2" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testIf3" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testIf4" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testIf5" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testExternalAliasInstanceof1" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testExternalAliasInstanceof2" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testExternalAliasInstanceof3" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testRegularAssignPropOnPropFromAVar" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testAnonymous1" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testAnonymous2" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testAnonymous3" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testAnonymous4" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testAnonymous5" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testAnonymous6" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testAnonymous7" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testAnonymous8" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testAnonymous9" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testSideEffectClassification1" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testSideEffectClassification2" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testSideEffectClassification3" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testSideEffectClassification4" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testSideEffectClassification5" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testSideEffectClassification6" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testSideEffectClassification7" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testRemoveInstanceOfOnly" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testRefChain1" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testRefChain2" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testRefChain6" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testBlock" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.008"/>
+  <testcase name="testForIn" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testForOf" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testWhile" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testRemoveConstDeclaration1" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testRemoveConstDeclaration2" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testRemoveConstDeclaration3" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testIf4a" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testIf4b" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testIf4c" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testRhsAssign1" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testRhsAssign2" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testRhsAssign3" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testRhsAssign4" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testRhsAssign5" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testRhsAssign6" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testRhsAssign7" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testRhsAssign8" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testRhsAssign9" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testAssign1" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testAssign2" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testAssign3" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testAssign4" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testAssign5" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testFunctionPrototype" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testSetterInForStruct10" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testSetterInForStruct11" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testSetterInForStruct12" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testSetterInForStruct13" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testSetterInForStruct14" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testSetterInForStruct15" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testSetterInForStruct16" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testAssignWithAnd1" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testAssignWithAnd2" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testAssignWithCall" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testAssignmentToCallResultPrototype" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testRemoveAlias" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testObjectDefinePropertiesOnPrototype1" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.005"/>
+  <testcase name="testObjectDefinePropertiesOnPrototype2" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testObjectDefinePropertiesOnPrototype3" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testConstants1" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testConstants2" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testNoSideEffectAnnotation10" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testNoSideEffectAnnotation11" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testNoSideEffectAnnotation12" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testNoSideEffectAnnotation13" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testNoSideEffectAnnotation14" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testNoSideEffectAnnotation15" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testNoSideEffectAnnotation16" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.016"/>
+  <testcase name="testUnanalyzableObjectDefineProperties" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testInherits1" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testInherits2" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testInherits3" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testInherits4" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testInherits5" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testDo" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testFunctions1" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testFunctions2" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testSetterInDoWhilePredicate" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testNestedAssign1" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testNestedAssign2" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testNestedAssign3" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testNestedAssign4" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testNestedAssign5" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testNestedAssign6" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testNestedAssign7" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testNestedAssign8" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testEs6ClassExtendsQualifiedName1" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testEs6ClassExtendsQualifiedName2" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testDoNotChangeLocalScopeReferencedInstanceOf" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testAssignWithHook2a" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testVarReferencedInClassDefinedInObjectLit1" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testVarReferencedInClassDefinedInObjectLit2" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testPrototypePropertySetInLocalScope1" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testPrototypePropertySetInLocalScope2" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testPrototypePropertySetInLocalScope3" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testPrototypePropertySetInLocalScope4" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testPrototypePropertySetInLocalScope5" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testPrototypePropertySetInLocalScope6" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testPrototypePropertySetInLocalScope7" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testArrayExt" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testAssignmentToUnknownPrototype" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testObjectDefinePropertiesOnConstructorThatEscapes" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.005"/>
+  <testcase name="testDoNotChangeLocalScopeReferencedLocalScopedInstanceOf2" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testNoRemoveAlias0" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testNoRemoveAlias1" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testNoRemoveAlias2" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testNoRemoveAlias3" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testGenerators" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.005"/>
+  <testcase name="testShortCircuit2" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testShortCircuit3" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testShortCircuit4" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testShortCircuit6" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testShortCircuit7" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testShortCircuit8" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testRemovePrototypeAliases" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testUnintendedUseOfInheritsInLocalScope1" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testUnintendedUseOfInheritsInLocalScope2" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testUnintendedUseOfInheritsInLocalScope3" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testUnintendedUseOfInheritsInLocalScope4" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testEs6ClassExtends" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.005"/>
+  <testcase name="testSingletonGetter1" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testSingletonGetter2" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testSingletonGetter3" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testRemoveRecursiveFunction2a" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testPropertyDefinedInGlobalScope" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testNoRemoveAliasOfExternal0" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testNoRemoveAliasOfExternal1" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testNoRemoveAliasOfExternal2" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testObjectDefineSetters" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.005"/>
+  <testcase name="testDoNotChangeReferencedInstanceOf" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testArrayDestructuring" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.013"/>
+  <testcase name="testRemovePrototypeDefinitionsInGlobalScope1" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testRemovePrototypeDefinitionsInGlobalScope2" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testAssignmentWithComplexLhs" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testNestedAssign15" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testNestedAssigns1" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testNestedAssigns2" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testDontRemoveFunctionOnNamespaceThatEscapes" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testNonAnalyzableObjectDefinePropertiesCall" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testRemoveNamedFunction" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testAssignmentWithComplexLhs2" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testAssignmentWithComplexLhs3" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.005"/>
+  <testcase name="testAssignmentWithComplexLhs4" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testRemoveInstanceOfWithReferencedMethod" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testRefChain12" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testRefChain14" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testRefChain16" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testRefChain17" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testRefChain18" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testRefChain19" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testRefChain21" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testRefChain22" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testRefChain23" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testNoRemoveWindowPropertyAlias4a" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testNoRemoveWindowPropertyAlias5a" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testNoRemoveWindowPropertyAlias6a" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testNoRemoveWindowPropertyAlias7a" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testRemoveLabeledStatement" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testReferredToByWindow" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testSetterInWhilePredicate" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testComplexNestedAssigns1" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testComplexNestedAssigns2" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testComplexNestedAssigns3" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testComplexNestedAssigns4" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testAssignmentToThisPrototype" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testObjectDefinePropertiesOnNamespace1" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.005"/>
+  <testcase name="testObjectDefinePropertiesOnNamespace2" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.005"/>
+  <testcase name="testObjectDefinePropertiesOnNamespace3" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.006"/>
+  <testcase name="testObjectDefinePropertiesOnNamespace4" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testObjectDefinePropertiesOnNamespace5" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testRemoveLetInBlock1" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.005"/>
+  <testcase name="testRemoveLetInBlock2" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.004"/>
+  <testcase name="testBug30868041" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testPreservePropertyMutationsToAlias1" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testPreservePropertyMutationsToAlias2" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testPreservePropertyMutationsToAlias3" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testPreservePropertyMutationsToAlias4" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testPreservePropertyMutationsToAlias5" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testPreservePropertyMutationsToAlias6" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testPreservePropertyMutationsToAlias7" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testPreservePropertyMutationsToAlias8" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testPreservePropertyMutationsToAlias9" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testNoRemovePrototypeDefinitionsOutsideGlobalScope1" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testNoRemovePrototypeDefinitionsOutsideGlobalScope2" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testNoRemovePrototypeDefinitionsOutsideGlobalScope4" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testNoRemovePrototypeDefinitionsOutsideGlobalScope5" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testIssue838a" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testIssue838b" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testIssue874a" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testIssue874b" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testIssue874c" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testIssue874d" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testIssue874e" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testDoNotChangeReferencedLocalScopedInstanceOf" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testNoRemoveWindowPropertyAlias1" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testNoRemoveWindowPropertyAlias2" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testNoRemoveWindowPropertyAlias3" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testNoRemoveWindowPropertyAlias4" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testNoRemoveWindowPropertyAlias5" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testNoRemoveWindowPropertyAlias6" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testNoRemoveWindowPropertyAlias7" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testSetCreatingReference" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testTemplateLit" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.009"/>
+  <testcase name="testRemoveLetDeclaration1" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testRemoveLetDeclaration2" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testRemoveLetDeclaration3" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testRemoveLetDeclaration4" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testRemoveLetDeclaration5" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testRemoveLetDeclaration6" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testRemoveLetDeclaration7" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testRemoveLetDeclaration8" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testRemoveLetDeclaration9" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testDefaultingAssignmentWithAssignedProperty" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testEs6Class" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.031"/>
+  <testcase name="testConditionallyDefinedFunction1" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testConditionallyDefinedFunction2" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testConditionallyDefinedFunction3" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testExtern" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testUnhandledTopNode" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testAssignWithCall2" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testAssignWithHook1" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testAssignWithHook2" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testAssignWithHook3" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testAssignWithHook4" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testAssignWithHook5" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testAssignWithHook6" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testAssignWithHook7" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testDoNotChangeInstanceOfGetElem" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testIfElse" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testDoNotChangeInstanceOfGetprop" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testAssignWithOr1" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testAssignWithOr2" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testMixin1" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testMixin2" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testMixin3" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testMixin4" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testMixin5" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testMixin6" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testMixin7" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testGetElemOnThis" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.005"/>
+  <testcase name="testComplexAssigns" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testOtherGlobal" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testRemoveVarDeclaration1" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testRemoveVarDeclaration2" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testRemoveVarDeclaration3" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testRemoveVarDeclaration4" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testRemoveVarDeclaration5" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testRemoveVarDeclaration6" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testRemoveVarDeclaration7" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testRemoveVarDeclaration8" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testNoRemoveThrowReference1" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testNoRemoveThrowReference2" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testSpread" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testRemoveFunction1" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testRemoveFunction2" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testRemoveFunction3" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testRemoveLabeledStatement3" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testRemoveLabeledStatement4" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testObjectDefineSetters_global" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testBug6575051" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testSetterInForStruct1" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testSetterInForStruct2" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testSetterInForStruct3" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testSetterInForStruct4" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testSetterInForStruct5" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testSetterInForStruct6" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testSetterInForStruct7" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testSetterInForStruct8" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testSetterInForStruct9" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testDoNotChangeLocalScopeReferencedLocalScopedInstanceOf" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testRhsReference1" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testRhsReference2" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testRhsReference3" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testRhsReference4" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testRhsReference5" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testObjectDefineProperty" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testAssignmentToExternPrototype" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testSetterInForIn1" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testSetterInForIn2" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testSetterInForIn3" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testSetterInForIn4" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testSetterInForIn5" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testSetterInForIn6" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testSetterInForOf1" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testSetterInForOf2" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testSetterInForOf3" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testSetterInForOf4" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testSetterInForOf5" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testSetterInForOf6" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+  <testcase name="testObjectDefineGetters" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.005"/>
+  <testcase name="testWeirdnessOnLeftSideOfPrototype" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.003"/>
+  <testcase name="testRemoveLocalScopedInstanceOfOnly" classname="com.google.javascript.jscomp.RemoveUnusedCodeNameAnalyzerTest" time="0.002"/>
+</testsuite>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.google.javascript.jscomp.PeepholeMinimizeConditionsTest" time="1.859" tests="64" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
+    <property name="java.vm.version" value="25.151-b12"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/wju/test-proj/closure-compiler"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/home/wju/test-proj/closure-compiler"/>
+    <property name="java.runtime.version" value="1.8.0_151-8u151-b12-0ubuntu0.16.04.2-b12"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Linux"/>
+    <property name="net.sourceforge.cobertura.datafile" value="/home/wju/test-proj/closure-compiler/target/cobertura/cobertura.ser"/>
+    <property name="classworlds.conf" value="/usr/share/maven/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="4.4.0-109-generic"/>
+    <property name="user.home" value="/home/wju"/>
+    <property name="user.timezone" value="America/Los_Angeles"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="wju"/>
+    <property name="java.class.path" value="/usr/share/maven/boot/plexus-classworlds-2.x.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/usr/lib/jvm/java-8-openjdk-amd64/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher cobertura:cobertura"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_151"/>
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/usr/share/maven"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="project.build.outputDirectory" value="/home/wju/test-proj/closure-compiler/target/generated-classes/cobertura"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="testMinimizeForCondition" classname="com.google.javascript.jscomp.PeepholeMinimizeConditionsTest" time="0.052"/>
+  <testcase name="testMinimizeCondition_example1" classname="com.google.javascript.jscomp.PeepholeMinimizeConditionsTest" time="0.004"/>
+  <testcase name="testFoldLogicalOpStringCompare" classname="com.google.javascript.jscomp.PeepholeMinimizeConditionsTest" time="0.004"/>
+  <testcase name="testAndParenthesesCount" classname="com.google.javascript.jscomp.PeepholeMinimizeConditionsTest" time="0.013"/>
+  <testcase name="testCoercionSubstitution_expression" classname="com.google.javascript.jscomp.PeepholeMinimizeConditionsTest" time="0.027"/>
+  <testcase name="testCoercionSubstitution_allType" classname="com.google.javascript.jscomp.PeepholeMinimizeConditionsTest" time="0.028"/>
+  <testcase name="testSubsituteBreakForThrow" classname="com.google.javascript.jscomp.PeepholeMinimizeConditionsTest" time="0.113"/>
+  <testcase name="testObjectLiteral" classname="com.google.javascript.jscomp.PeepholeMinimizeConditionsTest" time="0.017"/>
+  <testcase name="testCombineIfs1" classname="com.google.javascript.jscomp.PeepholeMinimizeConditionsTest" time="0.009"/>
+  <testcase name="testCombineIfs2" classname="com.google.javascript.jscomp.PeepholeMinimizeConditionsTest" time="0.012"/>
+  <testcase name="testCombineIfs3" classname="com.google.javascript.jscomp.PeepholeMinimizeConditionsTest" time="0.005"/>
+  <testcase name="testFoldConditionalVarDeclaration" classname="com.google.javascript.jscomp.PeepholeMinimizeConditionsTest" time="0.025"/>
+  <testcase name="testMinimizeAndOr1" classname="com.google.javascript.jscomp.PeepholeMinimizeConditionsTest" time="0.005"/>
+  <testcase name="testFoldNot" classname="com.google.javascript.jscomp.PeepholeMinimizeConditionsTest" time="0.046"/>
+  <testcase name="testNestedIfCombine" classname="com.google.javascript.jscomp.PeepholeMinimizeConditionsTest" time="0.022"/>
+  <testcase name="testRemoveDuplicateThrow" classname="com.google.javascript.jscomp.PeepholeMinimizeConditionsTest" time="0.048"/>
+  <testcase name="testCoercionSubstitution_nonNumberVsZero" classname="com.google.javascript.jscomp.PeepholeMinimizeConditionsTest" time="0.039"/>
+  <testcase name="testCoercionSubstitution_hook" classname="com.google.javascript.jscomp.PeepholeMinimizeConditionsTest" time="0.024"/>
+  <testcase name="testNoSwapWithDanglingElse" classname="com.google.javascript.jscomp.PeepholeMinimizeConditionsTest" time="0.009"/>
+  <testcase name="testFoldReturns" classname="com.google.javascript.jscomp.PeepholeMinimizeConditionsTest" time="0.045"/>
+  <testcase name="testFoldLoopBreakEarly" classname="com.google.javascript.jscomp.PeepholeMinimizeConditionsTest" time="0.032"/>
+  <testcase name="testDontRemoveDuplicateStatementsWithoutNormalization" classname="com.google.javascript.jscomp.PeepholeMinimizeConditionsTest" time="0.005"/>
+  <testcase name="testMinimizeDemorgan11" classname="com.google.javascript.jscomp.PeepholeMinimizeConditionsTest" time="0.004"/>
+  <testcase name="testMinimizeDemorgan21" classname="com.google.javascript.jscomp.PeepholeMinimizeConditionsTest" time="0.005"/>
+  <testcase name="testMinimizeDemorgan2b" classname="com.google.javascript.jscomp.PeepholeMinimizeConditionsTest" time="0.004"/>
+  <testcase name="testMinimizeDemorganRemoveLeadingNot" classname="com.google.javascript.jscomp.PeepholeMinimizeConditionsTest" time="0.013"/>
+  <testcase name="testRemoveDuplicateReturn" classname="com.google.javascript.jscomp.PeepholeMinimizeConditionsTest" time="0.038"/>
+  <testcase name="testRemoveElseCause1" classname="com.google.javascript.jscomp.PeepholeMinimizeConditionsTest" time="0.004"/>
+  <testcase name="testRemoveElseCause2" classname="com.google.javascript.jscomp.PeepholeMinimizeConditionsTest" time="0.012"/>
+  <testcase name="testRemoveElseCause3" classname="com.google.javascript.jscomp.PeepholeMinimizeConditionsTest" time="0.013"/>
+  <testcase name="testRemoveElseCause4" classname="com.google.javascript.jscomp.PeepholeMinimizeConditionsTest" time="0.004"/>
+  <testcase name="testMinimizeDemorgan20a" classname="com.google.javascript.jscomp.PeepholeMinimizeConditionsTest" time="0.004"/>
+  <testcase name="testMinimizeDemorgan20b" classname="com.google.javascript.jscomp.PeepholeMinimizeConditionsTest" time="0.005"/>
+  <testcase name="testArrayLiteral" classname="com.google.javascript.jscomp.PeepholeMinimizeConditionsTest" time="0.016"/>
+  <testcase name="testMinimizeComma" classname="com.google.javascript.jscomp.PeepholeMinimizeConditionsTest" time="0.009"/>
+  <testcase name="testCoercionSubstitution_while" classname="com.google.javascript.jscomp.PeepholeMinimizeConditionsTest" time="0.023"/>
+  <testcase name="testCoercionSubstitution_booleanResult0" classname="com.google.javascript.jscomp.PeepholeMinimizeConditionsTest" time="0.012"/>
+  <testcase name="testCoercionSubstitution_booleanResult1" classname="com.google.javascript.jscomp.PeepholeMinimizeConditionsTest" time="0.108"/>
+  <testcase name="testCoercionSubstitution_primitivesVsNull" classname="com.google.javascript.jscomp.PeepholeMinimizeConditionsTest" time="0.037"/>
+  <testcase name="testFoldIfWithLowerOperatorsInside" classname="com.google.javascript.jscomp.PeepholeMinimizeConditionsTest" time="0.014"/>
+  <testcase name="testCoercionSubstitution_boxedPrimitives" classname="com.google.javascript.jscomp.PeepholeMinimizeConditionsTest" time="0.055"/>
+  <testcase name="testCoercionSubstitution_unknownType" classname="com.google.javascript.jscomp.PeepholeMinimizeConditionsTest" time="0.024"/>
+  <testcase name="testFoldAssignments" classname="com.google.javascript.jscomp.PeepholeMinimizeConditionsTest" time="0.039"/>
+  <testcase name="testMinimizeHook" classname="com.google.javascript.jscomp.PeepholeMinimizeConditionsTest" time="0.025"/>
+  <testcase name="testFoldLoopBreakLate" classname="com.google.javascript.jscomp.PeepholeMinimizeConditionsTest" time="0.039"/>
+  <testcase name="testPreserveIf" classname="com.google.javascript.jscomp.PeepholeMinimizeConditionsTest" time="0.004"/>
+  <testcase name="testRemoveElseCause" classname="com.google.javascript.jscomp.PeepholeMinimizeConditionsTest" time="0.005"/>
+  <testcase name="testMinimizeExprCondition" classname="com.google.javascript.jscomp.PeepholeMinimizeConditionsTest" time="0.033"/>
+  <testcase name="testMinimizeDemorgan1" classname="com.google.javascript.jscomp.PeepholeMinimizeConditionsTest" time="0.004"/>
+  <testcase name="testMinimizeDemorgan2" classname="com.google.javascript.jscomp.PeepholeMinimizeConditionsTest" time="0.005"/>
+  <testcase name="testMinimizeDemorgan3" classname="com.google.javascript.jscomp.PeepholeMinimizeConditionsTest" time="0.004"/>
+  <testcase name="testMinimizeDemorgan5" classname="com.google.javascript.jscomp.PeepholeMinimizeConditionsTest" time="0.004"/>
+  <testcase name="testMinimizeWhileCondition" classname="com.google.javascript.jscomp.PeepholeMinimizeConditionsTest" time="0.064"/>
+  <testcase name="testIssue291" classname="com.google.javascript.jscomp.PeepholeMinimizeConditionsTest" time="0.02"/>
+  <testcase name="testIssue925" classname="com.google.javascript.jscomp.PeepholeMinimizeConditionsTest" time="0.016"/>
+  <testcase name="testRemoveDuplicateStatements" classname="com.google.javascript.jscomp.PeepholeMinimizeConditionsTest" time="0.04"/>
+  <testcase name="testCoercionSubstitution_if" classname="com.google.javascript.jscomp.PeepholeMinimizeConditionsTest" time="0.229"/>
+  <testcase name="testSubsituteReturn" classname="com.google.javascript.jscomp.PeepholeMinimizeConditionsTest" time="0.082"/>
+  <testcase name="testFoldOneChildBlocks" classname="com.google.javascript.jscomp.PeepholeMinimizeConditionsTest" time="0.139"/>
+  <testcase name="testNotCond" classname="com.google.javascript.jscomp.PeepholeMinimizeConditionsTest" time="0.02"/>
+  <testcase name="testCoercionSubstitution_disabled" classname="com.google.javascript.jscomp.PeepholeMinimizeConditionsTest" time="0.046"/>
+  <testcase name="testCoercionSubstitution_boxedNumberVsZero" classname="com.google.javascript.jscomp.PeepholeMinimizeConditionsTest" time="0.011"/>
+  <testcase name="testCoercionSubstitution_not" classname="com.google.javascript.jscomp.PeepholeMinimizeConditionsTest" time="0.024"/>
+  <testcase name="testMinimizeExprResult" classname="com.google.javascript.jscomp.PeepholeMinimizeConditionsTest" time="0.018"/>
+</testsuite>

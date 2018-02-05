@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.google.javascript.jscomp.FunctionInjectorTest" time="0.071" tests="140" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
+    <property name="java.vm.version" value="25.151-b12"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/wju/test-proj/closure-compiler"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/home/wju/test-proj/closure-compiler"/>
+    <property name="java.runtime.version" value="1.8.0_151-8u151-b12-0ubuntu0.16.04.2-b12"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Linux"/>
+    <property name="net.sourceforge.cobertura.datafile" value="/home/wju/test-proj/closure-compiler/target/cobertura/cobertura.ser"/>
+    <property name="classworlds.conf" value="/usr/share/maven/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="4.4.0-109-generic"/>
+    <property name="user.home" value="/home/wju"/>
+    <property name="user.timezone" value="America/Los_Angeles"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="wju"/>
+    <property name="java.class.path" value="/usr/share/maven/boot/plexus-classworlds-2.x.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/usr/lib/jvm/java-8-openjdk-amd64/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher cobertura:cobertura"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_151"/>
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/usr/share/maven"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="project.build.outputDirectory" value="/home/wju/test-proj/closure-compiler/target/generated-classes/cobertura"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="testInline19b" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0.002"/>
+  <testcase name="testCanInlineReferenceToFunctionInExpression1" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0.001"/>
+  <testcase name="testCanInlineReferenceToFunctionInExpression2" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0"/>
+  <testcase name="testCanInlineReferenceToFunctionInExpression3" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0"/>
+  <testcase name="testCanInlineReferenceToFunctionInExpression4" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0.001"/>
+  <testcase name="testCanInlineReferenceToFunctionInExpression5" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0"/>
+  <testcase name="testCanInlineReferenceToFunctionInExpression6" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0"/>
+  <testcase name="testCanInlineReferenceToFunctionInExpression7" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0"/>
+  <testcase name="testCanInlineReferenceToFunctionInExpression8" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0.001"/>
+  <testcase name="testCanInlineReferenceToFunctionInExpression9" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0"/>
+  <testcase name="testInlineIntoLoop" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0.003"/>
+  <testcase name="testInlineReferenceInExpression11" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0.001"/>
+  <testcase name="testInlineReferenceInExpression12" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0.001"/>
+  <testcase name="testInlineReferenceInExpression13" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0.001"/>
+  <testcase name="testInlineReferenceInExpression14" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0.001"/>
+  <testcase name="testInlineReferenceInExpression15" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0.001"/>
+  <testcase name="testInlineReferenceInExpression16" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0.001"/>
+  <testcase name="testInlineReferenceInExpression17" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0.001"/>
+  <testcase name="testCanInlineReferenceToFunction1" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0"/>
+  <testcase name="testCanInlineReferenceToFunction2" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0"/>
+  <testcase name="testCanInlineReferenceToFunction3" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0.001"/>
+  <testcase name="testCanInlineReferenceToFunction4" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0"/>
+  <testcase name="testCanInlineReferenceToFunction5" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0"/>
+  <testcase name="testCanInlineReferenceToFunction6" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0"/>
+  <testcase name="testCanInlineReferenceToFunction7" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0.001"/>
+  <testcase name="testCanInlineReferenceToFunction8" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0"/>
+  <testcase name="testCanInlineReferenceToFunction9" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0"/>
+  <testcase name="testInlineAssignmentToConstant" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0.001"/>
+  <testcase name="testCanInlineReferenceToFunction10" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0"/>
+  <testcase name="testCanInlineReferenceToFunction11" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0"/>
+  <testcase name="testCanInlineReferenceToFunction12" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0.001"/>
+  <testcase name="testCanInlineReferenceToFunction14" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0"/>
+  <testcase name="testCanInlineReferenceToFunction15" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0"/>
+  <testcase name="testCanInlineReferenceToFunction16" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0"/>
+  <testcase name="testCanInlineReferenceToFunction17" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0.001"/>
+  <testcase name="testCanInlineReferenceToFunction18" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0"/>
+  <testcase name="testCanInlineReferenceToFunction19" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0"/>
+  <testcase name="testCanInlineReferenceToFunction20" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0"/>
+  <testcase name="testCanInlineReferenceToFunction21" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0.001"/>
+  <testcase name="testCanInlineReferenceToFunction22" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0"/>
+  <testcase name="testCanInlineReferenceToFunction23" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0"/>
+  <testcase name="testCanInlineReferenceToFunction24" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0"/>
+  <testcase name="testCanInlineReferenceToFunction25" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0.001"/>
+  <testcase name="testCanInlineReferenceToFunction26" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0"/>
+  <testcase name="testCanInlineReferenceToFunction27" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0"/>
+  <testcase name="testCanInlineReferenceToFunction28" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0"/>
+  <testcase name="testCanInlineReferenceToFunction29" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0"/>
+  <testcase name="testCanInlineReferenceToFunction30" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0.001"/>
+  <testcase name="testCanInlineReferenceToFunction31" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0"/>
+  <testcase name="testCanInlineReferenceToFunction32" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0"/>
+  <testcase name="testCanInlineReferenceToFunction33" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0"/>
+  <testcase name="testCanInlineReferenceToFunction34" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0.001"/>
+  <testcase name="testCanInlineReferenceToFunction35" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0"/>
+  <testcase name="testCanInlineReferenceToFunction36" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0"/>
+  <testcase name="testCanInlineReferenceToFunction37" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0"/>
+  <testcase name="testCanInlineReferenceToFunction38" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0.001"/>
+  <testcase name="testCanInlineReferenceToFunction39" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0"/>
+  <testcase name="testCanInlineReferenceToFunction40" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0.001"/>
+  <testcase name="testCanInlineReferenceToFunction41" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0"/>
+  <testcase name="testCanInlineReferenceToFunction42" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0"/>
+  <testcase name="testCanInlineReferenceToFunction43" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0"/>
+  <testcase name="testCanInlineReferenceToFunction44" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0.001"/>
+  <testcase name="testCanInlineReferenceToFunction45" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0"/>
+  <testcase name="testCanInlineReferenceToFunction46" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0"/>
+  <testcase name="testCanInlineReferenceToFunction47" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0.001"/>
+  <testcase name="testCanInlineReferenceToFunction48" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0"/>
+  <testcase name="testCanInlineReferenceToFunction49" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0"/>
+  <testcase name="testCanInlineReferenceToFunction50" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0"/>
+  <testcase name="testCanInlineReferenceToFunction51" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0.001"/>
+  <testcase name="testCanInlineReferenceToFunction52" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0"/>
+  <testcase name="testInlineFunctionWithInnerArrowFunction1" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0.001"/>
+  <testcase name="testCanInlineReferenceToFunctionInLoop1" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0"/>
+  <testcase name="testCanInlineReferenceToFunctionInLoop2" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0"/>
+  <testcase name="testIssue1101a" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0"/>
+  <testcase name="testIssue1101b" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0.001"/>
+  <testcase name="testCanInlineFunctionWithInnerArrowFunction1" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0"/>
+  <testcase name="testCanInlineFunctionWithInnerArrowFunction2" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0"/>
+  <testcase name="testIsSimpleFunction1" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0"/>
+  <testcase name="testIsSimpleFunction2" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0.001"/>
+  <testcase name="testIsSimpleFunction3" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0"/>
+  <testcase name="testIsSimpleFunction4" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0"/>
+  <testcase name="testIsSimpleFunction5" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0"/>
+  <testcase name="testIsSimpleFunction6" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0.001"/>
+  <testcase name="testIsSimpleFunction7" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0"/>
+  <testcase name="testInlineReferenceInExpression1" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0.001"/>
+  <testcase name="testInlineReferenceInExpression2" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0"/>
+  <testcase name="testInlineReferenceInExpression3" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0.001"/>
+  <testcase name="testInlineReferenceInExpression4" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0.001"/>
+  <testcase name="testInlineReferenceInExpression5" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0.001"/>
+  <testcase name="testInlineReferenceInExpression6" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0.001"/>
+  <testcase name="testInlineReferenceInExpression7" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0.001"/>
+  <testcase name="testInlineReferenceInExpression8" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0.001"/>
+  <testcase name="testInlineReferenceInExpression9" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0.001"/>
+  <testcase name="testCanInlineReferenceToFunctionInExpression10a" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0"/>
+  <testcase name="testCanInlineReferenceToFunctionInExpression14a" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0"/>
+  <testcase name="testCanInlineReferenceToFunctionInExpression19a" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0"/>
+  <testcase name="testCanInlineReferenceToFunctionInExpression21a" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0.001"/>
+  <testcase name="testCanInlineReferenceToFunctionInExpression22a" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0"/>
+  <testcase name="testCanInlineReferenceToFunctionInExpression23a" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0"/>
+  <testcase name="testInline10" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0.001"/>
+  <testcase name="testInline11" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0.001"/>
+  <testcase name="testInline12" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0.001"/>
+  <testcase name="testInline13" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0"/>
+  <testcase name="testInline14" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0.001"/>
+  <testcase name="testInline15" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0.001"/>
+  <testcase name="testInline16" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0.001"/>
+  <testcase name="testInline17" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0.001"/>
+  <testcase name="testInline18" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0.001"/>
+  <testcase name="testInline19" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0.001"/>
+  <testcase name="testInline20" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0"/>
+  <testcase name="testInline21" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0.001"/>
+  <testcase name="testCanInlineReferenceToFunctionInExpression10" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0"/>
+  <testcase name="testCanInlineReferenceToFunctionInExpression12" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0.001"/>
+  <testcase name="testCanInlineReferenceToFunctionInExpression13" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0"/>
+  <testcase name="testCanInlineReferenceToFunctionInExpression14" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0"/>
+  <testcase name="testCanInlineReferenceToFunctionInExpression18" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0.001"/>
+  <testcase name="testCanInlineReferenceToFunctionInExpression19" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0"/>
+  <testcase name="testCanInlineReferenceToFunctionInExpression21" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0"/>
+  <testcase name="testCanInlineReferenceToFunctionInExpression22" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0"/>
+  <testcase name="testCanInlineReferenceToFunctionInExpression23" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0.001"/>
+  <testcase name="testCanInlineReferenceToFunctionInExpression5a" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0"/>
+  <testcase name="testCanInlineReferenceToFunctionInExpression7a" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0"/>
+  <testcase name="testInline1" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0.001"/>
+  <testcase name="testInline2" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0"/>
+  <testcase name="testInline3" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0.001"/>
+  <testcase name="testInline4" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0.001"/>
+  <testcase name="testInline5" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0"/>
+  <testcase name="testInline6" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0.001"/>
+  <testcase name="testInline7" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0.001"/>
+  <testcase name="testInline8" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0.001"/>
+  <testcase name="testInline9" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0"/>
+  <testcase name="testBug1897706" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0.003"/>
+  <testcase name="testInlineFunctionWithInnerFunction1" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0"/>
+  <testcase name="testInlineFunctionWithInnerFunction2" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0.001"/>
+  <testcase name="testInlineFunctionWithInnerFunction3" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0.001"/>
+  <testcase name="testInlineFunctionWithInnerFunction4" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0.001"/>
+  <testcase name="testInlineFunctionWithInnerFunction5" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0.001"/>
+  <testcase name="testCanInlineReferenceToFunction12b" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0"/>
+  <testcase name="testCanInlineReferenceToFunction18b" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0"/>
+  <testcase name="testInlineWithinCalls1" classname="com.google.javascript.jscomp.FunctionInjectorTest" time="0.001"/>
+</testsuite>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.google.javascript.jscomp.VarCheckTest" time="0.571" tests="95" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
+    <property name="java.vm.version" value="25.151-b12"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/wju/test-proj/closure-compiler"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/home/wju/test-proj/closure-compiler"/>
+    <property name="java.runtime.version" value="1.8.0_151-8u151-b12-0ubuntu0.16.04.2-b12"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Linux"/>
+    <property name="net.sourceforge.cobertura.datafile" value="/home/wju/test-proj/closure-compiler/target/cobertura/cobertura.ser"/>
+    <property name="classworlds.conf" value="/usr/share/maven/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="4.4.0-109-generic"/>
+    <property name="user.home" value="/home/wju"/>
+    <property name="user.timezone" value="America/Los_Angeles"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="wju"/>
+    <property name="java.class.path" value="/usr/share/maven/boot/plexus-classworlds-2.x.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/usr/lib/jvm/java-8-openjdk-amd64/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher cobertura:cobertura"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_151"/>
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/usr/share/maven"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="project.build.outputDirectory" value="/home/wju/test-proj/closure-compiler/target/generated-classes/cobertura"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="testExportAsAlias" classname="com.google.javascript.jscomp.VarCheckTest" time="0.003"/>
+  <testcase name="testFunctionRedeclared1" classname="com.google.javascript.jscomp.VarCheckTest" time="0.001"/>
+  <testcase name="testFunctionRedeclared2" classname="com.google.javascript.jscomp.VarCheckTest" time="0.001"/>
+  <testcase name="testFunctionRedeclared3" classname="com.google.javascript.jscomp.VarCheckTest" time="0"/>
+  <testcase name="testRecursiveFunction" classname="com.google.javascript.jscomp.VarCheckTest" time="0.001"/>
+  <testcase name="testMultiplyDeclaredVars1" classname="com.google.javascript.jscomp.VarCheckTest" time="0"/>
+  <testcase name="testMultiplyDeclaredVars2" classname="com.google.javascript.jscomp.VarCheckTest" time="0"/>
+  <testcase name="testMultiplyDeclaredVars3" classname="com.google.javascript.jscomp.VarCheckTest" time="0.001"/>
+  <testcase name="testMultiplyDeclaredVars4" classname="com.google.javascript.jscomp.VarCheckTest" time="0.001"/>
+  <testcase name="testRecursiveFunction2" classname="com.google.javascript.jscomp.VarCheckTest" time="0"/>
+  <testcase name="testDuplicateNamespaceInExterns" classname="com.google.javascript.jscomp.VarCheckTest" time="0.001"/>
+  <testcase name="testLocalVar" classname="com.google.javascript.jscomp.VarCheckTest" time="0.001"/>
+  <testcase name="testParameter" classname="com.google.javascript.jscomp.VarCheckTest" time="0"/>
+  <testcase name="testLetDeclarationInExterns" classname="com.google.javascript.jscomp.VarCheckTest" time="0.001"/>
+  <testcase name="testForwardVarReferenceInLocalScope1" classname="com.google.javascript.jscomp.VarCheckTest" time="0.001"/>
+  <testcase name="testForwardVarReferenceInLocalScope2" classname="com.google.javascript.jscomp.VarCheckTest" time="0.001"/>
+  <testcase name="testShorthandObjLit" classname="com.google.javascript.jscomp.VarCheckTest" time="0.001"/>
+  <testcase name="testVarAssignmentInExterns" classname="com.google.javascript.jscomp.VarCheckTest" time="0.001"/>
+  <testcase name="testNoUndeclaredVarWhenUsingClosurePass" classname="com.google.javascript.jscomp.VarCheckTest" time="0"/>
+  <testcase name="testNamespaceDeclarationInExterns" classname="com.google.javascript.jscomp.VarCheckTest" time="0.001"/>
+  <testcase name="testSuppressionWithInlineJsDoc" classname="com.google.javascript.jscomp.VarCheckTest" time="0.001"/>
+  <testcase name="testMissingModuleDependencySkipNonStrictNotPromoted" classname="com.google.javascript.jscomp.VarCheckTest" time="0.001"/>
+  <testcase name="testVarInWithBlock" classname="com.google.javascript.jscomp.VarCheckTest" time="0"/>
+  <testcase name="testBreak" classname="com.google.javascript.jscomp.VarCheckTest" time="0.001"/>
+  <testcase name="testParam" classname="com.google.javascript.jscomp.VarCheckTest" time="0.007"/>
+  <testcase name="testReferencedLetDefined1_withES6Modules" classname="com.google.javascript.jscomp.VarCheckTest" time="0.001"/>
+  <testcase name="testConstDeclarationInExterns" classname="com.google.javascript.jscomp.VarCheckTest" time="0.001"/>
+  <testcase name="testRedeclaration1" classname="com.google.javascript.jscomp.VarCheckTest" time="0"/>
+  <testcase name="testRedeclaration2" classname="com.google.javascript.jscomp.VarCheckTest" time="0.001"/>
+  <testcase name="testRedeclaration3" classname="com.google.javascript.jscomp.VarCheckTest" time="0"/>
+  <testcase name="testVariableInNormalCodeUsedInExterns1" classname="com.google.javascript.jscomp.VarCheckTest" time="0.001"/>
+  <testcase name="testVariableInNormalCodeUsedInExterns2" classname="com.google.javascript.jscomp.VarCheckTest" time="0"/>
+  <testcase name="testVariableInNormalCodeUsedInExterns3" classname="com.google.javascript.jscomp.VarCheckTest" time="0.001"/>
+  <testcase name="testVariableInNormalCodeUsedInExterns4" classname="com.google.javascript.jscomp.VarCheckTest" time="0"/>
+  <testcase name="testNamedClass" classname="com.google.javascript.jscomp.VarCheckTest" time="0.003"/>
+  <testcase name="testDuplicateBlockScopedDeclarationInSwitch" classname="com.google.javascript.jscomp.VarCheckTest" time="0"/>
+  <testcase name="testValidFunctionExpr" classname="com.google.javascript.jscomp.VarCheckTest" time="0.001"/>
+  <testcase name="testStarStrictModuleDependencyCheck" classname="com.google.javascript.jscomp.VarCheckTest" time="0.001"/>
+  <testcase name="testFunctionDeclarationInExterns" classname="com.google.javascript.jscomp.VarCheckTest" time="0.001"/>
+  <testcase name="testNewInExterns" classname="com.google.javascript.jscomp.VarCheckTest" time="0.001"/>
+  <testcase name="testVarReferenceInExterns_withEs6Modules" classname="com.google.javascript.jscomp.VarCheckTest" time="0"/>
+  <testcase name="testViolatedModuleDependencyDefault" classname="com.google.javascript.jscomp.VarCheckTest" time="0.001"/>
+  <testcase name="testImportAsAlias" classname="com.google.javascript.jscomp.VarCheckTest" time="0.001"/>
+  <testcase name="testMultiplyDeclaredConsts_withES6Modules" classname="com.google.javascript.jscomp.VarCheckTest" time="0.001"/>
+  <testcase name="testDependentStrictModuleDependencyCheck" classname="com.google.javascript.jscomp.VarCheckTest" time="0.001"/>
+  <testcase name="testDestructuringInExterns" classname="com.google.javascript.jscomp.VarCheckTest" time="0.003"/>
+  <testcase name="testMissingModuleDependencyDefault" classname="com.google.javascript.jscomp.VarCheckTest" time="0.001"/>
+  <testcase name="testLetConstRedeclareWithFunctions_withEs6Modules" classname="com.google.javascript.jscomp.VarCheckTest" time="0.001"/>
+  <testcase name="testPropReferenceInExterns1" classname="com.google.javascript.jscomp.VarCheckTest" time="0.001"/>
+  <testcase name="testPropReferenceInExterns2" classname="com.google.javascript.jscomp.VarCheckTest" time="0"/>
+  <testcase name="testPropReferenceInExterns3" classname="com.google.javascript.jscomp.VarCheckTest" time="0.002"/>
+  <testcase name="testPropReferenceInExterns4" classname="com.google.javascript.jscomp.VarCheckTest" time="0.001"/>
+  <testcase name="testPropReferenceInExterns5" classname="com.google.javascript.jscomp.VarCheckTest" time="0.001"/>
+  <testcase name="testMultiplyDeclaredLets" classname="com.google.javascript.jscomp.VarCheckTest" time="0"/>
+  <testcase name="testMissingModuleDependencySkipNonStrict" classname="com.google.javascript.jscomp.VarCheckTest" time="0.001"/>
+  <testcase name="testFunctionRedeclared_global" classname="com.google.javascript.jscomp.VarCheckTest" time="0.001"/>
+  <testcase name="testSimpleValidityCheck" classname="com.google.javascript.jscomp.VarCheckTest" time="0"/>
+  <testcase name="testContinue" classname="com.google.javascript.jscomp.VarCheckTest" time="0.001"/>
+  <testcase name="testLegalConstReferenceBetweenModules" classname="com.google.javascript.jscomp.VarCheckTest" time="0.001"/>
+  <testcase name="testTwoLocalVars" classname="com.google.javascript.jscomp.VarCheckTest" time="0.001"/>
+  <testcase name="testReferencedConstDefined2" classname="com.google.javascript.jscomp.VarCheckTest" time="0.001"/>
+  <testcase name="testReferencedLetNotDefined" classname="com.google.javascript.jscomp.VarCheckTest" time="0"/>
+  <testcase name="testAliasesInExterns" classname="com.google.javascript.jscomp.VarCheckTest" time="0.002"/>
+  <testcase name="testMultiplyDeclaredConsts" classname="com.google.javascript.jscomp.VarCheckTest" time="0.001"/>
+  <testcase name="testReferencedVarNotDefined" classname="com.google.javascript.jscomp.VarCheckTest" time="0"/>
+  <testcase name="testNoCreateVarsForLabels" classname="com.google.javascript.jscomp.VarCheckTest" time="0"/>
+  <testcase name="testImportedNameCollision" classname="com.google.javascript.jscomp.VarCheckTest" time="0.001"/>
+  <testcase name="testReferencedVarDefinedClass" classname="com.google.javascript.jscomp.VarCheckTest" time="0.002"/>
+  <testcase name="testDontAllowSuppressDupeOnLet" classname="com.google.javascript.jscomp.VarCheckTest" time="0"/>
+  <testcase name="testViolatedModuleDependencyNonStrictNotPromoted" classname="com.google.javascript.jscomp.VarCheckTest" time="0.001"/>
+  <testcase name="testReferencedLetNotDefined_withES6Modules" classname="com.google.javascript.jscomp.VarCheckTest" time="0.001"/>
+  <testcase name="testVarReferenceInExterns" classname="com.google.javascript.jscomp.VarCheckTest" time="0"/>
+  <testcase name="testInnerFunctionLocalVar" classname="com.google.javascript.jscomp.VarCheckTest" time="0.001"/>
+  <testcase name="testImportedNames" classname="com.google.javascript.jscomp.VarCheckTest" time="0.473"/>
+  <testcase name="testReferencedVarDefined1" classname="com.google.javascript.jscomp.VarCheckTest" time="0.001"/>
+  <testcase name="testReferencedVarDefined2" classname="com.google.javascript.jscomp.VarCheckTest" time="0.001"/>
+  <testcase name="testParamArrowFunction" classname="com.google.javascript.jscomp.VarCheckTest" time="0.002"/>
+  <testcase name="testReferencedVarsExternallyDefined" classname="com.google.javascript.jscomp.VarCheckTest" time="0.001"/>
+  <testcase name="testFunctionScopeArguments" classname="com.google.javascript.jscomp.VarCheckTest" time="0.003"/>
+  <testcase name="testLegalLetReferenceBetweenModules" classname="com.google.javascript.jscomp.VarCheckTest" time="0.002"/>
+  <testcase name="testFunctionDeclaredInBlock" classname="com.google.javascript.jscomp.VarCheckTest" time="0.004"/>
+  <testcase name="testVarDeclarationInExterns" classname="com.google.javascript.jscomp.VarCheckTest" time="0"/>
+  <testcase name="testVarReferenceInTypeSummary" classname="com.google.javascript.jscomp.VarCheckTest" time="0.001"/>
+  <testcase name="testImportStar" classname="com.google.javascript.jscomp.VarCheckTest" time="0.001"/>
+  <testcase name="testIndependentStrictModuleDependencyCheck" classname="com.google.javascript.jscomp.VarCheckTest" time="0.001"/>
+  <testcase name="testLegalVarReferenceBetweenModules" classname="com.google.javascript.jscomp.VarCheckTest" time="0.001"/>
+  <testcase name="testMissingModuleDependencyLetAndConst" classname="com.google.javascript.jscomp.VarCheckTest" time="0.002"/>
+  <testcase name="testSimple" classname="com.google.javascript.jscomp.VarCheckTest" time="0.001"/>
+  <testcase name="testViolatedModuleDependencyLetAndConst" classname="com.google.javascript.jscomp.VarCheckTest" time="0"/>
+  <testcase name="testMultiplyDeclareLetsInDifferentScope" classname="com.google.javascript.jscomp.VarCheckTest" time="0.002"/>
+  <testcase name="testViolatedModuleDependencySkipNonStrict" classname="com.google.javascript.jscomp.VarCheckTest" time="0.001"/>
+  <testcase name="testReferencedLetDefined1" classname="com.google.javascript.jscomp.VarCheckTest" time="0.001"/>
+  <testcase name="testReferencedLetDefined2" classname="com.google.javascript.jscomp.VarCheckTest" time="0.001"/>
+  <testcase name="testDuplicateVar" classname="com.google.javascript.jscomp.VarCheckTest" time="0"/>
+  <testcase name="testCallInExterns" classname="com.google.javascript.jscomp.VarCheckTest" time="0.001"/>
+</testsuite>
