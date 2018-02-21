@@ -1,0 +1,4642 @@
+<html>
+  <head>
+    <title>pycobertura report</title>
+    <meta charset="UTF-8">
+    <style>
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+html {
+  font-family: sans-serif; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block; /* 1 */
+  vertical-align: baseline; /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+
+[hidden],
+template {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+
+a {
+  background-color: transparent;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+
+pre {
+  overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit; /* 1 */
+  font: inherit; /* 2 */
+  margin: 0; /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+
+button {
+  overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button; /* 2 */
+  cursor: pointer; /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+input {
+  line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+
+input[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box; /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+
+legend {
+  border: 0; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+
+/**
+ * Remove most spacing between table cells.
+ */
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+/*
+* Skeleton V2.0.4
+* Copyright 2014, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 12/29/2014
+*/
+
+
+/* Table of contents
+––––––––––––––––––––––––––––––––––––––––––––––––––
+- Grid
+- Base Styles
+- Typography
+- Links
+- Buttons
+- Forms
+- Lists
+- Code
+- Tables
+- Spacing
+- Utilities
+- Clearing
+- Media Queries
+*/
+
+
+/* Grid
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box; }
+.column,
+.columns {
+  width: 100%;
+  float: left;
+  box-sizing: border-box; }
+
+/* For devices larger than 400px */
+@media (min-width: 400px) {
+  .container {
+    width: 85%;
+    padding: 0; }
+}
+
+/* For devices larger than 550px */
+@media (min-width: 550px) {
+  .container {
+    width: 80%; }
+  .column,
+  .columns {
+    margin-left: 4%; }
+  .column:first-child,
+  .columns:first-child {
+    margin-left: 0; }
+
+  .one.column,
+  .one.columns                    { width: 4.66666666667%; }
+  .two.columns                    { width: 13.3333333333%; }
+  .three.columns                  { width: 22%;            }
+  .four.columns                   { width: 30.6666666667%; }
+  .five.columns                   { width: 39.3333333333%; }
+  .six.columns                    { width: 48%;            }
+  .seven.columns                  { width: 56.6666666667%; }
+  .eight.columns                  { width: 65.3333333333%; }
+  .nine.columns                   { width: 74.0%;          }
+  .ten.columns                    { width: 82.6666666667%; }
+  .eleven.columns                 { width: 91.3333333333%; }
+  .twelve.columns                 { width: 100%; margin-left: 0; }
+
+  .one-third.column               { width: 30.6666666667%; }
+  .two-thirds.column              { width: 65.3333333333%; }
+
+  .one-half.column                { width: 48%; }
+
+  /* Offsets */
+  .offset-by-one.column,
+  .offset-by-one.columns          { margin-left: 8.66666666667%; }
+  .offset-by-two.column,
+  .offset-by-two.columns          { margin-left: 17.3333333333%; }
+  .offset-by-three.column,
+  .offset-by-three.columns        { margin-left: 26%;            }
+  .offset-by-four.column,
+  .offset-by-four.columns         { margin-left: 34.6666666667%; }
+  .offset-by-five.column,
+  .offset-by-five.columns         { margin-left: 43.3333333333%; }
+  .offset-by-six.column,
+  .offset-by-six.columns          { margin-left: 52%;            }
+  .offset-by-seven.column,
+  .offset-by-seven.columns        { margin-left: 60.6666666667%; }
+  .offset-by-eight.column,
+  .offset-by-eight.columns        { margin-left: 69.3333333333%; }
+  .offset-by-nine.column,
+  .offset-by-nine.columns         { margin-left: 78.0%;          }
+  .offset-by-ten.column,
+  .offset-by-ten.columns          { margin-left: 86.6666666667%; }
+  .offset-by-eleven.column,
+  .offset-by-eleven.columns       { margin-left: 95.3333333333%; }
+
+  .offset-by-one-third.column,
+  .offset-by-one-third.columns    { margin-left: 34.6666666667%; }
+  .offset-by-two-thirds.column,
+  .offset-by-two-thirds.columns   { margin-left: 69.3333333333%; }
+
+  .offset-by-one-half.column,
+  .offset-by-one-half.columns     { margin-left: 52%; }
+
+}
+
+
+/* Base Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* NOTE
+html is set to 62.5% so that all the REM measurements throughout Skeleton
+are based on 10px sizing. So basically 1.5rem = 15px :) */
+html {
+  font-size: 62.5%; }
+body {
+  font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
+  line-height: 1.6;
+  font-weight: 400;
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #222; }
+
+
+/* Typography
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  font-weight: 300; }
+h1 { font-size: 4.0rem; line-height: 1.2;  letter-spacing: -.1rem;}
+h2 { font-size: 3.6rem; line-height: 1.25; letter-spacing: -.1rem; }
+h3 { font-size: 3.0rem; line-height: 1.3;  letter-spacing: -.1rem; }
+h4 { font-size: 2.4rem; line-height: 1.35; letter-spacing: -.08rem; }
+h5 { font-size: 1.8rem; line-height: 1.5;  letter-spacing: -.05rem; }
+h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
+
+/* Larger than phablet */
+@media (min-width: 550px) {
+  h1 { font-size: 5.0rem; }
+  h2 { font-size: 4.2rem; }
+  h3 { font-size: 3.6rem; }
+  h4 { font-size: 3.0rem; }
+  h5 { font-size: 2.4rem; }
+  h6 { font-size: 1.5rem; }
+}
+
+p {
+  margin-top: 0; }
+
+
+/* Links
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+a {
+  color: #1EAEDB; }
+a:hover {
+  color: #0FA0CE; }
+
+
+/* Buttons
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  display: inline-block;
+  height: 38px;
+  padding: 0 30px;
+  color: #555;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+  cursor: pointer;
+  box-sizing: border-box; }
+.button:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+.button:focus,
+button:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="button"]:focus {
+  color: #333;
+  border-color: #888;
+  outline: 0; }
+.button.button-primary,
+button.button-primary,
+input[type="submit"].button-primary,
+input[type="reset"].button-primary,
+input[type="button"].button-primary {
+  color: #FFF;
+  background-color: #33C3F0;
+  border-color: #33C3F0; }
+.button.button-primary:hover,
+button.button-primary:hover,
+input[type="submit"].button-primary:hover,
+input[type="reset"].button-primary:hover,
+input[type="button"].button-primary:hover,
+.button.button-primary:focus,
+button.button-primary:focus,
+input[type="submit"].button-primary:focus,
+input[type="reset"].button-primary:focus,
+input[type="button"].button-primary:focus {
+  color: #FFF;
+  background-color: #1EAEDB;
+  border-color: #1EAEDB; }
+
+
+/* Forms
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea,
+select {
+  height: 38px;
+  padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
+  background-color: #fff;
+  border: 1px solid #D1D1D1;
+  border-radius: 4px;
+  box-shadow: none;
+  box-sizing: border-box; }
+/* Removes awkward default styles on some inputs for iOS */
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none; }
+textarea {
+  min-height: 65px;
+  padding-top: 6px;
+  padding-bottom: 6px; }
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+select:focus {
+  border: 1px solid #33C3F0;
+  outline: 0; }
+label,
+legend {
+  display: block;
+  margin-bottom: .5rem;
+  font-weight: 600; }
+fieldset {
+  padding: 0;
+  border-width: 0; }
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline; }
+label > .label-body {
+  display: inline-block;
+  margin-left: .5rem;
+  font-weight: normal; }
+
+
+/* Lists
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+ul {
+  list-style: circle inside; }
+ol {
+  list-style: decimal inside; }
+ol, ul {
+  padding-left: 0;
+  margin-top: 0; }
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+  margin: 1.5rem 0 1.5rem 3rem;
+  font-size: 90%; }
+li {
+  margin-bottom: 1rem; }
+
+
+/* Code
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+code {
+  padding: .2rem .5rem;
+  margin: 0 .2rem;
+  font-size: 90%;
+  white-space: nowrap;
+  background: #F1F1F1;
+  border: 1px solid #E1E1E1;
+  border-radius: 4px; }
+pre > code {
+  display: block;
+  padding: 1rem 1.5rem;
+  white-space: pre; }
+
+
+/* Tables
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+th,
+td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #E1E1E1; }
+th:first-child,
+td:first-child {
+  padding-left: 0; }
+th:last-child,
+td:last-child {
+  padding-right: 0; }
+
+
+/* Spacing
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+button,
+.button {
+  margin-bottom: 1rem; }
+input,
+textarea,
+select,
+fieldset {
+  margin-bottom: 1.5rem; }
+pre,
+blockquote,
+dl,
+figure,
+table,
+p,
+ul,
+ol,
+form {
+  margin-bottom: 2.5rem; }
+
+
+/* Utilities
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.u-full-width {
+  width: 100%;
+  box-sizing: border-box; }
+.u-max-full-width {
+  max-width: 100%;
+  box-sizing: border-box; }
+.u-pull-right {
+  float: right; }
+.u-pull-left {
+  float: left; }
+
+
+/* Misc
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+hr {
+  margin-top: 3rem;
+  margin-bottom: 3.5rem;
+  border-width: 0;
+  border-top: 1px solid #E1E1E1; }
+
+
+/* Clearing
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* Self Clearing Goodness */
+.container:after,
+.row:after,
+.u-cf {
+  content: "";
+  display: table;
+  clear: both; }
+
+
+/* Media Queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/*
+Note: The best way to structure the use of media queries is to create the queries
+near the relevant code. For example, if you wanted to change the styles for buttons
+on small devices, paste the mobile query code up in the buttons section and style it
+there.
+*/
+
+
+/* Larger than mobile */
+@media (min-width: 400px) {}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {}
+
+/* Larger than tablet */
+@media (min-width: 750px) {}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}
+.hit {background-color: #EAFFEA}
+.miss {background-color: #FFECEC}
+.container .code {margin-left: 0}
+pre {line-height: 1.3}
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <table class="u-full-width">
+        <thead>
+          <tr>
+            <th>Filename</th>
+            <th>Stmts</th>
+            <th>Miss</th>
+            <th>Cover</th>
+            <th>Missing</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/AboutDialog.java">com/tagtraum/perf/gcviewer/AboutDialog.java</a></td>
+            <td>69</td>
+            <td>69</td>
+            <td>0.00%</td>
+            <td>38-176</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/AutoCompletionComboBox.java">com/tagtraum/perf/gcviewer/AutoCompletionComboBox.java</a></td>
+            <td>11</td>
+            <td>11</td>
+            <td>0.00%</td>
+            <td>13-32</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/AutoCompletionComboBox.java">com/tagtraum/perf/gcviewer/AutoCompletionComboBox.java</a></td>
+            <td>11</td>
+            <td>11</td>
+            <td>0.00%</td>
+            <td>13-32</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/AutoCompletionTextField.java">com/tagtraum/perf/gcviewer/AutoCompletionTextField.java</a></td>
+            <td>14</td>
+            <td>14</td>
+            <td>0.00%</td>
+            <td>20-54</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/AutoCompletionTextField.java">com/tagtraum/perf/gcviewer/AutoCompletionTextField.java</a></td>
+            <td>14</td>
+            <td>14</td>
+            <td>0.00%</td>
+            <td>20-54</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/AutoCompletionTextField.java">com/tagtraum/perf/gcviewer/AutoCompletionTextField.java</a></td>
+            <td>14</td>
+            <td>14</td>
+            <td>0.00%</td>
+            <td>20-54</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/ChartPanelView.java">com/tagtraum/perf/gcviewer/ChartPanelView.java</a></td>
+            <td>56</td>
+            <td>56</td>
+            <td>0.00%</td>
+            <td>59-170</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/ChartPanelView.java">com/tagtraum/perf/gcviewer/ChartPanelView.java</a></td>
+            <td>56</td>
+            <td>56</td>
+            <td>0.00%</td>
+            <td>59-170</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/ChartPanelView.java">com/tagtraum/perf/gcviewer/ChartPanelView.java</a></td>
+            <td>56</td>
+            <td>56</td>
+            <td>0.00%</td>
+            <td>59-170</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/ChartPanelView.java">com/tagtraum/perf/gcviewer/ChartPanelView.java</a></td>
+            <td>56</td>
+            <td>56</td>
+            <td>0.00%</td>
+            <td>59-170</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/ChartPanelView.java">com/tagtraum/perf/gcviewer/ChartPanelView.java</a></td>
+            <td>56</td>
+            <td>56</td>
+            <td>0.00%</td>
+            <td>59-170</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/ChartPanelView.java">com/tagtraum/perf/gcviewer/ChartPanelView.java</a></td>
+            <td>56</td>
+            <td>56</td>
+            <td>0.00%</td>
+            <td>59-170</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/ChartPanelView.java">com/tagtraum/perf/gcviewer/ChartPanelView.java</a></td>
+            <td>56</td>
+            <td>56</td>
+            <td>0.00%</td>
+            <td>59-170</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/ChartRenderer.java">com/tagtraum/perf/gcviewer/ChartRenderer.java</a></td>
+            <td>22</td>
+            <td>15</td>
+            <td>31.82%</td>
+            <td>31-56</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/DesktopPane.java">com/tagtraum/perf/gcviewer/DesktopPane.java</a></td>
+            <td>32</td>
+            <td>32</td>
+            <td>0.00%</td>
+            <td>34-129</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/DesktopPane.java">com/tagtraum/perf/gcviewer/DesktopPane.java</a></td>
+            <td>32</td>
+            <td>32</td>
+            <td>0.00%</td>
+            <td>34-129</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/GCDocument.java">com/tagtraum/perf/gcviewer/GCDocument.java</a></td>
+            <td>161</td>
+            <td>161</td>
+            <td>0.00%</td>
+            <td>44-365</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/GCDocument.java">com/tagtraum/perf/gcviewer/GCDocument.java</a></td>
+            <td>161</td>
+            <td>161</td>
+            <td>0.00%</td>
+            <td>44-365</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/GCDocument.java">com/tagtraum/perf/gcviewer/GCDocument.java</a></td>
+            <td>161</td>
+            <td>161</td>
+            <td>0.00%</td>
+            <td>44-365</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/GCDocument.java">com/tagtraum/perf/gcviewer/GCDocument.java</a></td>
+            <td>161</td>
+            <td>161</td>
+            <td>0.00%</td>
+            <td>44-365</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/GCDocument.java">com/tagtraum/perf/gcviewer/GCDocument.java</a></td>
+            <td>161</td>
+            <td>161</td>
+            <td>0.00%</td>
+            <td>44-365</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/GCDocument.java">com/tagtraum/perf/gcviewer/GCDocument.java</a></td>
+            <td>161</td>
+            <td>161</td>
+            <td>0.00%</td>
+            <td>44-365</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/GCDocument.java">com/tagtraum/perf/gcviewer/GCDocument.java</a></td>
+            <td>161</td>
+            <td>161</td>
+            <td>0.00%</td>
+            <td>44-365</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/GCPreferences.java">com/tagtraum/perf/gcviewer/GCPreferences.java</a></td>
+            <td>73</td>
+            <td>57</td>
+            <td>21.92%</td>
+            <td>65-73, 77-85, 90-94, 102-159, 171-172, 179-187, 195-203</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/GCViewer.java">com/tagtraum/perf/gcviewer/GCViewer.java</a></td>
+            <td>48</td>
+            <td>48</td>
+            <td>0.00%</td>
+            <td>20-96</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/GCViewerArgsParser.java">com/tagtraum/perf/gcviewer/GCViewerArgsParser.java</a></td>
+            <td>26</td>
+            <td>1</td>
+            <td>96.15%</td>
+            <td>64</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/GCViewerArgsParserException.java">com/tagtraum/perf/gcviewer/GCViewerArgsParserException.java</a></td>
+            <td>7</td>
+            <td>0</td>
+            <td>100.00%</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/GCViewerGui.java">com/tagtraum/perf/gcviewer/GCViewerGui.java</a></td>
+            <td>366</td>
+            <td>366</td>
+            <td>0.00%</td>
+            <td>85-813</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/GCViewerGui.java">com/tagtraum/perf/gcviewer/GCViewerGui.java</a></td>
+            <td>366</td>
+            <td>366</td>
+            <td>0.00%</td>
+            <td>85-813</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/GCViewerGui.java">com/tagtraum/perf/gcviewer/GCViewerGui.java</a></td>
+            <td>366</td>
+            <td>366</td>
+            <td>0.00%</td>
+            <td>85-813</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/GCViewerGui.java">com/tagtraum/perf/gcviewer/GCViewerGui.java</a></td>
+            <td>366</td>
+            <td>366</td>
+            <td>0.00%</td>
+            <td>85-813</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/GCViewerGui.java">com/tagtraum/perf/gcviewer/GCViewerGui.java</a></td>
+            <td>366</td>
+            <td>366</td>
+            <td>0.00%</td>
+            <td>85-813</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/GCViewerGui.java">com/tagtraum/perf/gcviewer/GCViewerGui.java</a></td>
+            <td>366</td>
+            <td>366</td>
+            <td>0.00%</td>
+            <td>85-813</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/GCViewerGui.java">com/tagtraum/perf/gcviewer/GCViewerGui.java</a></td>
+            <td>366</td>
+            <td>366</td>
+            <td>0.00%</td>
+            <td>85-813</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/GCViewerGui.java">com/tagtraum/perf/gcviewer/GCViewerGui.java</a></td>
+            <td>366</td>
+            <td>366</td>
+            <td>0.00%</td>
+            <td>85-813</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/GCViewerGui.java">com/tagtraum/perf/gcviewer/GCViewerGui.java</a></td>
+            <td>366</td>
+            <td>366</td>
+            <td>0.00%</td>
+            <td>85-813</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/GCViewerGui.java">com/tagtraum/perf/gcviewer/GCViewerGui.java</a></td>
+            <td>366</td>
+            <td>366</td>
+            <td>0.00%</td>
+            <td>85-813</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/GCViewerGui.java">com/tagtraum/perf/gcviewer/GCViewerGui.java</a></td>
+            <td>366</td>
+            <td>366</td>
+            <td>0.00%</td>
+            <td>85-813</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/ModelChart.java">com/tagtraum/perf/gcviewer/ModelChart.java</a></td>
+            <td>0</td>
+            <td>0</td>
+            <td>100.00%</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/ModelChartImpl.java">com/tagtraum/perf/gcviewer/ModelChartImpl.java</a></td>
+            <td>184</td>
+            <td>51</td>
+            <td>72.28%</td>
+            <td>193-194, 204-225, 235, 248, 258, 268, 278, 288, 298, 308, 318, 328, 343, 369, 396-703</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/ModelChartImpl.java">com/tagtraum/perf/gcviewer/ModelChartImpl.java</a></td>
+            <td>184</td>
+            <td>51</td>
+            <td>72.28%</td>
+            <td>193-194, 204-225, 235, 248, 258, 268, 278, 288, 298, 308, 318, 328, 343, 369, 396-703</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/ModelChartImpl.java">com/tagtraum/perf/gcviewer/ModelChartImpl.java</a></td>
+            <td>184</td>
+            <td>51</td>
+            <td>72.28%</td>
+            <td>193-194, 204-225, 235, 248, 258, 268, 278, 288, 298, 308, 318, 328, 343, 369, 396-703</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/ModelChartImpl.java">com/tagtraum/perf/gcviewer/ModelChartImpl.java</a></td>
+            <td>184</td>
+            <td>51</td>
+            <td>72.28%</td>
+            <td>193-194, 204-225, 235, 248, 258, 268, 278, 288, 298, 308, 318, 328, 343, 369, 396-703</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/ModelChartImpl.java">com/tagtraum/perf/gcviewer/ModelChartImpl.java</a></td>
+            <td>184</td>
+            <td>51</td>
+            <td>72.28%</td>
+            <td>193-194, 204-225, 235, 248, 258, 268, 278, 288, 298, 308, 318, 328, 343, 369, 396-703</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/ModelChartImpl.java">com/tagtraum/perf/gcviewer/ModelChartImpl.java</a></td>
+            <td>184</td>
+            <td>51</td>
+            <td>72.28%</td>
+            <td>193-194, 204-225, 235, 248, 258, 268, 278, 288, 298, 308, 318, 328, 343, 369, 396-703</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/ModelDetailsPanel.java">com/tagtraum/perf/gcviewer/ModelDetailsPanel.java</a></td>
+            <td>47</td>
+            <td>47</td>
+            <td>0.00%</td>
+            <td>31-113</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/ModelDetailsPanel.java">com/tagtraum/perf/gcviewer/ModelDetailsPanel.java</a></td>
+            <td>47</td>
+            <td>47</td>
+            <td>0.00%</td>
+            <td>31-113</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/ModelDetailsPanel.java">com/tagtraum/perf/gcviewer/ModelDetailsPanel.java</a></td>
+            <td>47</td>
+            <td>47</td>
+            <td>0.00%</td>
+            <td>31-113</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/ModelPanel.java">com/tagtraum/perf/gcviewer/ModelPanel.java</a></td>
+            <td>35</td>
+            <td>0</td>
+            <td>100.00%</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/ModelPanel.java">com/tagtraum/perf/gcviewer/ModelPanel.java</a></td>
+            <td>35</td>
+            <td>0</td>
+            <td>100.00%</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/ModelPanel.java">com/tagtraum/perf/gcviewer/ModelPanel.java</a></td>
+            <td>35</td>
+            <td>0</td>
+            <td>100.00%</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/ModelPanel.java">com/tagtraum/perf/gcviewer/ModelPanel.java</a></td>
+            <td>35</td>
+            <td>0</td>
+            <td>100.00%</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/ModelPanel.java">com/tagtraum/perf/gcviewer/ModelPanel.java</a></td>
+            <td>35</td>
+            <td>0</td>
+            <td>100.00%</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/ModelPanel.java">com/tagtraum/perf/gcviewer/ModelPanel.java</a></td>
+            <td>35</td>
+            <td>0</td>
+            <td>100.00%</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/RecentURLEvent.java">com/tagtraum/perf/gcviewer/RecentURLEvent.java</a></td>
+            <td>8</td>
+            <td>8</td>
+            <td>0.00%</td>
+            <td>15-29</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/RecentURLsListener.java">com/tagtraum/perf/gcviewer/RecentURLsListener.java</a></td>
+            <td>0</td>
+            <td>0</td>
+            <td>100.00%</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/RecentURLsMenu.java">com/tagtraum/perf/gcviewer/RecentURLsMenu.java</a></td>
+            <td>7</td>
+            <td>7</td>
+            <td>0.00%</td>
+            <td>18-34</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/RecentURLsMenu.java">com/tagtraum/perf/gcviewer/RecentURLsMenu.java</a></td>
+            <td>7</td>
+            <td>7</td>
+            <td>0.00%</td>
+            <td>18-34</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/RecentURLsModel.java">com/tagtraum/perf/gcviewer/RecentURLsModel.java</a></td>
+            <td>43</td>
+            <td>43</td>
+            <td>0.00%</td>
+            <td>18-80</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/RecentURLsModel.java">com/tagtraum/perf/gcviewer/RecentURLsModel.java</a></td>
+            <td>43</td>
+            <td>43</td>
+            <td>0.00%</td>
+            <td>18-80</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/RefreshWatchDog.java">com/tagtraum/perf/gcviewer/RefreshWatchDog.java</a></td>
+            <td>20</td>
+            <td>20</td>
+            <td>0.00%</td>
+            <td>17-92</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/RefreshWatchDog.java">com/tagtraum/perf/gcviewer/RefreshWatchDog.java</a></td>
+            <td>20</td>
+            <td>20</td>
+            <td>0.00%</td>
+            <td>17-92</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/RefreshWatchDog.java">com/tagtraum/perf/gcviewer/RefreshWatchDog.java</a></td>
+            <td>20</td>
+            <td>20</td>
+            <td>0.00%</td>
+            <td>17-92</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/RefreshWatchDog.java">com/tagtraum/perf/gcviewer/RefreshWatchDog.java</a></td>
+            <td>20</td>
+            <td>20</td>
+            <td>0.00%</td>
+            <td>17-92</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/ScreenCenteredDialog.java">com/tagtraum/perf/gcviewer/ScreenCenteredDialog.java</a></td>
+            <td>43</td>
+            <td>43</td>
+            <td>0.00%</td>
+            <td>34-111</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/SimpleChartRenderer.java">com/tagtraum/perf/gcviewer/SimpleChartRenderer.java</a></td>
+            <td>29</td>
+            <td>29</td>
+            <td>0.00%</td>
+            <td>20-96</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/SimpleChartRenderer.java">com/tagtraum/perf/gcviewer/SimpleChartRenderer.java</a></td>
+            <td>29</td>
+            <td>29</td>
+            <td>0.00%</td>
+            <td>20-96</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/SimpleChartRenderer.java">com/tagtraum/perf/gcviewer/SimpleChartRenderer.java</a></td>
+            <td>29</td>
+            <td>29</td>
+            <td>0.00%</td>
+            <td>20-96</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/SimpleChartRenderer.java">com/tagtraum/perf/gcviewer/SimpleChartRenderer.java</a></td>
+            <td>29</td>
+            <td>29</td>
+            <td>0.00%</td>
+            <td>20-96</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/TextFileViewer.java">com/tagtraum/perf/gcviewer/TextFileViewer.java</a></td>
+            <td>58</td>
+            <td>58</td>
+            <td>0.00%</td>
+            <td>27-131</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/TextFileViewer.java">com/tagtraum/perf/gcviewer/TextFileViewer.java</a></td>
+            <td>58</td>
+            <td>58</td>
+            <td>0.00%</td>
+            <td>27-131</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/TimeOffsetPanel.java">com/tagtraum/perf/gcviewer/TimeOffsetPanel.java</a></td>
+            <td>30</td>
+            <td>1</td>
+            <td>96.67%</td>
+            <td>100</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/TimeOffsetPanel.java">com/tagtraum/perf/gcviewer/TimeOffsetPanel.java</a></td>
+            <td>30</td>
+            <td>1</td>
+            <td>96.67%</td>
+            <td>100</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/TimeOffsetPanel.java">com/tagtraum/perf/gcviewer/TimeOffsetPanel.java</a></td>
+            <td>30</td>
+            <td>1</td>
+            <td>96.67%</td>
+            <td>100</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/TimeOffsetPanel.java">com/tagtraum/perf/gcviewer/TimeOffsetPanel.java</a></td>
+            <td>30</td>
+            <td>1</td>
+            <td>96.67%</td>
+            <td>100</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/action/About.java">com/tagtraum/perf/gcviewer/action/About.java</a></td>
+            <td>12</td>
+            <td>12</td>
+            <td>0.00%</td>
+            <td>23-39</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/action/Arrange.java">com/tagtraum/perf/gcviewer/action/Arrange.java</a></td>
+            <td>21</td>
+            <td>21</td>
+            <td>0.00%</td>
+            <td>25-49</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/action/Exit.java">com/tagtraum/perf/gcviewer/action/Exit.java</a></td>
+            <td>13</td>
+            <td>13</td>
+            <td>0.00%</td>
+            <td>23-40</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/action/Export.java">com/tagtraum/perf/gcviewer/action/Export.java</a></td>
+            <td>49</td>
+            <td>49</td>
+            <td>0.00%</td>
+            <td>34-96</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/action/Export.java">com/tagtraum/perf/gcviewer/action/Export.java</a></td>
+            <td>49</td>
+            <td>49</td>
+            <td>0.00%</td>
+            <td>34-96</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/action/LicenseAction.java">com/tagtraum/perf/gcviewer/action/LicenseAction.java</a></td>
+            <td>9</td>
+            <td>9</td>
+            <td>0.00%</td>
+            <td>15-28</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/action/OSXFullScreen.java">com/tagtraum/perf/gcviewer/action/OSXFullScreen.java</a></td>
+            <td>23</td>
+            <td>23</td>
+            <td>0.00%</td>
+            <td>29-79</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/action/OSXFullScreen.java">com/tagtraum/perf/gcviewer/action/OSXFullScreen.java</a></td>
+            <td>23</td>
+            <td>23</td>
+            <td>0.00%</td>
+            <td>29-79</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/action/OpenFile.java">com/tagtraum/perf/gcviewer/action/OpenFile.java</a></td>
+            <td>40</td>
+            <td>40</td>
+            <td>0.00%</td>
+            <td>31-89</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/action/OpenRecent.java">com/tagtraum/perf/gcviewer/action/OpenRecent.java</a></td>
+            <td>17</td>
+            <td>17</td>
+            <td>0.00%</td>
+            <td>19-46</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/action/OpenURL.java">com/tagtraum/perf/gcviewer/action/OpenURL.java</a></td>
+            <td>33</td>
+            <td>33</td>
+            <td>0.00%</td>
+            <td>34-77</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/action/ReadmeAction.java">com/tagtraum/perf/gcviewer/action/ReadmeAction.java</a></td>
+            <td>9</td>
+            <td>9</td>
+            <td>0.00%</td>
+            <td>15-28</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/action/Refresh.java">com/tagtraum/perf/gcviewer/action/Refresh.java</a></td>
+            <td>19</td>
+            <td>19</td>
+            <td>0.00%</td>
+            <td>25-47</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/action/Watch.java">com/tagtraum/perf/gcviewer/action/Watch.java</a></td>
+            <td>26</td>
+            <td>26</td>
+            <td>0.00%</td>
+            <td>24-57</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/action/Zoom.java">com/tagtraum/perf/gcviewer/action/Zoom.java</a></td>
+            <td>16</td>
+            <td>16</td>
+            <td>0.00%</td>
+            <td>21-43</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/exp/AbstractDataWriter.java">com/tagtraum/perf/gcviewer/exp/AbstractDataWriter.java</a></td>
+            <td>11</td>
+            <td>1</td>
+            <td>90.91%</td>
+            <td>44</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/exp/DataWriter.java">com/tagtraum/perf/gcviewer/exp/DataWriter.java</a></td>
+            <td>0</td>
+            <td>0</td>
+            <td>100.00%</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/exp/DataWriterType.java">com/tagtraum/perf/gcviewer/exp/DataWriterType.java</a></td>
+            <td>7</td>
+            <td>0</td>
+            <td>100.00%</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/exp/impl/CSVDataWriter.java">com/tagtraum/perf/gcviewer/exp/impl/CSVDataWriter.java</a></td>
+            <td>31</td>
+            <td>31</td>
+            <td>0.00%</td>
+            <td>21-65</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/exp/impl/CSVTSDataWriter.java">com/tagtraum/perf/gcviewer/exp/impl/CSVTSDataWriter.java</a></td>
+            <td>24</td>
+            <td>24</td>
+            <td>0.00%</td>
+            <td>21-58</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/exp/impl/CsvSummaryExportFormatter.java">com/tagtraum/perf/gcviewer/exp/impl/CsvSummaryExportFormatter.java</a></td>
+            <td>3</td>
+            <td>3</td>
+            <td>0.00%</td>
+            <td>14-23</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/exp/impl/DataWriterFactory.java">com/tagtraum/perf/gcviewer/exp/impl/DataWriterFactory.java</a></td>
+            <td>11</td>
+            <td>11</td>
+            <td>0.00%</td>
+            <td>19-57</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/exp/impl/DataWriterFactory.java">com/tagtraum/perf/gcviewer/exp/impl/DataWriterFactory.java</a></td>
+            <td>11</td>
+            <td>11</td>
+            <td>0.00%</td>
+            <td>19-57</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/exp/impl/ISummaryExportFormatter.java">com/tagtraum/perf/gcviewer/exp/impl/ISummaryExportFormatter.java</a></td>
+            <td>0</td>
+            <td>0</td>
+            <td>100.00%</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/exp/impl/PNGDataWriter.java">com/tagtraum/perf/gcviewer/exp/impl/PNGDataWriter.java</a></td>
+            <td>5</td>
+            <td>5</td>
+            <td>0.00%</td>
+            <td>21-28</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/exp/impl/PlainDataWriter.java">com/tagtraum/perf/gcviewer/exp/impl/PlainDataWriter.java</a></td>
+            <td>7</td>
+            <td>7</td>
+            <td>0.00%</td>
+            <td>22-35</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/exp/impl/SimpleGcWriter.java">com/tagtraum/perf/gcviewer/exp/impl/SimpleGcWriter.java</a></td>
+            <td>42</td>
+            <td>11</td>
+            <td>73.81%</td>
+            <td>68-75, 90, 109-116</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/exp/impl/SummaryDataWriter.java">com/tagtraum/perf/gcviewer/exp/impl/SummaryDataWriter.java</a></td>
+            <td>174</td>
+            <td>174</td>
+            <td>0.00%</td>
+            <td>45-330</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/imp/AbstractDataReaderSun.java">com/tagtraum/perf/gcviewer/imp/AbstractDataReaderSun.java</a></td>
+            <td>282</td>
+            <td>16</td>
+            <td>94.33%</td>
+            <td>99-102, 151-152, 234, 489-490, 566-567, 605, 630-631, 672, 687, 702</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/imp/DataReader.java">com/tagtraum/perf/gcviewer/imp/DataReader.java</a></td>
+            <td>0</td>
+            <td>0</td>
+            <td>100.00%</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/imp/DataReaderException.java">com/tagtraum/perf/gcviewer/imp/DataReaderException.java</a></td>
+            <td>8</td>
+            <td>4</td>
+            <td>50.00%</td>
+            <td>21-26</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/imp/DataReaderFacade.java">com/tagtraum/perf/gcviewer/imp/DataReaderFacade.java</a></td>
+            <td>47</td>
+            <td>11</td>
+            <td>76.60%</td>
+            <td>54, 106, 140-152</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/imp/DataReaderFacade.java">com/tagtraum/perf/gcviewer/imp/DataReaderFacade.java</a></td>
+            <td>47</td>
+            <td>11</td>
+            <td>76.60%</td>
+            <td>54, 106, 140-152</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/imp/DataReaderFactory.java">com/tagtraum/perf/gcviewer/imp/DataReaderFactory.java</a></td>
+            <td>110</td>
+            <td>24</td>
+            <td>78.18%</td>
+            <td>53, 61, 85-88, 135-136, 138-139, 142-143, 156-157, 166-167, 169-170, 172-173, 175-176, 178-179, 199, 205</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/imp/DataReaderHPUX1_2.java">com/tagtraum/perf/gcviewer/imp/DataReaderHPUX1_2.java</a></td>
+            <td>67</td>
+            <td>3</td>
+            <td>95.52%</td>
+            <td>43, 47, 158</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/imp/DataReaderHPUX1_4_1.java">com/tagtraum/perf/gcviewer/imp/DataReaderHPUX1_4_1.java</a></td>
+            <td>83</td>
+            <td>12</td>
+            <td>85.54%</td>
+            <td>55, 204, 214, 228-240</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/imp/DataReaderIBM1_3_0.java">com/tagtraum/perf/gcviewer/imp/DataReaderIBM1_3_0.java</a></td>
+            <td>74</td>
+            <td>9</td>
+            <td>87.84%</td>
+            <td>44-45, 71-73, 91, 129-131</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/imp/DataReaderIBM1_3_1.java">com/tagtraum/perf/gcviewer/imp/DataReaderIBM1_3_1.java</a></td>
+            <td>103</td>
+            <td>5</td>
+            <td>95.15%</td>
+            <td>51-52, 119, 130-131</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/imp/DataReaderIBM1_4_2.java">com/tagtraum/perf/gcviewer/imp/DataReaderIBM1_4_2.java</a></td>
+            <td>105</td>
+            <td>105</td>
+            <td>0.00%</td>
+            <td>34-194</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/imp/DataReaderIBM_J9_5_0.java">com/tagtraum/perf/gcviewer/imp/DataReaderIBM_J9_5_0.java</a></td>
+            <td>28</td>
+            <td>9</td>
+            <td>67.86%</td>
+            <td>59-62, 68-72, 80</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/imp/DataReaderIBMi5OS1_4_2.java">com/tagtraum/perf/gcviewer/imp/DataReaderIBMi5OS1_4_2.java</a></td>
+            <td>91</td>
+            <td>5</td>
+            <td>94.51%</td>
+            <td>70-71, 134, 153-154</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/imp/DataReaderJRockit1_4_2.java">com/tagtraum/perf/gcviewer/imp/DataReaderJRockit1_4_2.java</a></td>
+            <td>86</td>
+            <td>5</td>
+            <td>94.19%</td>
+            <td>44, 61, 85, 106, 153</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/imp/DataReaderJRockit1_5_0.java">com/tagtraum/perf/gcviewer/imp/DataReaderJRockit1_5_0.java</a></td>
+            <td>101</td>
+            <td>4</td>
+            <td>96.04%</td>
+            <td>50, 111, 125, 194</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/imp/DataReaderJRockit1_6_0.java">com/tagtraum/perf/gcviewer/imp/DataReaderJRockit1_6_0.java</a></td>
+            <td>94</td>
+            <td>6</td>
+            <td>93.62%</td>
+            <td>56, 67, 88, 116, 128, 189</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/imp/DataReaderSun1_2_2.java">com/tagtraum/perf/gcviewer/imp/DataReaderSun1_2_2.java</a></td>
+            <td>59</td>
+            <td>1</td>
+            <td>98.31%</td>
+            <td>110</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/imp/DataReaderSun1_3_1.java">com/tagtraum/perf/gcviewer/imp/DataReaderSun1_3_1.java</a></td>
+            <td>48</td>
+            <td>10</td>
+            <td>79.17%</td>
+            <td>51-53, 66, 82, 86, 93-96</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/imp/DataReaderSun1_6_0.java">com/tagtraum/perf/gcviewer/imp/DataReaderSun1_6_0.java</a></td>
+            <td>298</td>
+            <td>20</td>
+            <td>93.29%</td>
+            <td>268-269, 288-289, 319-320, 333-334, 388, 416-419, 499, 524-525, 599, 606, 613-614</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/imp/DataReaderSun1_6_0G1.java">com/tagtraum/perf/gcviewer/imp/DataReaderSun1_6_0G1.java</a></td>
+            <td>278</td>
+            <td>13</td>
+            <td>95.32%</td>
+            <td>171, 221, 230, 294, 308-309, 393-396, 600, 631-632</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/imp/GcLogType.java">com/tagtraum/perf/gcviewer/imp/GcLogType.java</a></td>
+            <td>20</td>
+            <td>0</td>
+            <td>100.00%</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/imp/IBMJ9SAXHandler.java">com/tagtraum/perf/gcviewer/imp/IBMJ9SAXHandler.java</a></td>
+            <td>34</td>
+            <td>0</td>
+            <td>100.00%</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/imp/IBMJ9SAXHandler.java">com/tagtraum/perf/gcviewer/imp/IBMJ9SAXHandler.java</a></td>
+            <td>34</td>
+            <td>0</td>
+            <td>100.00%</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/imp/ParseException.java">com/tagtraum/perf/gcviewer/imp/ParseException.java</a></td>
+            <td>13</td>
+            <td>6</td>
+            <td>53.85%</td>
+            <td>19-25, 36</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/imp/UnknownGcTypeException.java">com/tagtraum/perf/gcviewer/imp/UnknownGcTypeException.java</a></td>
+            <td>6</td>
+            <td>4</td>
+            <td>33.33%</td>
+            <td>18-23</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/log/TextAreaFormatter.java">com/tagtraum/perf/gcviewer/log/TextAreaFormatter.java</a></td>
+            <td>19</td>
+            <td>7</td>
+            <td>63.16%</td>
+            <td>27-35</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/log/TextAreaLogHandler.java">com/tagtraum/perf/gcviewer/log/TextAreaLogHandler.java</a></td>
+            <td>28</td>
+            <td>10</td>
+            <td>64.29%</td>
+            <td>23, 31, 47-48, 52-53, 56-57, 62-65</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/math/DoubleData.java">com/tagtraum/perf/gcviewer/math/DoubleData.java</a></td>
+            <td>38</td>
+            <td>10</td>
+            <td>73.68%</td>
+            <td>70-73, 80-86</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/math/IntData.java">com/tagtraum/perf/gcviewer/math/IntData.java</a></td>
+            <td>39</td>
+            <td>16</td>
+            <td>58.97%</td>
+            <td>29-34, 72-84</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/math/RegressionLine.java">com/tagtraum/perf/gcviewer/math/RegressionLine.java</a></td>
+            <td>24</td>
+            <td>0</td>
+            <td>100.00%</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/math/Sum.java">com/tagtraum/perf/gcviewer/math/Sum.java</a></td>
+            <td>13</td>
+            <td>1</td>
+            <td>92.31%</td>
+            <td>13</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/model/AbstractGCEvent.java">com/tagtraum/perf/gcviewer/model/AbstractGCEvent.java</a></td>
+            <td>96</td>
+            <td>24</td>
+            <td>75.00%</td>
+            <td>58, 77, 82-89, 105, 137, 156, 165, 174, 177, 204, 216-218, 232-240</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/model/AbstractGCEvent.java">com/tagtraum/perf/gcviewer/model/AbstractGCEvent.java</a></td>
+            <td>96</td>
+            <td>24</td>
+            <td>75.00%</td>
+            <td>58, 77, 82-89, 105, 137, 156, 165, 174, 177, 204, 216-218, 232-240</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/model/AbstractGCEvent.java">com/tagtraum/perf/gcviewer/model/AbstractGCEvent.java</a></td>
+            <td>96</td>
+            <td>24</td>
+            <td>75.00%</td>
+            <td>58, 77, 82-89, 105, 137, 156, 165, 174, 177, 204, 216-218, 232-240</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/model/AbstractGCEvent.java">com/tagtraum/perf/gcviewer/model/AbstractGCEvent.java</a></td>
+            <td>96</td>
+            <td>24</td>
+            <td>75.00%</td>
+            <td>58, 77, 82-89, 105, 137, 156, 165, 174, 177, 204, 216-218, 232-240</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/model/AbstractGCEvent.java">com/tagtraum/perf/gcviewer/model/AbstractGCEvent.java</a></td>
+            <td>96</td>
+            <td>24</td>
+            <td>75.00%</td>
+            <td>58, 77, 82-89, 105, 137, 156, 165, 174, 177, 204, 216-218, 232-240</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/model/AbstractGCEvent.java">com/tagtraum/perf/gcviewer/model/AbstractGCEvent.java</a></td>
+            <td>96</td>
+            <td>24</td>
+            <td>75.00%</td>
+            <td>58, 77, 82-89, 105, 137, 156, 165, 174, 177, 204, 216-218, 232-240</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/model/AbstractGCEvent.java">com/tagtraum/perf/gcviewer/model/AbstractGCEvent.java</a></td>
+            <td>96</td>
+            <td>24</td>
+            <td>75.00%</td>
+            <td>58, 77, 82-89, 105, 137, 156, 165, 174, 177, 204, 216-218, 232-240</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/model/ConcurrentGCEvent.java">com/tagtraum/perf/gcviewer/model/ConcurrentGCEvent.java</a></td>
+            <td>16</td>
+            <td>13</td>
+            <td>18.75%</td>
+            <td>24, 37-52</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/model/G1GcEvent.java">com/tagtraum/perf/gcviewer/model/G1GcEvent.java</a></td>
+            <td>4</td>
+            <td>2</td>
+            <td>50.00%</td>
+            <td>20-21</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/model/GCEvent.java">com/tagtraum/perf/gcviewer/model/GCEvent.java</a></td>
+            <td>68</td>
+            <td>1</td>
+            <td>98.53%</td>
+            <td>56</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/model/GCEvent.java">com/tagtraum/perf/gcviewer/model/GCEvent.java</a></td>
+            <td>68</td>
+            <td>1</td>
+            <td>98.53%</td>
+            <td>56</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/model/GCModel.java">com/tagtraum/perf/gcviewer/model/GCModel.java</a></td>
+            <td>293</td>
+            <td>45</td>
+            <td>84.64%</td>
+            <td>184-226, 234, 241-242, 255-263, 305, 531, 668, 686-694, 708, 737-741, 865, 876, 900</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/model/GCModel.java">com/tagtraum/perf/gcviewer/model/GCModel.java</a></td>
+            <td>293</td>
+            <td>45</td>
+            <td>84.64%</td>
+            <td>184-226, 234, 241-242, 255-263, 305, 531, 668, 686-694, 708, 737-741, 865, 876, 900</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/model/GCModel.java">com/tagtraum/perf/gcviewer/model/GCModel.java</a></td>
+            <td>293</td>
+            <td>45</td>
+            <td>84.64%</td>
+            <td>184-226, 234, 241-242, 255-263, 305, 531, 668, 686-694, 708, 737-741, 865, 876, 900</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/model/VmOperationEvent.java">com/tagtraum/perf/gcviewer/model/VmOperationEvent.java</a></td>
+            <td>8</td>
+            <td>7</td>
+            <td>12.50%</td>
+            <td>15-21</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/renderer/ConcurrentGcBegionEndRenderer.java">com/tagtraum/perf/gcviewer/renderer/ConcurrentGcBegionEndRenderer.java</a></td>
+            <td>27</td>
+            <td>22</td>
+            <td>18.52%</td>
+            <td>31-56</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/renderer/FullGCLineRenderer.java">com/tagtraum/perf/gcviewer/renderer/FullGCLineRenderer.java</a></td>
+            <td>19</td>
+            <td>15</td>
+            <td>21.05%</td>
+            <td>27-43</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/renderer/GCRectanglesRenderer.java">com/tagtraum/perf/gcviewer/renderer/GCRectanglesRenderer.java</a></td>
+            <td>46</td>
+            <td>38</td>
+            <td>17.39%</td>
+            <td>35, 41-90</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/renderer/GCTimesRenderer.java">com/tagtraum/perf/gcviewer/renderer/GCTimesRenderer.java</a></td>
+            <td>13</td>
+            <td>7</td>
+            <td>46.15%</td>
+            <td>31-38</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/renderer/IncLineRenderer.java">com/tagtraum/perf/gcviewer/renderer/IncLineRenderer.java</a></td>
+            <td>16</td>
+            <td>12</td>
+            <td>25.00%</td>
+            <td>26-39</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/renderer/InitialMarkLevelRenderer.java">com/tagtraum/perf/gcviewer/renderer/InitialMarkLevelRenderer.java</a></td>
+            <td>13</td>
+            <td>7</td>
+            <td>46.15%</td>
+            <td>31-39</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/renderer/PolygonChartRenderer.java">com/tagtraum/perf/gcviewer/renderer/PolygonChartRenderer.java</a></td>
+            <td>77</td>
+            <td>67</td>
+            <td>12.99%</td>
+            <td>53-208</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/renderer/PolygonChartRenderer.java">com/tagtraum/perf/gcviewer/renderer/PolygonChartRenderer.java</a></td>
+            <td>77</td>
+            <td>67</td>
+            <td>12.99%</td>
+            <td>53-208</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/renderer/PolygonChartRenderer.java">com/tagtraum/perf/gcviewer/renderer/PolygonChartRenderer.java</a></td>
+            <td>77</td>
+            <td>67</td>
+            <td>12.99%</td>
+            <td>53-208</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/renderer/TotalHeapRenderer.java">com/tagtraum/perf/gcviewer/renderer/TotalHeapRenderer.java</a></td>
+            <td>24</td>
+            <td>16</td>
+            <td>33.33%</td>
+            <td>31-54</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/renderer/TotalTenuredRenderer.java">com/tagtraum/perf/gcviewer/renderer/TotalTenuredRenderer.java</a></td>
+            <td>26</td>
+            <td>18</td>
+            <td>30.77%</td>
+            <td>36-59</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/renderer/TotalYoungRenderer.java">com/tagtraum/perf/gcviewer/renderer/TotalYoungRenderer.java</a></td>
+            <td>33</td>
+            <td>25</td>
+            <td>24.24%</td>
+            <td>36-68</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/renderer/UsedHeapRenderer.java">com/tagtraum/perf/gcviewer/renderer/UsedHeapRenderer.java</a></td>
+            <td>18</td>
+            <td>12</td>
+            <td>33.33%</td>
+            <td>32-48</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/renderer/UsedTenuredRenderer.java">com/tagtraum/perf/gcviewer/renderer/UsedTenuredRenderer.java</a></td>
+            <td>20</td>
+            <td>14</td>
+            <td>30.00%</td>
+            <td>32-51</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/renderer/UsedYoungRenderer.java">com/tagtraum/perf/gcviewer/renderer/UsedYoungRenderer.java</a></td>
+            <td>31</td>
+            <td>25</td>
+            <td>19.35%</td>
+            <td>33-66</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/util/BuildInfoReader.java">com/tagtraum/perf/gcviewer/util/BuildInfoReader.java</a></td>
+            <td>16</td>
+            <td>3</td>
+            <td>81.25%</td>
+            <td>14, 38-39</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/util/ExtensionFileFilter.java">com/tagtraum/perf/gcviewer/util/ExtensionFileFilter.java</a></td>
+            <td>8</td>
+            <td>8</td>
+            <td>0.00%</td>
+            <td>13-35</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/util/FormattedValue.java">com/tagtraum/perf/gcviewer/util/FormattedValue.java</a></td>
+            <td>11</td>
+            <td>11</td>
+            <td>0.00%</td>
+            <td>14-33</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/util/HttpUrlConnectionHelper.java">com/tagtraum/perf/gcviewer/util/HttpUrlConnectionHelper.java</a></td>
+            <td>54</td>
+            <td>6</td>
+            <td>88.89%</td>
+            <td>29-30, 73-74, 86-87</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/util/LocalisationHelper.java">com/tagtraum/perf/gcviewer/util/LocalisationHelper.java</a></td>
+            <td>9</td>
+            <td>2</td>
+            <td>77.78%</td>
+            <td>12, 39</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/util/LoggerHelper.java">com/tagtraum/perf/gcviewer/util/LoggerHelper.java</a></td>
+            <td>17</td>
+            <td>17</td>
+            <td>0.00%</td>
+            <td>13-56</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/util/MemoryFormat.java">com/tagtraum/perf/gcviewer/util/MemoryFormat.java</a></td>
+            <td>63</td>
+            <td>33</td>
+            <td>47.62%</td>
+            <td>52-53, 70-118</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/util/NumberParser.java">com/tagtraum/perf/gcviewer/util/NumberParser.java</a></td>
+            <td>117</td>
+            <td>95</td>
+            <td>18.80%</td>
+            <td>11, 22-65, 79-82, 90, 94, 99, 102-105, 113-207</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/util/OSXAdapter.java">com/tagtraum/perf/gcviewer/util/OSXAdapter.java</a></td>
+            <td>59</td>
+            <td>59</td>
+            <td>0.00%</td>
+            <td>68-213</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/util/OSXAdapter.java">com/tagtraum/perf/gcviewer/util/OSXAdapter.java</a></td>
+            <td>59</td>
+            <td>59</td>
+            <td>0.00%</td>
+            <td>68-213</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/util/OSXSupport.java">com/tagtraum/perf/gcviewer/util/OSXSupport.java</a></td>
+            <td>85</td>
+            <td>85</td>
+            <td>0.00%</td>
+            <td>17-258</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/util/OSXSupport.java">com/tagtraum/perf/gcviewer/util/OSXSupport.java</a></td>
+            <td>85</td>
+            <td>85</td>
+            <td>0.00%</td>
+            <td>17-258</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/util/ParseInformation.java">com/tagtraum/perf/gcviewer/util/ParseInformation.java</a></td>
+            <td>8</td>
+            <td>0</td>
+            <td>100.00%</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/util/TimeFormat.java">com/tagtraum/perf/gcviewer/util/TimeFormat.java</a></td>
+            <td>32</td>
+            <td>14</td>
+            <td>56.25%</td>
+            <td>37-40, 46, 49-52, 56-57, 61, 64, 70</td>
+          </tr>
+          <tr>
+            <td><a href="#com/tagtraum/perf/gcviewer/util/UrlDisplayHelper.java">com/tagtraum/perf/gcviewer/util/UrlDisplayHelper.java</a></td>
+            <td>11</td>
+            <td>11</td>
+            <td>0.00%</td>
+            <td>19-59</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>TOTAL</td>
+            <td>13784</td>
+            <td>8968</td>
+            <td>48.39%</td>
+            <td></td>
+          </tr>
+        </tfoot>
+      </table>
+<h4 id="com/tagtraum/perf/gcviewer/AboutDialog.java">com/tagtraum/perf/gcviewer/AboutDialog.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/AboutDialog.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/AutoCompletionComboBox.java">com/tagtraum/perf/gcviewer/AutoCompletionComboBox.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/AutoCompletionComboBox.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/AutoCompletionComboBox.java">com/tagtraum/perf/gcviewer/AutoCompletionComboBox.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/AutoCompletionComboBox.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/AutoCompletionTextField.java">com/tagtraum/perf/gcviewer/AutoCompletionTextField.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/AutoCompletionTextField.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/AutoCompletionTextField.java">com/tagtraum/perf/gcviewer/AutoCompletionTextField.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/AutoCompletionTextField.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/AutoCompletionTextField.java">com/tagtraum/perf/gcviewer/AutoCompletionTextField.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/AutoCompletionTextField.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/ChartPanelView.java">com/tagtraum/perf/gcviewer/ChartPanelView.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/ChartPanelView.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/ChartPanelView.java">com/tagtraum/perf/gcviewer/ChartPanelView.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/ChartPanelView.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/ChartPanelView.java">com/tagtraum/perf/gcviewer/ChartPanelView.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/ChartPanelView.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/ChartPanelView.java">com/tagtraum/perf/gcviewer/ChartPanelView.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/ChartPanelView.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/ChartPanelView.java">com/tagtraum/perf/gcviewer/ChartPanelView.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/ChartPanelView.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/ChartPanelView.java">com/tagtraum/perf/gcviewer/ChartPanelView.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/ChartPanelView.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/ChartPanelView.java">com/tagtraum/perf/gcviewer/ChartPanelView.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/ChartPanelView.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/ChartRenderer.java">com/tagtraum/perf/gcviewer/ChartRenderer.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/ChartRenderer.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/DesktopPane.java">com/tagtraum/perf/gcviewer/DesktopPane.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/DesktopPane.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/DesktopPane.java">com/tagtraum/perf/gcviewer/DesktopPane.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/DesktopPane.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/GCDocument.java">com/tagtraum/perf/gcviewer/GCDocument.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/GCDocument.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/GCDocument.java">com/tagtraum/perf/gcviewer/GCDocument.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/GCDocument.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/GCDocument.java">com/tagtraum/perf/gcviewer/GCDocument.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/GCDocument.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/GCDocument.java">com/tagtraum/perf/gcviewer/GCDocument.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/GCDocument.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/GCDocument.java">com/tagtraum/perf/gcviewer/GCDocument.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/GCDocument.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/GCDocument.java">com/tagtraum/perf/gcviewer/GCDocument.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/GCDocument.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/GCDocument.java">com/tagtraum/perf/gcviewer/GCDocument.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/GCDocument.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/GCPreferences.java">com/tagtraum/perf/gcviewer/GCPreferences.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/GCPreferences.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/GCViewer.java">com/tagtraum/perf/gcviewer/GCViewer.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/GCViewer.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/GCViewerArgsParser.java">com/tagtraum/perf/gcviewer/GCViewerArgsParser.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/GCViewerArgsParser.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/GCViewerArgsParserException.java">com/tagtraum/perf/gcviewer/GCViewerArgsParserException.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/GCViewerArgsParserException.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/GCViewerGui.java">com/tagtraum/perf/gcviewer/GCViewerGui.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/GCViewerGui.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/GCViewerGui.java">com/tagtraum/perf/gcviewer/GCViewerGui.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/GCViewerGui.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/GCViewerGui.java">com/tagtraum/perf/gcviewer/GCViewerGui.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/GCViewerGui.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/GCViewerGui.java">com/tagtraum/perf/gcviewer/GCViewerGui.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/GCViewerGui.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/GCViewerGui.java">com/tagtraum/perf/gcviewer/GCViewerGui.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/GCViewerGui.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/GCViewerGui.java">com/tagtraum/perf/gcviewer/GCViewerGui.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/GCViewerGui.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/GCViewerGui.java">com/tagtraum/perf/gcviewer/GCViewerGui.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/GCViewerGui.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/GCViewerGui.java">com/tagtraum/perf/gcviewer/GCViewerGui.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/GCViewerGui.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/GCViewerGui.java">com/tagtraum/perf/gcviewer/GCViewerGui.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/GCViewerGui.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/GCViewerGui.java">com/tagtraum/perf/gcviewer/GCViewerGui.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/GCViewerGui.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/GCViewerGui.java">com/tagtraum/perf/gcviewer/GCViewerGui.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/GCViewerGui.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/ModelChart.java">com/tagtraum/perf/gcviewer/ModelChart.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/ModelChart.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/ModelChartImpl.java">com/tagtraum/perf/gcviewer/ModelChartImpl.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/ModelChartImpl.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/ModelChartImpl.java">com/tagtraum/perf/gcviewer/ModelChartImpl.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/ModelChartImpl.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/ModelChartImpl.java">com/tagtraum/perf/gcviewer/ModelChartImpl.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/ModelChartImpl.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/ModelChartImpl.java">com/tagtraum/perf/gcviewer/ModelChartImpl.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/ModelChartImpl.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/ModelChartImpl.java">com/tagtraum/perf/gcviewer/ModelChartImpl.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/ModelChartImpl.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/ModelChartImpl.java">com/tagtraum/perf/gcviewer/ModelChartImpl.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/ModelChartImpl.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/ModelDetailsPanel.java">com/tagtraum/perf/gcviewer/ModelDetailsPanel.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/ModelDetailsPanel.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/ModelDetailsPanel.java">com/tagtraum/perf/gcviewer/ModelDetailsPanel.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/ModelDetailsPanel.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/ModelDetailsPanel.java">com/tagtraum/perf/gcviewer/ModelDetailsPanel.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/ModelDetailsPanel.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/ModelPanel.java">com/tagtraum/perf/gcviewer/ModelPanel.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/ModelPanel.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/ModelPanel.java">com/tagtraum/perf/gcviewer/ModelPanel.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/ModelPanel.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/ModelPanel.java">com/tagtraum/perf/gcviewer/ModelPanel.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/ModelPanel.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/ModelPanel.java">com/tagtraum/perf/gcviewer/ModelPanel.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/ModelPanel.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/ModelPanel.java">com/tagtraum/perf/gcviewer/ModelPanel.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/ModelPanel.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/ModelPanel.java">com/tagtraum/perf/gcviewer/ModelPanel.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/ModelPanel.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/RecentURLEvent.java">com/tagtraum/perf/gcviewer/RecentURLEvent.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/RecentURLEvent.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/RecentURLsListener.java">com/tagtraum/perf/gcviewer/RecentURLsListener.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/RecentURLsListener.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/RecentURLsMenu.java">com/tagtraum/perf/gcviewer/RecentURLsMenu.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/RecentURLsMenu.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/RecentURLsMenu.java">com/tagtraum/perf/gcviewer/RecentURLsMenu.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/RecentURLsMenu.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/RecentURLsModel.java">com/tagtraum/perf/gcviewer/RecentURLsModel.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/RecentURLsModel.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/RecentURLsModel.java">com/tagtraum/perf/gcviewer/RecentURLsModel.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/RecentURLsModel.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/RefreshWatchDog.java">com/tagtraum/perf/gcviewer/RefreshWatchDog.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/RefreshWatchDog.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/RefreshWatchDog.java">com/tagtraum/perf/gcviewer/RefreshWatchDog.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/RefreshWatchDog.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/RefreshWatchDog.java">com/tagtraum/perf/gcviewer/RefreshWatchDog.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/RefreshWatchDog.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/RefreshWatchDog.java">com/tagtraum/perf/gcviewer/RefreshWatchDog.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/RefreshWatchDog.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/ScreenCenteredDialog.java">com/tagtraum/perf/gcviewer/ScreenCenteredDialog.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/ScreenCenteredDialog.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/SimpleChartRenderer.java">com/tagtraum/perf/gcviewer/SimpleChartRenderer.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/SimpleChartRenderer.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/SimpleChartRenderer.java">com/tagtraum/perf/gcviewer/SimpleChartRenderer.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/SimpleChartRenderer.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/SimpleChartRenderer.java">com/tagtraum/perf/gcviewer/SimpleChartRenderer.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/SimpleChartRenderer.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/SimpleChartRenderer.java">com/tagtraum/perf/gcviewer/SimpleChartRenderer.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/SimpleChartRenderer.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/TextFileViewer.java">com/tagtraum/perf/gcviewer/TextFileViewer.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/TextFileViewer.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/TextFileViewer.java">com/tagtraum/perf/gcviewer/TextFileViewer.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/TextFileViewer.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/TimeOffsetPanel.java">com/tagtraum/perf/gcviewer/TimeOffsetPanel.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/TimeOffsetPanel.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/TimeOffsetPanel.java">com/tagtraum/perf/gcviewer/TimeOffsetPanel.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/TimeOffsetPanel.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/TimeOffsetPanel.java">com/tagtraum/perf/gcviewer/TimeOffsetPanel.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/TimeOffsetPanel.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/TimeOffsetPanel.java">com/tagtraum/perf/gcviewer/TimeOffsetPanel.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/TimeOffsetPanel.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/action/About.java">com/tagtraum/perf/gcviewer/action/About.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/action/About.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/action/Arrange.java">com/tagtraum/perf/gcviewer/action/Arrange.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/action/Arrange.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/action/Exit.java">com/tagtraum/perf/gcviewer/action/Exit.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/action/Exit.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/action/Export.java">com/tagtraum/perf/gcviewer/action/Export.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/action/Export.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/action/Export.java">com/tagtraum/perf/gcviewer/action/Export.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/action/Export.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/action/LicenseAction.java">com/tagtraum/perf/gcviewer/action/LicenseAction.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/action/LicenseAction.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/action/OSXFullScreen.java">com/tagtraum/perf/gcviewer/action/OSXFullScreen.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/action/OSXFullScreen.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/action/OSXFullScreen.java">com/tagtraum/perf/gcviewer/action/OSXFullScreen.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/action/OSXFullScreen.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/action/OpenFile.java">com/tagtraum/perf/gcviewer/action/OpenFile.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/action/OpenFile.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/action/OpenRecent.java">com/tagtraum/perf/gcviewer/action/OpenRecent.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/action/OpenRecent.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/action/OpenURL.java">com/tagtraum/perf/gcviewer/action/OpenURL.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/action/OpenURL.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/action/ReadmeAction.java">com/tagtraum/perf/gcviewer/action/ReadmeAction.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/action/ReadmeAction.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/action/Refresh.java">com/tagtraum/perf/gcviewer/action/Refresh.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/action/Refresh.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/action/Watch.java">com/tagtraum/perf/gcviewer/action/Watch.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/action/Watch.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/action/Zoom.java">com/tagtraum/perf/gcviewer/action/Zoom.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/action/Zoom.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/exp/AbstractDataWriter.java">com/tagtraum/perf/gcviewer/exp/AbstractDataWriter.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/exp/AbstractDataWriter.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/exp/DataWriter.java">com/tagtraum/perf/gcviewer/exp/DataWriter.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/exp/DataWriter.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/exp/DataWriterType.java">com/tagtraum/perf/gcviewer/exp/DataWriterType.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/exp/DataWriterType.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/exp/impl/CSVDataWriter.java">com/tagtraum/perf/gcviewer/exp/impl/CSVDataWriter.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/exp/impl/CSVDataWriter.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/exp/impl/CSVTSDataWriter.java">com/tagtraum/perf/gcviewer/exp/impl/CSVTSDataWriter.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/exp/impl/CSVTSDataWriter.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/exp/impl/CsvSummaryExportFormatter.java">com/tagtraum/perf/gcviewer/exp/impl/CsvSummaryExportFormatter.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/exp/impl/CsvSummaryExportFormatter.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/exp/impl/DataWriterFactory.java">com/tagtraum/perf/gcviewer/exp/impl/DataWriterFactory.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/exp/impl/DataWriterFactory.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/exp/impl/DataWriterFactory.java">com/tagtraum/perf/gcviewer/exp/impl/DataWriterFactory.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/exp/impl/DataWriterFactory.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/exp/impl/ISummaryExportFormatter.java">com/tagtraum/perf/gcviewer/exp/impl/ISummaryExportFormatter.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/exp/impl/ISummaryExportFormatter.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/exp/impl/PNGDataWriter.java">com/tagtraum/perf/gcviewer/exp/impl/PNGDataWriter.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/exp/impl/PNGDataWriter.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/exp/impl/PlainDataWriter.java">com/tagtraum/perf/gcviewer/exp/impl/PlainDataWriter.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/exp/impl/PlainDataWriter.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/exp/impl/SimpleGcWriter.java">com/tagtraum/perf/gcviewer/exp/impl/SimpleGcWriter.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/exp/impl/SimpleGcWriter.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/exp/impl/SummaryDataWriter.java">com/tagtraum/perf/gcviewer/exp/impl/SummaryDataWriter.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/exp/impl/SummaryDataWriter.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/imp/AbstractDataReaderSun.java">com/tagtraum/perf/gcviewer/imp/AbstractDataReaderSun.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/imp/AbstractDataReaderSun.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/imp/DataReader.java">com/tagtraum/perf/gcviewer/imp/DataReader.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/imp/DataReader.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/imp/DataReaderException.java">com/tagtraum/perf/gcviewer/imp/DataReaderException.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/imp/DataReaderException.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/imp/DataReaderFacade.java">com/tagtraum/perf/gcviewer/imp/DataReaderFacade.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/imp/DataReaderFacade.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/imp/DataReaderFacade.java">com/tagtraum/perf/gcviewer/imp/DataReaderFacade.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/imp/DataReaderFacade.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/imp/DataReaderFactory.java">com/tagtraum/perf/gcviewer/imp/DataReaderFactory.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/imp/DataReaderFactory.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/imp/DataReaderHPUX1_2.java">com/tagtraum/perf/gcviewer/imp/DataReaderHPUX1_2.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/imp/DataReaderHPUX1_2.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/imp/DataReaderHPUX1_4_1.java">com/tagtraum/perf/gcviewer/imp/DataReaderHPUX1_4_1.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/imp/DataReaderHPUX1_4_1.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/imp/DataReaderIBM1_3_0.java">com/tagtraum/perf/gcviewer/imp/DataReaderIBM1_3_0.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/imp/DataReaderIBM1_3_0.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/imp/DataReaderIBM1_3_1.java">com/tagtraum/perf/gcviewer/imp/DataReaderIBM1_3_1.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/imp/DataReaderIBM1_3_1.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/imp/DataReaderIBM1_4_2.java">com/tagtraum/perf/gcviewer/imp/DataReaderIBM1_4_2.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/imp/DataReaderIBM1_4_2.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/imp/DataReaderIBM_J9_5_0.java">com/tagtraum/perf/gcviewer/imp/DataReaderIBM_J9_5_0.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/imp/DataReaderIBM_J9_5_0.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/imp/DataReaderIBMi5OS1_4_2.java">com/tagtraum/perf/gcviewer/imp/DataReaderIBMi5OS1_4_2.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/imp/DataReaderIBMi5OS1_4_2.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/imp/DataReaderJRockit1_4_2.java">com/tagtraum/perf/gcviewer/imp/DataReaderJRockit1_4_2.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/imp/DataReaderJRockit1_4_2.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/imp/DataReaderJRockit1_5_0.java">com/tagtraum/perf/gcviewer/imp/DataReaderJRockit1_5_0.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/imp/DataReaderJRockit1_5_0.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/imp/DataReaderJRockit1_6_0.java">com/tagtraum/perf/gcviewer/imp/DataReaderJRockit1_6_0.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/imp/DataReaderJRockit1_6_0.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/imp/DataReaderSun1_2_2.java">com/tagtraum/perf/gcviewer/imp/DataReaderSun1_2_2.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/imp/DataReaderSun1_2_2.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/imp/DataReaderSun1_3_1.java">com/tagtraum/perf/gcviewer/imp/DataReaderSun1_3_1.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/imp/DataReaderSun1_3_1.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/imp/DataReaderSun1_6_0.java">com/tagtraum/perf/gcviewer/imp/DataReaderSun1_6_0.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/imp/DataReaderSun1_6_0.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/imp/DataReaderSun1_6_0G1.java">com/tagtraum/perf/gcviewer/imp/DataReaderSun1_6_0G1.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/imp/DataReaderSun1_6_0G1.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/imp/GcLogType.java">com/tagtraum/perf/gcviewer/imp/GcLogType.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/imp/GcLogType.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/imp/IBMJ9SAXHandler.java">com/tagtraum/perf/gcviewer/imp/IBMJ9SAXHandler.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/imp/IBMJ9SAXHandler.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/imp/IBMJ9SAXHandler.java">com/tagtraum/perf/gcviewer/imp/IBMJ9SAXHandler.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/imp/IBMJ9SAXHandler.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/imp/ParseException.java">com/tagtraum/perf/gcviewer/imp/ParseException.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/imp/ParseException.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/imp/UnknownGcTypeException.java">com/tagtraum/perf/gcviewer/imp/UnknownGcTypeException.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/imp/UnknownGcTypeException.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/log/TextAreaFormatter.java">com/tagtraum/perf/gcviewer/log/TextAreaFormatter.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/log/TextAreaFormatter.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/log/TextAreaLogHandler.java">com/tagtraum/perf/gcviewer/log/TextAreaLogHandler.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/log/TextAreaLogHandler.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/math/DoubleData.java">com/tagtraum/perf/gcviewer/math/DoubleData.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/math/DoubleData.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/math/IntData.java">com/tagtraum/perf/gcviewer/math/IntData.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/math/IntData.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/math/RegressionLine.java">com/tagtraum/perf/gcviewer/math/RegressionLine.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/math/RegressionLine.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/math/Sum.java">com/tagtraum/perf/gcviewer/math/Sum.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/math/Sum.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/model/AbstractGCEvent.java">com/tagtraum/perf/gcviewer/model/AbstractGCEvent.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/model/AbstractGCEvent.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/model/AbstractGCEvent.java">com/tagtraum/perf/gcviewer/model/AbstractGCEvent.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/model/AbstractGCEvent.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/model/AbstractGCEvent.java">com/tagtraum/perf/gcviewer/model/AbstractGCEvent.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/model/AbstractGCEvent.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/model/AbstractGCEvent.java">com/tagtraum/perf/gcviewer/model/AbstractGCEvent.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/model/AbstractGCEvent.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/model/AbstractGCEvent.java">com/tagtraum/perf/gcviewer/model/AbstractGCEvent.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/model/AbstractGCEvent.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/model/AbstractGCEvent.java">com/tagtraum/perf/gcviewer/model/AbstractGCEvent.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/model/AbstractGCEvent.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/model/AbstractGCEvent.java">com/tagtraum/perf/gcviewer/model/AbstractGCEvent.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/model/AbstractGCEvent.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/model/ConcurrentGCEvent.java">com/tagtraum/perf/gcviewer/model/ConcurrentGCEvent.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/model/ConcurrentGCEvent.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/model/G1GcEvent.java">com/tagtraum/perf/gcviewer/model/G1GcEvent.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/model/G1GcEvent.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/model/GCEvent.java">com/tagtraum/perf/gcviewer/model/GCEvent.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/model/GCEvent.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/model/GCEvent.java">com/tagtraum/perf/gcviewer/model/GCEvent.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/model/GCEvent.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/model/GCModel.java">com/tagtraum/perf/gcviewer/model/GCModel.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/model/GCModel.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/model/GCModel.java">com/tagtraum/perf/gcviewer/model/GCModel.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/model/GCModel.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/model/GCModel.java">com/tagtraum/perf/gcviewer/model/GCModel.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/model/GCModel.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/model/VmOperationEvent.java">com/tagtraum/perf/gcviewer/model/VmOperationEvent.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/model/VmOperationEvent.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/renderer/ConcurrentGcBegionEndRenderer.java">com/tagtraum/perf/gcviewer/renderer/ConcurrentGcBegionEndRenderer.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/renderer/ConcurrentGcBegionEndRenderer.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/renderer/FullGCLineRenderer.java">com/tagtraum/perf/gcviewer/renderer/FullGCLineRenderer.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/renderer/FullGCLineRenderer.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/renderer/GCRectanglesRenderer.java">com/tagtraum/perf/gcviewer/renderer/GCRectanglesRenderer.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/renderer/GCRectanglesRenderer.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/renderer/GCTimesRenderer.java">com/tagtraum/perf/gcviewer/renderer/GCTimesRenderer.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/renderer/GCTimesRenderer.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/renderer/IncLineRenderer.java">com/tagtraum/perf/gcviewer/renderer/IncLineRenderer.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/renderer/IncLineRenderer.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/renderer/InitialMarkLevelRenderer.java">com/tagtraum/perf/gcviewer/renderer/InitialMarkLevelRenderer.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/renderer/InitialMarkLevelRenderer.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/renderer/PolygonChartRenderer.java">com/tagtraum/perf/gcviewer/renderer/PolygonChartRenderer.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/renderer/PolygonChartRenderer.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/renderer/PolygonChartRenderer.java">com/tagtraum/perf/gcviewer/renderer/PolygonChartRenderer.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/renderer/PolygonChartRenderer.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/renderer/PolygonChartRenderer.java">com/tagtraum/perf/gcviewer/renderer/PolygonChartRenderer.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/renderer/PolygonChartRenderer.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/renderer/TotalHeapRenderer.java">com/tagtraum/perf/gcviewer/renderer/TotalHeapRenderer.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/renderer/TotalHeapRenderer.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/renderer/TotalTenuredRenderer.java">com/tagtraum/perf/gcviewer/renderer/TotalTenuredRenderer.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/renderer/TotalTenuredRenderer.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/renderer/TotalYoungRenderer.java">com/tagtraum/perf/gcviewer/renderer/TotalYoungRenderer.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/renderer/TotalYoungRenderer.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/renderer/UsedHeapRenderer.java">com/tagtraum/perf/gcviewer/renderer/UsedHeapRenderer.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/renderer/UsedHeapRenderer.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/renderer/UsedTenuredRenderer.java">com/tagtraum/perf/gcviewer/renderer/UsedTenuredRenderer.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/renderer/UsedTenuredRenderer.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/renderer/UsedYoungRenderer.java">com/tagtraum/perf/gcviewer/renderer/UsedYoungRenderer.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/renderer/UsedYoungRenderer.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/util/BuildInfoReader.java">com/tagtraum/perf/gcviewer/util/BuildInfoReader.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/util/BuildInfoReader.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/util/ExtensionFileFilter.java">com/tagtraum/perf/gcviewer/util/ExtensionFileFilter.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/util/ExtensionFileFilter.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/util/FormattedValue.java">com/tagtraum/perf/gcviewer/util/FormattedValue.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/util/FormattedValue.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/util/HttpUrlConnectionHelper.java">com/tagtraum/perf/gcviewer/util/HttpUrlConnectionHelper.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/util/HttpUrlConnectionHelper.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/util/LocalisationHelper.java">com/tagtraum/perf/gcviewer/util/LocalisationHelper.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/util/LocalisationHelper.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/util/LoggerHelper.java">com/tagtraum/perf/gcviewer/util/LoggerHelper.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/util/LoggerHelper.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/util/MemoryFormat.java">com/tagtraum/perf/gcviewer/util/MemoryFormat.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/util/MemoryFormat.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/util/NumberParser.java">com/tagtraum/perf/gcviewer/util/NumberParser.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/util/NumberParser.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/util/OSXAdapter.java">com/tagtraum/perf/gcviewer/util/OSXAdapter.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/util/OSXAdapter.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/util/OSXAdapter.java">com/tagtraum/perf/gcviewer/util/OSXAdapter.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/util/OSXAdapter.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/util/OSXSupport.java">com/tagtraum/perf/gcviewer/util/OSXSupport.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/util/OSXSupport.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/util/OSXSupport.java">com/tagtraum/perf/gcviewer/util/OSXSupport.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/util/OSXSupport.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/util/ParseInformation.java">com/tagtraum/perf/gcviewer/util/ParseInformation.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/util/ParseInformation.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/util/TimeFormat.java">com/tagtraum/perf/gcviewer/util/TimeFormat.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/util/TimeFormat.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="com/tagtraum/perf/gcviewer/util/UrlDisplayHelper.java">com/tagtraum/perf/gcviewer/util/UrlDisplayHelper.java</h4>
+<table class="code u-max-full-width">
+  <tbody>
+    <tr>
+      <td class="lineno">
+        <pre>0 &nbsp;
+</pre>
+      </td>
+      <td class="source">
+        <pre><span class="noop">./build/failed/chewiebug/GCViewer/target/site/cobertura/com/tagtraum/perf/gcviewer/util/UrlDisplayHelper.java not found</span></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+    </div>
+  </body>
+</html>
